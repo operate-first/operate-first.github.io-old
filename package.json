@@ -10,8 +10,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "travis-deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/operate-first/operate-first.github.io.git"
   },
   "dependencies": {
     "gatsby": "^2.24.50",
