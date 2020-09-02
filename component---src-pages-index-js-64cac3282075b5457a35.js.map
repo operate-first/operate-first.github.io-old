@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["Home"],"mappings":"2FAAA,wEAEe,SAASA,IACtB,OAAO","file":"component---src-pages-index-js-64cac3282075b5457a35.js","sourcesContent":["import React from \"react\"\n\nexport default function Home() {\n  return <div>Travis Works!</div>\n}\n"],"sourceRoot":""}
