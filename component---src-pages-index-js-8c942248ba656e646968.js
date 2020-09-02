@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{RXBc:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return c}));var r=e("q1tI"),u=e.n(r);function c(){return u.a.createElement("div",null,"Travis Works 2!")}}}]);
-//# sourceMappingURL=component---src-pages-index-js-8c942248ba656e646968.js.map
