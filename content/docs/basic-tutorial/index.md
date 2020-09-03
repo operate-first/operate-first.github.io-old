@@ -6,22 +6,22 @@ description: "Basic Tutorial"
 
 ### Pre-requisites
 
-This Tutorial requires a basic installation of Open Data Hub with Spark and JupyterHub as detailed in the [quick installation]({{site.baseurl}}/docs/getting-started/quick-installation). The quick installation steps are also available as a <a class="external-link" href="https://www.youtube.com/watch?v=-T6ypF7LoKk&t=2s" target="_blank"><i class="fas fa-external-link-alt"></i>tutorial video</a> on the OpenShift youtube channel.
+This Tutorial requires a basic installation of Open Data Hub with Spark and JupyterHub as detailed in the [quick installation](/quick-installation). The quick installation steps are also available as a <a class="external-link" href="https://www.youtube.com/watch?v=-T6ypF7LoKk&t=2s" target="_blank"><i class="fas fa-external-link-alt"></i>tutorial video</a> on the OpenShift youtube channel.
 
 All screenshots and instructions are from OpenShift 4.4. For the purposes of this tutorial, we used [try.openshift.com](https://try.openshift.com/) on AWS. Tutorials have also been tested on [Code Ready Containers](https://code-ready.github.io/crc/) with 16GB of RAM.
 
-The [source]({{site.repo}}/opendatahub.io/blob/master/assets/files/tutorials/basic/basic_tutorial_notebook.ipynb) for the following notebook is available in GitLab with comments for easy viewing.
+The [source](./basic_tutorial_notebook.ipynb) for the following notebook is available in GitLab with comments for easy viewing.
 
 ### Exploring JupyterHub and Spark
 
 JupyterHub and Spark are installed by default with Open Data Hub. You can create Jupyter Notebooks and connect to Spark. This is a simple `hello world` example.
 
 1.  Find the route to JupyterHub. Within your Open Data Hub Project click on `Networking` -> `Routes`
-    ![Routes]({{site.baseurl}}/assets/img/pages/docs/basic-tutorial/routes.png "Routes")
+    ![Routes](./routes.png "Routes")
 1.  For the route named `jupyterhub`, click on the location to bring up JupyterHub (typically `https://jupyterhub-project.apps.your-cluster.your-domain.com`).
 1.  Sign in using your OpenShift credentials.
 1.  Spawn a new server with spark functionality. (e.g. `s2i-spark-minimal-notebook:py36-spark2.4.5-hadoop2.7.3`)
-    ![New Notebook]({{site.baseurl}}/assets/img/pages/docs/basic-tutorial/new-notebook.png "New Notebook")
+    ![New Notebook](./new-notebook.png "New Notebook")
 1.  Create a new Python 3 notebook
 1.  Copy the following code to test a basic spark connection.
 
@@ -105,4 +105,3 @@ Now, let's access that same data file from Spark so you can analyze the data.
 
 That's it! You have a working Jupyter notebook workspace with access to S3 storage and Spark.
 
-{% include next-link.html label="Advanced Tutorials" url="/docs/advanced-tutorials/data-exploration.html" %}

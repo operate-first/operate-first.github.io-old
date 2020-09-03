@@ -1,18 +1,18 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout";
+import SEO from "../components/seo";
 
 const DocIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
+        const title = node.frontmatter.title || node.fields.slug;
         return (
           <article key={node.fields.slug}>
             <header>
@@ -23,13 +23,13 @@ const DocIndex = ({ data, location }) => {
               </h3>
             </header>
           </article>
-        )
+        );
       })}
     </Layout>
-  )
-}
+  );
+};
 
-export default DocIndex
+export default DocIndex;
 
 export const pageQuery = graphql`
   query {
@@ -47,10 +47,10 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            idx  
+            idx
           }
         }
       }
     }
   }
-`
+`;
