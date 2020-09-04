@@ -1,4 +1,8 @@
-# Operate First
+---
+title: Operate First
+idx: 1
+description: "Operate First for ODH"
+---
 
 The transition from delivering projects to delivering services involves different roles and a different mindset. Features that enable the software to be run at scale need to be built into the project. [Operate First](https://openinfralabs.org/) means, we must also operate the project, involving developers from the beginning.
 
