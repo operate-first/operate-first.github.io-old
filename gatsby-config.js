@@ -8,6 +8,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/data`,
+        name: `data`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/docs`,
         name: `doc`,
       },
@@ -71,5 +78,6 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-transformer-yaml`,
   ],
 };

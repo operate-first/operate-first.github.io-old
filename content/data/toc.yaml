@@ -1,0 +1,15 @@
+- id: operate-first
+  label: Home
+  href: /operate-first
+- id: getting-started
+  label: Getting Started
+  links:
+    - id: basic-tutorial
+      label: Basic Workflow
+      href: /basic-tutorial
+- id: advanced-topics
+  label: Advanced Topics
+  links:
+    - id: data-exploration
+      label: Data Exploration
+      href: /data-exploration

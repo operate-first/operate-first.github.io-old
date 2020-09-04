@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
-
+import { useStaticQuery, Link, graphql } from "gatsby";
 import { Nav, NavExpandable, NavItem, NavList, PageSidebar } from "@patternfly/react-core";
-
-import { navData } from "./NavData";
 
 function createNavItem({ id, label, href }, pathname) {
   let isActive = pathname.startsWith(href);
@@ -15,30 +12,43 @@ function createNavItem({ id, label, href }, pathname) {
   );
 }
 
-function createNavGroup({ group, children }, pathname) {
-  const isActive = !!children.find((c) => pathname.startsWith(c.href));
+function createNavGroup({ id, label, links }, pathname) {
+  const isActive = !!links.find((c) => pathname.startsWith(c.href));
 
   return (
-    <NavExpandable
-      key={group.id}
-      title={group.title}
-      groupId={group.id}
-      isActive={isActive}
-      isExpanded={isActive}
-    >
-      {children.map((c) => createNavItem(c, pathname))}
+    <NavExpandable key={id} title={label} groupId={id} isActive={isActive} isExpanded={isActive}>
+      {links.map((c) => createNavItem(c, pathname))}
     </NavExpandable>
   );
 }
 
 export const NavSidebar = ({ isNavOpen }) => {
-  // let routerLocation = useLocation();
+  const navData = useStaticQuery(
+    graphql`
+      {
+        allTocYaml {
+          edges {
+            node {
+              id
+              href
+              label
+              links {
+                id
+                href
+                label
+              }
+            }
+          }
+        }
+      }
+    `
+  ).allTocYaml.edges.map((x) => x.node);
 
-  const navItems = navData.map((item) => {
-    if (item.group) {
-      return createNavGroup(item, "/");
+  const navItems = navData.map((node) => {
+    if (node.links) {
+      return createNavGroup(node, "/");
     }
-    return createNavItem(item, "/");
+    return createNavItem(node, "/");
   });
 
   const nav = (
