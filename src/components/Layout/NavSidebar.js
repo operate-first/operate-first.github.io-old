@@ -22,7 +22,7 @@ function createNavGroup({ id, label, links }, pathname) {
   );
 }
 
-export const NavSidebar = ({ isNavOpen }) => {
+export const NavSidebar = ({ isNavOpen, location }) => {
   const navData = useStaticQuery(
     graphql`
       {
@@ -46,9 +46,9 @@ export const NavSidebar = ({ isNavOpen }) => {
 
   const navItems = navData.map((node) => {
     if (node.links) {
-      return createNavGroup(node, "/");
+      return createNavGroup(node, location.pathname);
     }
-    return createNavItem(node, "/");
+    return createNavItem(node, location.pathname);
   });
 
   const nav = (
