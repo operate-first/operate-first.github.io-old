@@ -1,8 +1,62 @@
-# Operate First website
+Operate First Website
+=======================
+For more information regarding the purpose and roadmap, view the [website](https://operate-first.github.io/) or the [markdown doc](https://github.com/operate-first/operate-first.github.io/blob/master/content/docs/operate-first/index.md)
 
-To preview locally:
 
+## Usage
+Customize your `.env` file similar to `.env.example`(.env.example)
+
+#### Development
+Runs `npm install` and `npm start`/`gatsby develop`
+In terminal:
+```shell script
+make dev
 ```
-npm install
-gatsby develop
+
+#### Manual deployment to GitHub pages
+CI should deploy to GitHub pages automatically, but to manually redeploy
+```shell script
+make gh-pages
+```
+
+#### Building a containerized image
+Customize `.env` file to image and source information as desired. `npm` and the `s2i` command line tool is required.  [https://github.com/openshift/source-to-image](https://github.com/openshift/source-to-image)
+```.env
+IMAGE_REPOSITORY=quay.io/my-org/operate-first-app:latest
+SOURCE_REPOSITORY_URL=git@github.com:my-org/operate-first.github.io.git
+SOURCE_REPOSITORY_REF=my-branch
+```
+```shell script
+make build
+```
+
+#### Pushing the container image
+Customize `.env` file to image information and container builder.
+```.env
+CONTAINER_BUILDER=docker
+IMAGE_REPOSITORY=quay.io/my-org/odh-dashboard:latest
+```
+```shell script
+make push
+```
+
+#### Deploying to OpenShift
+Customize `.env` file for deployment information.  Required.  `oc` command line tool is required.
+```.env
+OC_URL=https://api.my-host:6443
+OC_PROJECT=operate-first
+# user and password login
+OC_USER=kubeadmin
+OC_PASSWORD=my_password
+```
+or
+```.env
+OC_URL=https://api.my-host:6443
+OC_PROJECT=operate-first
+# token login
+OC_TOKEN=my_token
+```
+Run:
+```shell script
+make deploy
 ```
