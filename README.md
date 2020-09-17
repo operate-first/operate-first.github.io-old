@@ -6,18 +6,52 @@ For more information regarding the purpose and roadmap, view the [website](https
 ## Usage
 Customize your `.env` file similar to `.env.example`(.env.example)
 
-#### Development
-Runs `npm install` and `npm start`/`gatsby develop`
+
+### Development / Contributing
+
+#### Adding a document / post
+
+All  posts are located in the `/content/docs` directory. Each file is a Markdown (`.md`) file.  Create the name of the link `my-path` and inside create an `index.md`.
+
+`/content/docs/my-document/index.md`
+```markdown
+---
+title: My Document
+description: My Document Description
+---
+# Content goes here
+
+valid markdown
+
+```
+
+#### Local Development
+You can run the app locally to preview your changes. 
 In terminal:
 ```shell script
 make dev
+``` 
+Runs `npm install` and `npm start`/`gatsby develop`
+
+#### Previewing your changes on GitHub pages
+When previewing your changes on a fork.
+
+First, enable github pages to use the gh-pages branch from root.  
+
+![](misc/gh-pages-fork.png)
+
+Then, from your branch manually build and push.
+```shell script
+make gh-pages-fork
 ```
 
-#### Manual deployment to GitHub pages
+### Manual Site Deployment (Production GitHub Pages)
 CI should deploy to GitHub pages automatically, but to manually redeploy
 ```shell script
 make gh-pages
 ```
+
+### Running on OpenShift
 
 #### Building a containerized image
 Customize `.env` file to image and source information as desired. `npm` and the `s2i` command line tool is required.  [https://github.com/openshift/source-to-image](https://github.com/openshift/source-to-image)

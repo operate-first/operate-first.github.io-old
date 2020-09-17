@@ -20,11 +20,19 @@ dev:
 
 ##################################
 
-# BUILD - build app and deploy to GitHub pages
+# GH-PAGES - build app and deploy to GitHub pages
 
 .PHONY: gh-pages
 gh-pages:
 	./scripts/gh-pages.sh
+
+##################################
+
+# GH-PAGES-FORK - build app from your fork and deploy to GitHub pages with the appropriate pathPrefix
+
+.PHONY: gh-pages-fork
+gh-pages-fork:
+	./scripts/gh-pages-fork.sh
 
 ##################################
 

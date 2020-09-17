@@ -1,4 +1,7 @@
+const pathPrefix = process.env.PATH_PREFIX;
+
 module.exports = {
+  pathPrefix,
   siteMetadata: {
     title: `Operate First`,
     description: `Operate First`,
