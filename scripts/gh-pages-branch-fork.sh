@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 printf "\n\n######## build & deploy GitHub Pages from a fork ########\n"
-printf "\n## Warning: Overwrites everything in your fork's gh-pages branch.\n\n"
+printf "\n## Info: Non-destructive build. Result is deployed on \"gh-pages\" branch in \"$(git branch --show-current)\" folder.\n\n"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
@@ -9,4 +9,4 @@ pwd
 
 npm install
 npm run build
-npm run deploy-fork
+npm run deploy-branch

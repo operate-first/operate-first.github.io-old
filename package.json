@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'Updates: Manual build'",
     "deploy-fork": "PATH_PREFIX='/operate-first.github.io' gatsby build --prefix-paths && gh-pages -d public -m 'Preview Fork: Manual build' ",
+    "deploy-branch": "PATH_PREFIX=\"/operate-first.github.io/$(git branch --show-current)\" gatsby build --prefix-paths && gh-pages -d public -a -e $(git branch --show-current) -m 'Preview Fork: Manual build of a branch' ",
     "travis-deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/operate-first/operate-first.github.io.git -m \"Updates $TRAVIS_COMMIT: $TRAVIS_COMMIT_MESSAGE\""
   },
   "dependencies": {
