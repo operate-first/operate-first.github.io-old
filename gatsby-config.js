@@ -1,3 +1,4 @@
+const path = require("path");
 const pathPrefix = process.env.PATH_PREFIX;
 
 module.exports = {
@@ -30,9 +31,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [`.md`, `.mdx`],
+        defaultLayouts: { default: path.resolve("./src/components/Layout") },
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -84,5 +87,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-yaml`,
     `gatsby-plugin-meta-redirect`,
+    `@rafaelquintanilha/gatsby-transformer-ipynb`,
   ],
 };

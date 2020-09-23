@@ -107,4 +107,3 @@ select * from opendatahub.sample limit 10;
 
 7. Check the query results in Hue.
    ![Query results](./query-results.png "Query results")
-

@@ -1,45 +1,44 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { MDXProvider } from "@mdx-js/react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import { Link } from "gatsby";
 import { TextContent } from "@patternfly/react-core";
 
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
 import "./Doc.scss";
 
-const DocTemplate = ({ data, pageContext, location }) => {
-  const docContent = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
+const shortcodes = { Link }; // Provide common components here
+
+export default function DocTemplate({ data: { site, mdx }, pageContext, location }) {
+  const siteTitle = site.siteMetadata.title;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={docContent.frontmatter.title}
-        description={docContent.frontmatter.description || docContent.excerpt}
-      />
+      <SEO title={mdx.frontmatter.title} description={mdx.frontmatter.description} />
       <TextContent className="doc">
-        <h1>{docContent.frontmatter.title}</h1>
-        <section dangerouslySetInnerHTML={{ __html: docContent.html }} />
+        <h1>{mdx.frontmatter.title}</h1>
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
+        </MDXProvider>
       </TextContent>
     </Layout>
   );
-};
-
-export default DocTemplate;
+}
 
 export const pageQuery = graphql`
-  query DocBySlug($slug: String!) {
+  query DocQuery($id: String) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(id: { eq: $id }) {
       id
-      excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
-        idx
         description
       }
     }

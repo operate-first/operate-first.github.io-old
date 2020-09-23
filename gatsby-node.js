@@ -1,7 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createRedirect, createPage } = actions;
 
   createRedirect({
@@ -11,16 +11,15 @@ exports.createPages = async ({ graphql, actions }) => {
     isPermanent: true,
   });
 
-  const doc = path.resolve(`./src/templates/Doc.js`);
+  const docTemplate = path.resolve(`./src/templates/Doc.js`);
   const result = await graphql(
     `
       {
-        allMarkdownRemark(sort: { fields: [frontmatter___idx], order: ASC }, limit: 1000) {
+        allMdx {
           edges {
             node {
-              fields {
-                slug
-              }
+              id
+              slug
               frontmatter {
                 title
               }
@@ -32,36 +31,19 @@ exports.createPages = async ({ graphql, actions }) => {
   );
 
   if (result.errors) {
-    throw result.errors;
+    reporter.panicOnBuild('ERROR: Loading "createPages" query');
   }
 
-  const docs = result.data.allMarkdownRemark.edges;
+  const mdx = result.data.allMdx.edges;
 
-  docs.forEach((post, index) => {
-    const previous = index === docs.length - 1 ? null : docs[index + 1].node;
-    const next = index === 0 ? null : docs[index - 1].node;
-
+  mdx.forEach(({ node }, index) => {
     createPage({
-      path: post.node.fields.slug,
-      component: doc,
+      path: node.slug,
+      component: docTemplate,
       context: {
-        slug: post.node.fields.slug,
-        previous,
-        next,
+        id: node.id,
+        slug: node.slug,
       },
     });
   });
-};
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
-  }
 };
