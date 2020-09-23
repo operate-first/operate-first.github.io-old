@@ -7,6 +7,9 @@
     - id: basic-tutorial
       label: Basic Workflow
       href: /basic-tutorial
+    - id: jupyter-notebooks
+      label: Jupyter Notebooks
+      href: /jupyter-notebooks
 - id: advanced-topics
   label: Advanced Topics
   links:

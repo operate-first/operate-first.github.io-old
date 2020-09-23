@@ -104,4 +104,3 @@ Now, let's access that same data file from Spark so you can analyze the data.
 1.  Run the cell. The data from the `csv` file should be displayed as a Pandas data frame.
 
 That's it! You have a working Jupyter notebook workspace with access to S3 storage and Spark.
-

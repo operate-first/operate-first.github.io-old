@@ -44,12 +44,15 @@ export const NavSidebar = ({ isNavOpen, location }) => {
     `
   ).allTocYaml.edges.map((x) => x.node);
 
-  const navItems = navData.map((node) => {
-    if (node.links) {
-      return createNavGroup(node, location.pathname);
-    }
-    return createNavItem(node, location.pathname);
-  });
+  let navItems = [];
+  if (location) {
+    navItems = navData.map((node) => {
+      if (node.links) {
+        return createNavGroup(node, location.pathname);
+      }
+      return createNavItem(node, location.pathname);
+    });
+  }
 
   const nav = (
     <Nav className="nav" theme="dark" aria-label="Nav">
