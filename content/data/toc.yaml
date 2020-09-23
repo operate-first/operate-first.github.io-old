@@ -13,3 +13,6 @@
     - id: data-exploration
       label: Data Exploration
       href: /data-exploration
+    - id: categorical-encoding
+      label: Categorical Encoding
+      href: /categorical-encoding
