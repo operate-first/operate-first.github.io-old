@@ -3,7 +3,11 @@ import { graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link } from "gatsby";
-import { TextContent } from "@patternfly/react-core";
+import {
+  PageSection,
+  PageSectionVariants,
+  TextContent
+} from "@patternfly/react-core";
 
 import Layout from "../components/Layout";
 import SEO from "../components/seo";
@@ -16,31 +20,34 @@ export default function DocTemplate({ data: { site, mdx }, pageContext, location
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={mdx.frontmatter.title} description={mdx.frontmatter.description} />
-      <TextContent className="doc">
-        <h1>{mdx.frontmatter.title}</h1>
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </MDXProvider>
-      </TextContent>
+      <SEO title={mdx.frontmatter.title}
+           description={mdx.frontmatter.description} />
+      <PageSection className="doc" variant={PageSectionVariants.light}>
+        <TextContent>
+          <h1>{mdx.frontmatter.title}</h1>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </MDXProvider>
+        </TextContent>
+      </PageSection>
     </Layout>
   );
 }
 
 export const pageQuery = graphql`
-  query DocQuery($id: String) {
-    site {
-      siteMetadata {
-        title
-      }
+    query DocQuery($id: String) {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        mdx(id: { eq: $id }) {
+            id
+            body
+            frontmatter {
+                title
+                description
+            }
+        }
     }
-    mdx(id: { eq: $id }) {
-      id
-      body
-      frontmatter {
-        title
-        description
-      }
-    }
-  }
 `;
