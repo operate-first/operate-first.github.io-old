@@ -1,7 +1,8 @@
 const path = require("path");
+const { contentPlugins } = require("./config-utils");
 const pathPrefix = process.env.PATH_PREFIX;
 
-module.exports = {
+let config = {
   pathPrefix,
   siteMetadata: {
     title: `Operate First`,
@@ -9,20 +10,6 @@ module.exports = {
     siteUrl: `https://operate-first.github.io/`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/data`,
-        name: `data`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/docs`,
-        name: `doc`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -90,3 +77,7 @@ module.exports = {
     `@rafaelquintanilha/gatsby-transformer-ipynb`,
   ],
 };
+
+config.plugins = contentPlugins.concat(config.plugins);
+
+module.exports = config;

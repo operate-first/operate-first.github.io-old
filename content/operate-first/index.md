@@ -1,6 +1,5 @@
 ---
 title: Operate First
-idx: 1
 description: "Operate First for ODH"
 ---
 

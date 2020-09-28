@@ -1,6 +1,5 @@
 ---
 title: Data Exploration
-idx: 2
 description: Data Exploration
 ---
 

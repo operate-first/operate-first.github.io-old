@@ -26,7 +26,7 @@ export const NavSidebar = ({ isNavOpen, location }) => {
   const navData = useStaticQuery(
     graphql`
       {
-        allTocYaml {
+        allNavItem {
           edges {
             node {
               id
@@ -42,7 +42,7 @@ export const NavSidebar = ({ isNavOpen, location }) => {
         }
       }
     `
-  ).allTocYaml.edges.map((x) => x.node);
+  ).allNavItem.edges.map((x) => x.node);
 
   let navItems = [];
   if (location) {
