@@ -1,6 +1,5 @@
 ---
 title: Basic Tutorial
-idx: 1
 description: "Basic Tutorial"
 ---
 

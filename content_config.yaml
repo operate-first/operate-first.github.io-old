@@ -1,0 +1,16 @@
+#- name: sample content
+#  dir: sample-dir
+#  ignore:
+#    - '*.js'
+#    - '*.exe'
+#   urlPrefix: url-prefix/sample
+#  toc: sample-dir/toc.yaml
+
+- name: local content
+  dir: content
+  toc: content/toc.yaml
+
+#- name: continuous deployment docs
+#  dir: continuous-deployment/docs
+#  urlPrefix: cd
+#  toc: continuous-deployment/docs/toc.yaml

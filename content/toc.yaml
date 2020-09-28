@@ -5,17 +5,17 @@
   label: Getting Started
   links:
     - id: basic-tutorial
-      label: Basic Workflow
-      href: /basic-tutorial
+      label: Basic Tutorial
+      href: /getting-started/basic-tutorial
     - id: jupyter-notebooks
       label: Jupyter Notebooks
-      href: /jupyter-notebooks
+      href: /getting-started/jupyter-notebooks
 - id: advanced-topics
   label: Advanced Topics
   links:
     - id: data-exploration
       label: Data Exploration
-      href: /data-exploration
+      href: /advanced-topics/data-exploration
     - id: categorical-encoding
       label: Categorical Encoding
-      href: /categorical-encoding
+      href: /advanced-topics/categorical-encoding
