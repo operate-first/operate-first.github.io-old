@@ -67,7 +67,7 @@ let config = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/images/odh-logo.png`,
+        icon: `static/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
