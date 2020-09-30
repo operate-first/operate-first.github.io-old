@@ -50,6 +50,20 @@ Then, from your branch manually build and push.
 make gh-pages-fork
 ```
 
+Now you can view your work on `https://githubuserid.github.io/operate-first.github.io`
+
+#### Previewing multiple PRs on GitHub pages
+
+If you've set up to preview the site on your personal GitHub pages, like the above, you can also preview multiple PR branches from your fork under separate paths.  For example, for a branch named `my-branch`, would deploy under a subpath of the same name.
+
+From your branch manually build and push.
+
+```shell script
+make gh-pages-branch
+```
+
+Now you can view your work on `https://githubuserid.github.io/operate-first.github.io/my-branch`
+
 ### Manual Site Deployment (Production GitHub Pages)
 
 CI should deploy to GitHub pages automatically, but to manually redeploy

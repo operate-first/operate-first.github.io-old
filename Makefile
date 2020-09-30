@@ -36,6 +36,14 @@ gh-pages-fork:
 
 ##################################
 
+# GH-PAGES-BRANCH - build app from your branch on your fork and deploy to GitHub pages under a path
+
+.PHONY: gh-pages-branch
+gh-pages-branch:
+	./scripts/gh-pages-branch-fork.sh
+
+##################################
+
 # BUILD - build image locally using s2i
 
 .PHONY: build
