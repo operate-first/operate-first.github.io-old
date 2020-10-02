@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-printf "\n\n######## gh-pages ########\n"
+printf "\n\n######## building s2i image ########\n"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 

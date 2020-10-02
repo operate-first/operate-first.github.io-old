@@ -1,0 +1,6 @@
+- id: continuous-deployment
+  label: Continuous Deployment
+  links:
+    - id: versions
+      label: Versions
+      href: /cd/versions

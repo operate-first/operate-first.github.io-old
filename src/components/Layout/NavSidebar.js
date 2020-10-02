@@ -26,23 +26,21 @@ export const NavSidebar = ({ isNavOpen, location }) => {
   const navData = useStaticQuery(
     graphql`
       {
-        allNavItem {
-          edges {
-            node {
+        navData {
+          navItems {
+            id
+            label
+            href
+            links {
               id
-              href
               label
-              links {
-                id
-                href
-                label
-              }
+              href
             }
           }
         }
       }
     `
-  ).allNavItem.edges.map((x) => x.node);
+  ).navData.navItems;
 
   let navItems = [];
   if (location) {

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const yaml = require("js-yaml");
-const contentSources = yaml.safeLoad(fs.readFileSync("./content_config.yaml", "utf-8"));
+const contentSources = yaml.safeLoad(fs.readFileSync("./content-sources.yaml", "utf-8"));
 
 const contentPlugins = contentSources.map(createSourcePlugin);
 

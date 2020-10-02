@@ -1,0 +1,7 @@
+#  Ordered list of sources of NavItems for the NavBar
+#- path/to/local.yaml
+#- path/to/cloned/toc.yaml
+
+- content/toc.yaml
+- content/cd-toc.yaml # using file from local repo
+#- continuous-deployment/docs/toc.yaml # using file from cloned repo

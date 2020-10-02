@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-printf "\n\n######## dev ########\n"
+printf "\n\n######## local dev ########\n"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
@@ -12,5 +12,8 @@ fi
 cd ${DIR}/..
 pwd
 
-npm install
+if [ ! -d "node_modules" ]; then
+  npm install
+fi
+npm run clone-remote-content
 npm start
