@@ -19,3 +19,6 @@
     - id: categorical-encoding
       label: Categorical Encoding
       href: /advanced-topics/categorical-encoding
+- id: resources
+  label: Resources
+  href: /resources
