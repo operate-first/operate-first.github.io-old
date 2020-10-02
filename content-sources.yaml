@@ -1,0 +1,16 @@
+#- name: sample content
+#  gitSrc: https://github.com/user/repo.git
+#  gitDest: relative/dir or /absolute/dir
+#  dir: content-dir
+#  ignore:
+#    - '*.js'
+#    - '*.exe'
+#  urlPrefix: url-prefix/sample
+
+- name: local content
+  dir: content
+
+- name: continuous deployment docs
+  gitSrc: https://github.com/operate-first/continuous-deployment.git
+  dir: continuous-deployment/docs
+  urlPrefix: cd

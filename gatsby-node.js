@@ -1,13 +1,9 @@
 const fs = require(`fs`);
 const yaml = require(`js-yaml`);
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
 
-const contentSources = yaml.safeLoad(fs.readFileSync(`./content_config.yaml`, `utf-8`));
-const pathPrefixMap = {};
-contentSources.forEach(({ filePath, urlPrefix }) => {
-  pathPrefixMap[filePath] = urlPrefix;
-});
+const contentSources = yaml.safeLoad(fs.readFileSync(`./content-sources.yaml`, `utf-8`));
+const tocSources = yaml.safeLoad(fs.readFileSync(`./toc-sources.yaml`, `utf-8`));
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createRedirect, createPage } = actions;
@@ -60,21 +56,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 };
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest, reporter }) => {
-  const tocSources = contentSources.map((cs) => cs.toc);
+  let navItems = [];
   tocSources.forEach((tocSource) => {
-    const navData = yaml.safeLoad(fs.readFileSync(`${__dirname}/${tocSource}`, `utf-8`));
-    navData.forEach((navItem) => {
-      const { id, label, href, links } = navItem;
-      actions.createNode({
-        id: createNodeId(`NavItem-${id}`),
-        label,
-        href,
-        links,
-        internal: {
-          type: `NavItem`,
-          contentDigest: createContentDigest(navItem),
-        },
-      });
+    const fileLocation = `${__dirname}/${tocSource}`;
+    if (!fs.existsSync(fileLocation)) {
+      reporter.error(`Table of Contents file ${fileLocation} missing.  Skipped.`);
+      return;
+    }
+    const toc = yaml.safeLoad(fs.readFileSync(fileLocation, `utf-8`));
+    toc.forEach((navItem) => navItems.push(navItem));
+    actions.createNode({
+      id: createNodeId(`NavData`),
+      navItems: navItems,
+      internal: {
+        type: `NavData`,
+        contentDigest: createContentDigest(navItems),
+      },
     });
   });
 };

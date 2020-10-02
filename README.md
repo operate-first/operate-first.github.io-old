@@ -27,6 +27,11 @@ valid markdown
 
 #### Local Development
 
+It is recommended you clone any remote content repositories or forks as you prefer:
+```shell script
+git clone git@github.com:operate-first/continuous-deployment.git
+```
+
 You can run the app locally to preview your changes.
 In terminal:
 
@@ -34,7 +39,7 @@ In terminal:
 make dev
 ```
 
-Runs `npm install` and `npm start`/`gatsby develop`
+Runs `npm install` and `npm start`/`gatsby develop`;
 
 #### Previewing your changes on GitHub pages
 
@@ -54,7 +59,7 @@ Now you can view your work on `https://githubuserid.github.io/operate-first.gith
 
 #### Previewing multiple PRs on GitHub pages
 
-If you've set up to preview the site on your personal GitHub pages, like the above, you can also preview multiple PR branches from your fork under separate paths.  For example, for a branch named `my-branch`, would deploy under a subpath of the same name.
+If you've set up to preview the site on your personal GitHub pages, like the above, you can also preview multiple PR branches from your fork under separate paths. For example, for a branch named `my-branch`, would deploy under a subpath of the same name.
 
 From your branch manually build and push.
 
