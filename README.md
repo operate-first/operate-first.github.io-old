@@ -8,9 +8,11 @@ Customize your `.env` file similar to `.env.example`(.env.example)
 
 ### Development / Contributing
 
+Documentation can be added directly from the repository or from a remote repository.
+
 #### Adding a document / post
 
-All posts are located in the `/content/docs` directory. Each file is a Markdown (`.md`) file. Create the name of the link `my-path` and inside create an `index.md`.
+All local posts are located in the `/content/docs` directory. Each file is a Markdown (`.md`) file. Create the name of the link `my-path` and inside create an `index.md`.
 
 `/content/docs/my-document/index.md`
 
@@ -25,12 +27,58 @@ description: My Document Description
 valid markdown
 ```
 
-#### Local Development
+Jupyter Notebooks (`.ipynb`) can be added in a similar manner by adding them to the `/content/docs` directory. Add the notebook(s) and create an `index.mdx` where you can import the notebook(s) to be included.
 
-It is recommended you clone any remote content repositories or forks as you prefer:
+`/content/docs/my-notebook/index.mdx`  
+`/content/docs/my-notebook/hello-world.ipynb`  
+
+```markdown
+---
+title: My Notebook
+description: My Notebook Description
+---
+
+import JupyterNotebook from '../../../src/components/JupyterNotebook'
+
+### Title
+
+<JupyterNotebook path="my-notebook/hello-world.ipynb"/>
+```
+
+#### Adding remote content
+
+To add remote content, it is recommended you clone any remote content repositories or forks as you prefer at the root of this repository:
 ```shell script
 git clone git@github.com:operate-first/continuous-deployment.git
 ```
+Add remote repository url and directory to get content from in `content-sources.yaml`
+
+```yaml
+- name: continuous deployment docs
+  gitSrc: https://github.com/operate-first/continuous-deployment.git
+  dir: continuous-deployment/docs
+  urlPrefix: cd
+```
+There are two ways you can manage the table of contents for the remote repo.
+
+First is to include the content directly in the master `content/toc.yaml`.
+
+```yaml
+- id: continuous-deployment
+  label: Continuous Deployment
+  href: /cd/versions #include the filename to be added from the remote repo
+```
+The second way is to manage an independent `repo-toc.yaml` for the remote repo. This `repo-toc.yaml` can be located in the `content` directory or also fetched from the remote repo if needed.
+
+Based on whether using the file from the local repo or the cloned repo, make sure to include the file in the `toc-sources.yaml`
+
+```yaml
+- content/cd-toc.yaml # using file from local repo
+- continuous-deployment/docs/toc.yaml # using file from cloned repo
+```
+
+#### Local Development
+
 
 You can run the app locally to preview your changes.
 In terminal:
