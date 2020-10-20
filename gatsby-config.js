@@ -40,6 +40,7 @@ let config = {
             options: {
               classMap: {
                 list: "pf-c-list",
+                table: "pf-c-table",
               },
             },
           },
