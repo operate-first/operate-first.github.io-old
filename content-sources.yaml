@@ -14,3 +14,5 @@
   gitSrc: https://github.com/operate-first/continuous-deployment.git
   dir: continuous-deployment/docs
   urlPrefix: cd
+  ignore:
+    - '**/README.md'
