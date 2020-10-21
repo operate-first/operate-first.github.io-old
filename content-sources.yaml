@@ -16,3 +16,9 @@
   urlPrefix: cd
   ignore:
     - '**/README.md'
+
+- name: configuration file analysis
+  gitSrc: https://github.com/aicoe-aiops/configuration-files-analysis.git
+  dir: configuration-files-analysis/docs/blog
+  urlPrefix: config-analysis
+
