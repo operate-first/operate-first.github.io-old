@@ -19,6 +19,9 @@
     - id: categorical-encoding
       label: Categorical Encoding
       href: /advanced-topics/categorical-encoding
+    - id: configuration-file-analysis
+      label: Configuration File Analysis
+      href: /config-analysis/configuration-file-analysis-blog
 - id: resources
   label: Resources
   href: /resources
