@@ -12,7 +12,7 @@
 
 - name: continuous deployment docs
   gitSrc: https://github.com/operate-first/continuous-deployment.git
-  dir: continuous-deployment/docs
+  dir: continuous-deployment/docs/publish
   urlPrefix: cd
   ignore:
     - '**/README.md'

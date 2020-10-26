@@ -51,14 +51,19 @@ To add remote content, it is recommended you clone any remote content repositori
 ```shell script
 git clone git@github.com:operate-first/continuous-deployment.git
 ```
+Include the remote repository to `.gitignore`.
+
+Create a separate folder within the remote repository which only consists of the document(s) to be published and its supporting files like images.
+
 Add remote repository url and directory to get content from in `content-sources.yaml`
 
 ```yaml
 - name: continuous deployment docs
   gitSrc: https://github.com/operate-first/continuous-deployment.git
-  dir: continuous-deployment/docs
+  dir: continuous-deployment/docs/publish
   urlPrefix: cd
 ```
+
 There are two ways you can manage the table of contents for the remote repo.
 
 First is to include the content directly in the master `content/toc.yaml`.
@@ -74,7 +79,7 @@ Based on whether using the file from the local repo or the cloned repo, make sur
 
 ```yaml
 - content/cd-toc.yaml # using file from local repo
-- continuous-deployment/docs/toc.yaml # using file from cloned repo
+- continuous-deployment/docs/publish/toc.yaml # using file from cloned repo
 ```
 
 #### Local Development
