@@ -25,3 +25,6 @@
 - id: resources
   label: Resources
   href: /resources
+- id: projects-overview
+  label: Projects Overview
+  href: /projects-overview
