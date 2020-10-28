@@ -102,6 +102,8 @@ First, enable github pages to use the gh-pages branch from root.
 
 ![](misc/gh-pages-fork.png)
 
+Make sure to push your changes to your branch on the fork.
+
 Then, from your branch manually build and push.
 
 ```shell script
