@@ -1,6 +1,7 @@
 # Remote content
 continuous-deployment
 configuration-files-analysis
+ocp-ci-analysis
 
 # Logs
 logs

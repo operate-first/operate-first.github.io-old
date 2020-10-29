@@ -21,4 +21,12 @@
   gitSrc: https://github.com/aicoe-aiops/configuration-files-analysis.git
   dir: configuration-files-analysis/docs/blog
   urlPrefix: config-analysis
+  
+- name: AI for continuous integration
+  gitSrc: https://github.com/aicoe-aiops/ocp-ci-analysis.git
+  dir: ocp-ci-analysis/docs/publish
+  urlPrefix: aici
+
+
+
 
