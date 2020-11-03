@@ -5,3 +5,4 @@
 - content/toc.yaml
 - content/cd-toc.yaml # using file from local repo
 #- continuous-deployment/docs/toc.yaml # using file from cloned repo
+- content/moc-toc.yaml
