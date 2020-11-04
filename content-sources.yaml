@@ -33,6 +33,6 @@
   urlPrefix: moc-cnv
 
 - name: MOC user docs
-  gitSrc: https://github.com/operate-first/odh-moc-support
+  gitSrc: https://github.com/operate-first/odh-moc-support.git
   dir: odh-moc-support/docs/user-docs
   urlPrefix: odh-moc-user
