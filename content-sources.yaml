@@ -36,3 +36,8 @@
   gitSrc: https://github.com/operate-first/odh-moc-support.git
   dir: odh-moc-support/docs/user-docs
   urlPrefix: odh-moc-user
+
+- name: Categorical encoding 
+  gitSrc: https://github.com/aicoe-aiops/categorical-encoding.git
+  dir: categorical-encoding/docs/blog
+  urlPrefix: advanced-topics/categorical-encoding
