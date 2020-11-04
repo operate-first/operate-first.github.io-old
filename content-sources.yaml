@@ -21,12 +21,18 @@
   gitSrc: https://github.com/aicoe-aiops/configuration-files-analysis.git
   dir: configuration-files-analysis/docs/blog
   urlPrefix: config-analysis
-  
+
 - name: AI for continuous integration
   gitSrc: https://github.com/aicoe-aiops/ocp-ci-analysis.git
   dir: ocp-ci-analysis/docs/publish
   urlPrefix: aici
 
+- name: MOC onboarding docs
+  gitSrc: https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox.git
+  dir: moc-cnv-sandbox/docs
+  urlPrefix: moc-cnv
 
-
-
+- name: MOC user docs
+  gitSrc: https://github.com/operate-first/odh-moc-support
+  dir: odh-moc-support/docs/user-docs
+  urlPrefix: odh-moc-user

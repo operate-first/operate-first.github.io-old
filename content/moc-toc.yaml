@@ -1,0 +1,13 @@
+- id: moc-user-docs
+  label: MOC - ODH Users
+  links:
+    - id: moc-jh
+      label: JupyterHub
+      href: /odh-moc-user/jupyterhub
+
+- id: moc-ops-docs
+  label: MOC - ODH Operations
+  links:
+    - id: moc-getting-access
+      label: Getting Access
+      href: /moc-cnv/about-the-cluster

@@ -2,6 +2,8 @@
 continuous-deployment
 configuration-files-analysis
 ocp-ci-analysis
+moc-cnv-sandbox
+odh-moc-support
 
 # Logs
 logs
