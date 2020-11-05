@@ -4,6 +4,7 @@ configuration-files-analysis
 ocp-ci-analysis
 moc-cnv-sandbox
 odh-moc-support
+data-science-workflows
 
 # Logs
 logs

@@ -36,3 +36,9 @@
   gitSrc: https://github.com/operate-first/odh-moc-support.git
   dir: odh-moc-support/docs/user-docs
   urlPrefix: odh-moc-user
+
+- name: Data Science Workflow
+  gitSrc: https://github.com/aicoe-aiops/data-science-workflows.git
+  dir: data-science-workflows/docs/publish
+  urlPrefix: dsw
+
