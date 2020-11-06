@@ -3,19 +3,10 @@
   href: /operate-first
 - id: getting-started
   label: Getting Started
+  href: /getting-started
+- id: data-science-projects
+  label: Data Science Projects
   links:
-    - id: basic-tutorial
-      label: Basic Tutorial
-      href: /getting-started/basic-tutorial
-    - id: jupyter-notebooks
-      label: Jupyter Notebooks
-      href: /getting-started/jupyter-notebooks
-- id: advanced-topics
-  label: Advanced Topics
-  links:
-    - id: data-exploration
-      label: Data Exploration
-      href: /advanced-topics/data-exploration
     - id: categorical-encoding
       label: Categorical Encoding
       href: /advanced-topics/categorical-encoding/blog
