@@ -12,7 +12,7 @@ _This document contains a list of projects within the AI Ops Team at Red Hat._
 
     Github Repo : https://github.com/aicoe-aiops/data-science-workflows
 
-3. **Insights Configuration Files Analysis** : Red Hat Insights is a tool that provides analytics for Red Hat systems. It collects the system data to find vulnerabilities through manually written rules. The systems data is collected periodically and stored in a warehouse for data analysis. The data comprises hardware and software description, configurations, and logs of the systems. In this project, the focus is on analysis of configuration files. Some of these files are written by experts and customized by users such as the tuned files. Others are completely configured by end users such as the sssd configuration files. This project aims to develop data-driven methods to analyze these configuration files and detect misconfiguration in these files.
+3. **Configuration Files Analysis** : Software systems have become more flexible and feature-rich. For example, the configuration file for MySQL has more than 200 configuration entries with different subentries. As a result, configuring these systems is a complicated task and frequently causes configuration errors. Currently, in most cases, misconfigurations are detected by manually specified rules. However, this process is tedious and not scalable. In this project, we propose data-driven methods to detect misconfigurations by discovering frequently occurring patterns in configuration files.
 
     Github Repo : https://github.com/aicoe-aiops/configuration-files-analysis
 
