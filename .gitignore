@@ -5,6 +5,8 @@ ocp-ci-analysis
 moc-cnv-sandbox
 odh-moc-support
 data-science-workflows
+categorical-encoding
+
 
 # Logs
 logs
