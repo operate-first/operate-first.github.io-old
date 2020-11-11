@@ -7,6 +7,9 @@
 - id: data-science-projects
   label: Data Science Projects
   links:
+    - id: projects-overview
+      label: Projects Overview
+      href: /data-science-projects/projects-overview
     - id: categorical-encoding
       label: Categorical Encoding
       href: /advanced-topics/categorical-encoding/blog
@@ -19,6 +22,4 @@
 - id: resources
   label: Resources
   href: /resources
-- id: projects-overview
-  label: Projects Overview
-  href: /projects-overview
+
