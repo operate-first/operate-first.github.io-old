@@ -19,6 +19,13 @@ dev:
 	./scripts/dev.sh
 
 ##################################
+# DEV-CLEAN - cleans local development environment
+
+.PHONY: dev-clean
+dev-clean:
+	./scripts/dev-clean.sh
+
+##################################
 
 # GH-PAGES - build app and deploy to GitHub pages
 

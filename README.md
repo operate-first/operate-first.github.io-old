@@ -92,7 +92,7 @@ In terminal:
 make dev
 ```
 
-Runs `npm install` and `npm start`/`gatsby develop`;
+If you have problems, run `make dev-clean`
 
 #### Previewing your changes on GitHub pages
 
