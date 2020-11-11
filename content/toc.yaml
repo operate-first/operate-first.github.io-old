@@ -9,7 +9,7 @@
   links:
     - id: projects-overview
       label: Projects Overview
-      href: /projects-overview
+      href: /data-science-projects/projects-overview
     - id: categorical-encoding
       label: Categorical Encoding
       href: /advanced-topics/categorical-encoding/blog
