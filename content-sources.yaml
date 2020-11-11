@@ -10,6 +10,11 @@
 - name: local content
   dir: content
 
+- name: continuous delivery docs
+  gitSrc: https://github.com/operate-first/continuous-delivery.git
+  dir: continuous-delivery/docs
+  urlPrefix: continuous-delivery
+
 - name: continuous deployment docs
   gitSrc: https://github.com/operate-first/continuous-deployment.git
   dir: continuous-deployment/docs/publish
