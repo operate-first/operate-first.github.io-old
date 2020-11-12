@@ -9,3 +9,4 @@
 #- continuous-deployment/docs/toc.yaml # using file from cloned repo
 - content/moc-toc.yaml
 - content/dsw-toc.yaml
+- content/aici-toc.yaml
