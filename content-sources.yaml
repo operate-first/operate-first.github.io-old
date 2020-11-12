@@ -32,6 +32,11 @@
   dir: ocp-ci-analysis/docs/publish
   urlPrefix: aici
 
+- name: AI for continuous integration notebooks
+  gitSrc: https://github.com/aicoe-aiops/ocp-ci-analysis.git
+  dir: ocp-ci-analysis/notebooks
+  urlPrefix: aici-nb
+
 - name: MOC onboarding docs
   gitSrc: https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox.git
   dir: moc-cnv-sandbox/docs
