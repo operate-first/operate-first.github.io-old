@@ -3,10 +3,10 @@
   links:
     - id: blueprint-adr-0000
       label: Use Markdown Architectural Decision Records
-      href: /blueprint/docs/adr/0000-use-markdown-architectural-decision-records
+      href: /blueprint/0000-use-markdown-architectural-decision-records
     - id: blueprint-adr-0001
       label: Use GNU GPL as license
-      href: /blueprint/docs/adr/0001-use-gpl3-as-license
+      href: /blueprint/0001-use-gpl3-as-license
     - id: blueprint-adr-0003
       label: Operate First deployment feature selection Policy
-      href: /blueprint/docs/adr/0003-feature-selection-policy
+      href: /blueprint/0003-feature-selection-policy
