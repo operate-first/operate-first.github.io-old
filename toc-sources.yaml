@@ -4,6 +4,7 @@
 
 - content/toc.yaml
 - content/blueprint-toc.yaml
+- continuous-delivery/docs/toc.yaml
 - content/cd-toc.yaml # using file from local repo
 #- continuous-deployment/docs/toc.yaml # using file from cloned repo
 - content/moc-toc.yaml

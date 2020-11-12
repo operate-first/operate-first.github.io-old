@@ -1,5 +1,6 @@
 # Remote content
 blueprint
+continuous-delivery
 continuous-deployment
 configuration-files-analysis
 ocp-ci-analysis
