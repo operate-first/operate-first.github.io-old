@@ -6,14 +6,7 @@ const contentSources = yaml.safeLoad(fs.readFileSync(`./content-sources.yaml`, `
 const tocSources = yaml.safeLoad(fs.readFileSync(`./toc-sources.yaml`, `utf-8`));
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createRedirect, createPage } = actions;
-
-  createRedirect({
-    fromPath: `/`,
-    toPath: `/operate-first`,
-    redirectInBrowser: true,
-    isPermanent: true,
-  });
+  const { createPage } = actions;
 
   const docTemplate = path.resolve(`./src/templates/Doc.js`);
   const result = await graphql(
@@ -49,6 +42,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: {
           id: node.id,
           slug: node.slug,
+        },
+      });
+    } else {
+      createPage({
+        path: "/",
+        component: docTemplate,
+        context: {
+          id: node.id,
+          slug: "/",
         },
       });
     }
