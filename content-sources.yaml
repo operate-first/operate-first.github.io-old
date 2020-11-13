@@ -63,4 +63,4 @@
   ignore:
     - "template.md"
     - "**/README.md"
-  urlPrefix: blueprint
+  urlPrefix: adr
