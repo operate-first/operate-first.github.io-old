@@ -55,6 +55,32 @@ Include the remote repository to `.gitignore`.
 
 Create a separate folder within the remote repository which only consists of the document(s) to be published and its supporting files like images.
 
+**If adding remote notebooks**, it's required to create an *.mdx file in your remote repository's publishing folder for each notebook you want to render (this file is what actually gets displayed). We recommend the following naming convention `notebook-you-want-to-publish-name.mdx` .
+
+It is also possible to render multiple notebooks within one .mdx file if needed. Create an single .mdx file within your repository's publishing folder referencing the notebooks in the .mdx file as follows.
+
+```markdown
+---
+title: My Notebook
+description: My Notebook Description
+---
+
+import JupyterNotebook from '../../../src/components/JupyterNotebook'
+
+### Title
+<JupyterNotebook path="notebooks/notebook1.ipynb"/>
+<JupyterNotebook path="notebooks/notebook2.ipynb"/>
+...
+...
+```
+
+The *.mdx files should follow the format outlined in the example above. However, depending on the directory structure of your repository the following path may need to be updated to navigate out of your cloned repo and into the correct `JupyterNotebook` directory.    
+
+```
+import JupyterNotebook from '../../../src/components/JupyterNotebook'
+```
+
+
 Add remote repository url and directory to get content from in `content-sources.yaml`
 
 ```yaml
