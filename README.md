@@ -1,6 +1,6 @@
 # Operate First Website
 
-For more information regarding the purpose and roadmap, view the [website](https://operate-first.github.io/) or the [markdown doc](https://github.com/operate-first/operate-first.github.io/blob/master/content/docs/operate-first/index.md)
+For more information regarding the purpose and roadmap, view the [website](https://operate-first.cloud/) or the [markdown doc](https://github.com/operate-first/operate-first.github.io/blob/master/content/docs/operate-first/index.md)
 
 ## Usage
 
