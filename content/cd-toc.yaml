@@ -1,6 +1,39 @@
-- id: continuous-deployment
-  label: Continuous Deployment
+- id: argocd
+  label: ArgoCD Operations
+  links: 
+    - id: argocd-application-manifests
+      label: Create ArgoCD Application Manifest
+      href: /cd/create_argocd_application_manifest
+    - id: argocd-manage-app
+      label: Get ArgoCD to Manage your app
+      href: /cd/get_argocd_to_manage_your_app
+    - id: argocd-access-project
+      label: Give ArgoCD Access to your Project
+      href: /cd/give_argocd_access_to_your_project
+    - id: argocd-inclusions
+      label: Inclusions Explained
+      href: /cd/inclusions_explained
+    - id: argocd-setup
+      label: ArgoCD Setup
+      href: /cd/setup_argocd_dev_environment
+- id: crc
+  label: CRC
   links:
-    - id: versions
-      label: Versions
-      href: /cd/versions
+    - id: crc-setup
+      label: CRC Setup
+      href: /cd/downstream/crc
+    - id: crc-odh
+      label: Installing ODH on CRC
+      href: /cd/downstream/odh-install-crc
+    - id: crc-disk
+      label: CRC Disk Size
+      href: /cd/downstream/crc-disk-size
+- id: quicklab
+  label: Quicklab
+  links:
+    - id: quicklab-setup
+      label: Quicklab Setup
+      href: /cd/downstream/quicklab
+    - id: quicklab-odh
+      label: Installing ODH on Quicklab
+      href: /cd/downstream/odh-install-quicklab
