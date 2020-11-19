@@ -7,7 +7,7 @@ let config = {
   siteMetadata: {
     title: `Operate First`,
     description: `Operate First`,
-    siteUrl: `https://operate-first.github.io/`,
+    siteUrl: `https://operate-first.cloud/`,
   },
   plugins: [
     {
