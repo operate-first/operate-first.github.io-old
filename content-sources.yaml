@@ -20,6 +20,7 @@
   dir: continuous-deployment/docs
   urlPrefix: cd
   ignore:
+    - "**/index.md"      
     - "**/README.md"
 
 - name: configuration file analysis
