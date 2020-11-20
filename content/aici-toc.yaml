@@ -5,6 +5,10 @@
       label: AI for Continuous Integration Overview
       href: /aici/project-doc
 
+    - id: ci-failure-type-classification
+      label: Failure type classification with the TestGrid
+      href: /aici/failure-type-classification-with-the-testgrid-data-project-doc
+
     - id: testgrid-EDA
       label: Initial TestGrid EDA
       href: /aici-nb/testgrid-eda
