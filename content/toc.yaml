@@ -13,9 +13,6 @@
     - id: configuration-file-analysis
       label: Configuration File Analysis
       href: /config-analysis/configuration-file-analysis-blog
-- id: resources
-  label: Resources
-  href: /resources
 - id: blueprint-adr
   label: Architecture Decision Records
   links:
@@ -118,6 +115,3 @@
     - id: testgrid-indepth-eda
       label: Indepth TestGrid EDA
       href: /aici-nb/testgrid-eda-indepth
-- id: contribute
-  label: Contribute
-  href: /contribute
