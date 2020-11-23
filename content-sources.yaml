@@ -12,56 +12,45 @@
 
 - name: continuous delivery docs
   gitSrc: https://github.com/operate-first/continuous-delivery.git
-  dir: continuous-delivery/docs
-  urlPrefix: continuous-delivery
+  dir: continuous-delivery
+  urlPrefix: blueprints/continuous-delivery
 
 - name: continuous deployment docs
   gitSrc: https://github.com/operate-first/continuous-deployment.git
-  dir: continuous-deployment/docs
-  urlPrefix: cd
-  ignore:
-    - "**/index.md"      
-    - "**/README.md"
+  dir: continuous-deployment
+  urlPrefix: operators/continuous-deployment
 
 - name: configuration file analysis
   gitSrc: https://github.com/aicoe-aiops/configuration-files-analysis.git
-  dir: configuration-files-analysis/docs/blog
-  urlPrefix: config-analysis
+  dir: configuration-files-analysis
+  urlPrefix: data-science/configuration-files-analysis
 
 - name: AI for continuous integration
   gitSrc: https://github.com/aicoe-aiops/ocp-ci-analysis.git
-  dir: ocp-ci-analysis/docs/publish
-  urlPrefix: aici
-
-- name: AI for continuous integration notebooks
-  gitSrc: https://github.com/aicoe-aiops/ocp-ci-analysis.git
-  dir: ocp-ci-analysis/notebooks
-  urlPrefix: aici-nb
+  dir: ocp-ci-analysis
+  urlPrefix: data-science/ocp-ci-analysis
 
 - name: MOC onboarding docs
   gitSrc: https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox.git
   dir: moc-cnv-sandbox/docs
-  urlPrefix: moc-cnv
+  urlPrefix: operators/moc-cnv-sandbox
 
 - name: MOC user docs
   gitSrc: https://github.com/operate-first/odh-moc-support.git
-  dir: odh-moc-support/docs/user-docs
-  urlPrefix: odh-moc-user
+  dir: odh-moc-support
+  urlPrefix: users/odh-moc-support
 
 - name: Data Science Workflow
   gitSrc: https://github.com/aicoe-aiops/data-science-workflows.git
-  dir: data-science-workflows/docs/publish
-  urlPrefix: dsw
+  dir: data-science-workflows
+  urlPrefix: data-science/data-science-workflows
 
 - name: Categorical encoding
   gitSrc: https://github.com/aicoe-aiops/categorical-encoding.git
-  dir: categorical-encoding/docs/blog
-  urlPrefix: advanced-topics/categorical-encoding
+  dir: categorical-encoding
+  urlPrefix: data-science/categorical-encoding
 
 - name: Architectural Decision Records
   gitSrc: https://github.com/operate-first/blueprint.git
-  dir: blueprint/docs/adr
-  ignore:
-    - "template.md"
-    - "**/README.md"
-  urlPrefix: adr
+  dir: blueprint/
+  urlPrefix: blueprints/blueprint

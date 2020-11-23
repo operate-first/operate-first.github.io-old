@@ -1,0 +1,36 @@
+- id: data-science
+  label: Data Science Projects
+  links:
+    - id: projects-overview
+      label: Projects Overview
+      href: /data-science/
+    - id: categorical-encoding
+      label: Categorical Encoding
+      href: /data-science/categorical-encoding/docs/blog/blog
+    - id: configuration-file-analysis
+      label: Configuration File Analysis
+      href: /data-science/configuration-files-analysis/docs/blog/configuration-file-analysis-blog
+- id: data-science-workflow
+  label: Data Science Workflow
+  links:
+    - id: data-science-workflow-overview
+      label: Data Science Workflow Overview
+      href: /data-science/data-science-workflows/
+    - id: project-document-template
+      label: Project Template
+      href: /data-science/data-science-workflows/docs/publish/project-document-template/
+- id: AI-for-CI
+  label: AI for Continuous Integration
+  links:
+    - id: ai-for-ci-overview
+      label: AI for Continuous Integration Overview
+      href: /data-science/ocp-ci-analysis
+    - id: ci-failure-type-classification
+      label: Failure type classification with the TestGrid
+      href: /data-science/ocp-ci-analysis/docs/publish/failure-type-classification-with-the-testgrid-data-project-doc
+    - id: testgrid-EDA
+      label: Initial TestGrid EDA
+      href: /aici-nb/testgrid-eda
+    - id: testgrid-indepth-eda
+      label: Indepth TestGrid EDA
+      href: /data-science/ocp-ci-analysis/notebooks/testgrid-eda

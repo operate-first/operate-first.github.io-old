@@ -3,7 +3,12 @@ import { useStaticQuery, Link, graphql } from "gatsby";
 import { Nav, NavExpandable, NavItem, NavList, PageSidebar } from "@patternfly/react-core";
 
 function createNavItem({ id, label, href }, pathname) {
-  let isActive = pathname.startsWith(href);
+  // only include navItems that start with the current top level navigation
+  if (pathname.split("/")[1] !== href.split("/")[1]) {
+    return;
+  }
+
+  const isActive = pathname === href;
 
   return (
     <NavItem key={id} itemId={id} isActive={isActive}>
@@ -13,11 +18,17 @@ function createNavItem({ id, label, href }, pathname) {
 }
 
 function createNavGroup({ id, label, links }, pathname) {
-  const isActive = !!links.find((c) => pathname.startsWith(c.href));
+  const navItems = links.map((c) => createNavItem(c, pathname))
+                      .filter((n) => { return n !== undefined });
 
+  if (navItems.length === 0) {
+    return;
+  }
+  
+  const isActive = !!links.find((c) => pathname.startsWith(c.href));
   return (
     <NavExpandable key={id} title={label} groupId={id} isActive={isActive} isExpanded={isActive}>
-      {links.map((c) => createNavItem(c, pathname))}
+      { navItems }
     </NavExpandable>
   );
 }
@@ -41,6 +52,11 @@ export const NavSidebar = ({ isNavOpen, location }) => {
       }
     `
   ).navData.navItems;
+
+  // No Sidebar for mainpage
+  if (location.pathname === "/") {
+    return <div />;
+  }
 
   let navItems = [];
   if (location) {

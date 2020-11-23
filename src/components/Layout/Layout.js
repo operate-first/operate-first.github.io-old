@@ -14,7 +14,7 @@ export const Layout = ({ location, title, children }) => {
 
   return (
     <Page
-      header={<Header isNavOpen={isNavOpen} onNavToggle={onNavToggle} />}
+      header={<Header isNavOpen={isNavOpen} onNavToggle={onNavToggle} location={location} />}
       sidebar={<NavSidebar isNavOpen={isNavOpen} location={location} />}
       isManagedSidebar
       className="layout"
