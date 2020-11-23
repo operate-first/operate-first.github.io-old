@@ -1,0 +1,9 @@
+- id: moc
+  label: User support
+  href: /users/odh-moc-support
+- id: moc-user-docs
+  label: Components
+  links:
+    - id: moc-jh
+      label: JupyterHub
+      href: /users/odh-moc-support/docs/user-docs/jupyterhub

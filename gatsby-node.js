@@ -1,9 +1,29 @@
 const fs = require(`fs`);
+const { createFilePath } = require("gatsby-source-filesystem");
 const yaml = require(`js-yaml`);
 const path = require(`path`);
 
 const contentSources = yaml.safeLoad(fs.readFileSync(`./content-sources.yaml`, `utf-8`));
 const tocSources = yaml.safeLoad(fs.readFileSync(`./toc-sources.yaml`, `utf-8`));
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  if (node.internal.type === "Mdx") {
+    // // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
+    // const relativeFilePath = createFilePath({
+    //   node,
+    //   getNode,
+    //   basePath: "data/faqs/",
+    // })
+
+    // // Creates new query'able field with name of 'slug'
+    // createNodeField({
+    //   node,
+    //   name: "slug",
+    //   value: `/faqs${relativeFilePath}`,
+    // })
+  }
+}
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -38,6 +58,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     if (node.slug) {
       createPage({
         path: createPagePath(node),
+        // path: node.slug,
         component: docTemplate,
         context: {
           id: node.id,
@@ -93,5 +114,9 @@ function createPagePath(node) {
   if (pathMatch && pathMatch.urlPrefix) {
     prefix = pathMatch.urlPrefix;
   }
-  return path.join(prefix, node.slug);
+  let slug = node.slug;
+  if (node.slug == "README") {
+    slug = ""
+  }
+  return path.join(prefix, slug);
 }
