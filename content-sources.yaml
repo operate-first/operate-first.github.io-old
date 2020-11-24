@@ -13,11 +13,16 @@
 - name: continuous delivery docs
   gitSrc: https://github.com/operate-first/continuous-delivery.git
   dir: continuous-delivery
+  ignore: 
+    - "**/*.yaml"
   urlPrefix: blueprints/continuous-delivery
 
 - name: continuous deployment docs
   gitSrc: https://github.com/operate-first/continuous-deployment.git
   dir: continuous-deployment
+  ignore: 
+    - "**/*.yaml"
+    - "**/docs/downstream/on-cluster-persistent-storage/README.md"
   urlPrefix: operators/continuous-deployment
 
 - name: configuration file analysis
@@ -44,6 +49,8 @@
   gitSrc: https://github.com/aicoe-aiops/data-science-workflows.git
   dir: data-science-workflows
   urlPrefix: data-science/data-science-workflows
+  ignore:
+    - "**/Thoth-bots.md"
 
 - name: Categorical encoding
   gitSrc: https://github.com/aicoe-aiops/categorical-encoding.git
