@@ -7,21 +7,22 @@ const contentSources = yaml.safeLoad(fs.readFileSync(`./content-sources.yaml`, `
 const tocSources = yaml.safeLoad(fs.readFileSync(`./toc-sources.yaml`, `utf-8`));
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
+  const { createNodeField, getParent } = actions
   if (node.internal.type === "Mdx") {
-    // // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
-    // const relativeFilePath = createFilePath({
-    //   node,
-    //   getNode,
-    //   basePath: "data/faqs/",
-    // })
-
-    // // Creates new query'able field with name of 'slug'
-    // createNodeField({
-    //   node,
-    //   name: "slug",
-    //   value: `/faqs${relativeFilePath}`,
-    // })
+    const fileNode = getNode(node.parent);
+    const gitRemoteNode = getNode(fileNode.gitRemote___NODE);
+    if (gitRemoteNode) {
+      const relativeFilePath = createFilePath({
+        node,
+        getNode,
+        basePath: "",
+      })
+      createNodeField({
+        node,
+        name: "slug",
+        value: gitRemoteNode.sourceInstanceName + `${relativeFilePath}`,
+      })
+    }
   }
 }
 
@@ -41,6 +42,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               frontmatter {
                 title
               }
+              fields {
+                slug
+              }
             }
           }
         }
@@ -53,12 +57,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const mdx = result.data.allMdx.edges;
+  let page_path = "";
 
   mdx.forEach(({ node }, index) => {
     if (node.slug) {
+      if (node.fields && node.fields.slug) {
+        page_path = node.fields.slug;
+      } else {
+        page_path = createPagePath(node);
+      }
       createPage({
-        path: createPagePath(node),
-        // path: node.slug,
+        path: page_path,
         component: docTemplate,
         context: {
           id: node.id,
