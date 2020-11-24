@@ -1,6 +1,6 @@
 - id: moc
   label: User support
-  href: /users/odh-moc-support
+  href: /users/odh-moc-support/README
 - id: moc-user-docs
   label: Components
   links:

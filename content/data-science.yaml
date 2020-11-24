@@ -15,7 +15,7 @@
   links:
     - id: data-science-workflow-overview
       label: Data Science Workflow Overview
-      href: /data-science/data-science-workflows/
+      href: /data-science/data-science-workflows/README
     - id: project-document-template
       label: Project Template
       href: /data-science/data-science-workflows/docs/publish/project-document-template/
@@ -24,13 +24,13 @@
   links:
     - id: ai-for-ci-overview
       label: AI for Continuous Integration Overview
-      href: /data-science/ocp-ci-analysis
+      href: /data-science/ocp-ci-analysis/README
     - id: ci-failure-type-classification
       label: Failure type classification with the TestGrid
       href: /data-science/ocp-ci-analysis/docs/publish/failure-type-classification-with-the-testgrid-data-project-doc
     - id: testgrid-EDA
       label: Initial TestGrid EDA
-      href: /aici-nb/testgrid-eda
+      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_EDA/
     - id: testgrid-indepth-eda
       label: Indepth TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/testgrid-eda
+      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_indepth_EDA/
