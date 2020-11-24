@@ -51,7 +51,7 @@ Files formatted as Markdown (`.md` file) or Jupyter notebook (`.ipynb`) can be a
 Content will be added to one of the four categories on this website:
 
 * **data-science**: Examples of data science projects for the data science users that want to learn about data science on ODH.
-* **users**: Documentation for all users of ODH. Access details of various deploed ODH components.
+* **users**: Documentation for all users of ODH. Access details of various deployed ODH components.
 * **operators**: Examples and documentation from operators of ODH. 
 * **blueprints**: Generic information that can be applied to other projects as well.
 
@@ -68,7 +68,7 @@ Include the remote repository to `.gitignore`.
 
 Add remote repository url and directory to get content from in `content-sources.yaml`. 
 
-Add the Git source where you are adding content from. Set the name of the repo, the root ad the `dir` and set the urlPrefix as the content category you are adding that content to (see the four categories mentioned above) and the name of the repository.
+Add the Git source where you are adding content from. Set the name of the repo as the `dir` (ie. the root directory of the repo) and set the urlPrefix as the content category you are adding that content to (see the four categories mentioned above) and the name of the repository.
 
 See example:
 
@@ -112,7 +112,7 @@ For example, to add content locally to the `blueprints` category, create an inde
 
 ### Configuring Table of Contents
 
-Whether adding content remotely, or locally, the content needs to be added to the vertical navigation bar on the left and belongs to one of the four categories.
+Whether adding content remotely, or locally, the content needs to be added to the vertical navigation bar on the left and will belong to one of the four categories.
 
 The `content` directory contains `category.yaml` files for each category eg: `blueprints.yaml` for the Blueprints category and this file will contain the table of content navigation items for each document that you add.
 
