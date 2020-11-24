@@ -76,6 +76,14 @@ let config = {
     `gatsby-transformer-yaml`,
     `gatsby-plugin-meta-redirect`,
     `@rafaelquintanilha/gatsby-transformer-ipynb`,
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `blueprints/continuous-delivery`,
+        remote: `https://github.com/operate-first/continuous-delivery.git`,
+        patterns: `**/*md`,
+      }
+    },
   ],
 };
 
