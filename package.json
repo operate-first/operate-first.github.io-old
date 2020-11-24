@@ -4,8 +4,6 @@
   "version": "0.1.0",
   "license": "GPLv3",
   "scripts": {
-    "clone-remote-content": "node clone-remote-content.js",
-    "prebuild": "npm run clone-remote-content",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"*.{js,jsx,ts,tsx,json,md}\" \"src/**/*.{js,jsx,ts,tsx,json,md}\" \"content/**/*.{js,jsx,ts,tsx,json,md}\"",
