@@ -2,7 +2,7 @@
 #- path/to/local.yaml
 #- path/to/cloned/toc.yaml
 
-- content/data-science.yaml
-- content/users.yaml
-- content/operators.yaml
-- content/blueprints.yaml
+- config/data-science.yaml
+- config/users.yaml
+- config/operators.yaml
+- config/blueprints.yaml
