@@ -3,31 +3,34 @@ title: Operate First for Open Data Hub
 description: "Operate First for ODH"
 ---
  
-[Operate First](https://openinfralabs.org/operate-first-manifesto/) is an initiative focused on adding operational intelligence into development of software by operating them in a transparent, open cloud environment.
+[Operate First](https://openinfralabs.org/operate-first-manifesto/) is an initiative to operate software in a production-grade environment - bringing users, developers and operators closer together.
+
+The goal is to create an Open Cloud environment, with reproducibility built-in, operated by a Community.
+
+Open means, onboarding and getting involved should mimic the process of an Open Source project, where planning, issue tracking and the code are accessible in a read-only fashion.
+
+Reproducibility caters towards being a blueprint for other setups. If we don’t want each environment to be a snowflake, we should be able to extract best practices that are easy to apply to new environments.
  
 At the Office of the CTO at Red Hat, we can lead the way with [Open Data Hub](https://opendatahub.io/) by opening up our operational knowledge to all open source communities to improve the integration and operability from the source.
  
  
 ## Getting started
  
-Open Data Hub (ODH) is a data and AI platform for the hybrid cloud running on on Red Hat's [Kubernetes](https://kubernetes.io/)-based [OpenShift® Container Platform](https://www.openshift.com/) and [Ceph Object Storage](https://www.redhat.com/en/technologies/storage/ceph).
- 
 ## [Data Science](https://www.operate-first.cloud/data-science/)
  
-Get started with tutorials and examples for data science on ODH.
+Get started with tutorials and examples for data science on Open Data Hub.
  
 ## [Users](https://www.operate-first.cloud/users/)
  
-Learn how you can engage with ODH and access the deployed components.
+Learn how you can engage with Open Data Hub and access the deployed components.
  
 ## [Operators](https://www.operate-first.cloud/operators/)
  
-Get started with deploying various components on ODH and find information on operating it.
+See how we are deploying and operating Open Data Hub
  
 ## [Blueprints](https://www.operate-first.cloud/blueprints/)
  
-Learn about repeatable best practices that can be applied to other projects.
- 
+Apply best practices and tooling to your own projects.
  
 ## Contribute
  
