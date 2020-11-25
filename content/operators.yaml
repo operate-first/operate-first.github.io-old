@@ -42,4 +42,4 @@
   links:
     - id: moc-getting-access
       label: Getting Access
-      href: /operators/moc-cnv-sandbox/about-the-cluster
+      href: /operators/moc-cnv-sandbox/docs/about-the-cluster

@@ -8,21 +8,28 @@ const tocSources = yaml.safeLoad(fs.readFileSync(`./toc-sources.yaml`, `utf-8`))
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField, getParent } = actions
-  if (node.internal.type === "Mdx") {
+  let slug = "";
+
+  if (node.internal.type === "Mdx" || node.internal.type === "JupyterNotebook") {
     const fileNode = getNode(node.parent);
     const gitRemoteNode = getNode(fileNode.gitRemote___NODE);
+    const relativeFilePath = createFilePath({
+      node,
+      getNode,
+      basePath: "",
+    })
+
     if (gitRemoteNode) {
-      const relativeFilePath = createFilePath({
-        node,
-        getNode,
-        basePath: "",
-      })
-      createNodeField({
-        node,
-        name: "slug",
-        value: gitRemoteNode.sourceInstanceName + `${relativeFilePath}`,
-      })
+      slug = gitRemoteNode.sourceInstanceName + relativeFilePath;
+    } else {
+      slug = relativeFilePath;
     }
+
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug
+    })
   }
 }
 
@@ -48,6 +55,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
+        allJupyterNotebook {
+          edges {
+            node {
+              id
+              fileAbsolutePath
+              fields {
+                slug
+              }
+            }
+          }
+        }
       }
     `
   );
@@ -55,6 +73,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (result.errors) {
     reporter.panicOnBuild(`ERROR: Loading "createPages" query`);
   }
+
+  const jupyterTemplate = path.resolve(`./src/templates/JupyterNotebook.js`);
+  result.data.allJupyterNotebook.edges.forEach(({ node }, index) => {
+    if (node.fields && node.fields.slug) {
+      createPage({
+        path: node.fields.slug,
+        component: jupyterTemplate,
+        context: {
+          id: node.id,
+          slug: node.fields.slug,
+        },
+      });
+    }
+  });
 
   const mdx = result.data.allMdx.edges;
   let page_path = "";
