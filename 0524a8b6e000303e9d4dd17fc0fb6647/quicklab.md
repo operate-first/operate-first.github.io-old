@@ -18,64 +18,48 @@
 
 6. Now click on **New Bundle** button in **Product information** section
 
-7. Select **openshift4upi** bundle. A new form loads - you can keep all the values as they are (you can ignore the warning on top as well, since this is the first install attempt of Openshift on that cluster):
+7. Select **openshift4upi** bundle. A new form loads. **Opt-in for the `htpasswd` credentials provider.** (You can ignore the warning on top as well, since this is the first install attempt of Openshift on that cluster):
    ![Select a bundle](../assets/images/quicklab/bundle_select.png)
 
 8. Wait for OCP4 to install. After successful installation you should see a cluster history log like this:
    ![Cluster log after OCP4 install](../assets/images/quicklab/cluster_log_2.png)
 
-9. Use the link and credentials from the **Cluster Information** section to access your cluster.
+9. Use the link and credentials from the **Cluster Information** section to access your cluster. Verify it contains login information for both `kube:admin` and `quicklab` user.
    ![Cluster information](../assets/images/quicklab/cluster_information.png)
 
-10. Login as the `kubeadmin`, take the value from "Hosts" and port 6443.\
+10. Login as the `kube:admin`, take the value from "Hosts" and port 6443.
     For example:
 
-   ```sh
-   oc login upi-0.tcoufaltest.lab.upshift.rdu2.redhat.com:6443
-   ```
+```sh
+oc login upi-0.tcoufaltest.lab.upshift.rdu2.redhat.com:6443
+```
 
 ## Install Argo CD on your cluster
 
-1. kube:admin is not supported in user api, therefore you have to create additional user. Simplest way is to deploy an Oauth via Htpasswd:
+1. `kube:admin` is not supported in user api, that's why we've opted in for the `htpasswd` provider during the bundle install.
 
-2. Create a htpasswd config file and deploy it to OpenShift:
+2. Log in as the `quicklab` user using the `htpasswd` provider in the web console. To create the Openshift user. Then log out.
 
-   ```sh
-   $ htpasswd -nb username password > oc.htpasswd
-   $ oc create secret generic htpass-secret --from-file=htpasswd=oc.htpasswd -n openshift-config
-   $ cat <<EOF | oc apply -f -
-   apiVersion: config.openshift.io/v1
-   kind: OAuth
-   metadata:
-     name: cluster
-   spec:
-     identityProviders:
-     - name: my_htpasswd_provider
-       mappingMethod: claim
-       type: HTPasswd
-       htpasswd:
-         fileData:
-           name: htpass-secret
-   EOF
-   ```
+3. Login as the `kube:admin` user in the web console and your local cli client.
 
-3. Grant the new user admin cluster-admin rights
+4. Grant the htpasswd's `quicklab` user admin cluster-admin rights
 
    ```sh
-   oc adm policy add-cluster-role-to-user cluster-admin username
+   oc adm policy add-cluster-role-to-user cluster-admin quicklab
    ```
 
-4. Now log out and log in using the htpasswd provider (the new username). Generate new API token and login via this token on your local CLI
+5. Now log out and log in using the htpasswd provider (the new username). Generate new API token and login via this token on your local CLI
 
-5. Now you can follow the upstream docs. Create the projects:
+6. Now you can follow the upstream docs. Create the projects:
+
    ```sh
    oc new-project argocd-test
    oc new-project aicoe-argocd-dev
    ```
 
-6. Make sure you have imported the required [gpg keys](../../README.md#gpg-key-access)
+7. Make sure you have imported the required [gpg keys](../../README.md#gpg-key-access)
 
-7. And deploy
+8. And deploy
 
    ```sh
    $ kustomize build manifests/crds --enable_alpha_plugins | oc apply -f -
