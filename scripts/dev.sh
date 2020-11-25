@@ -15,5 +15,4 @@ pwd
 if [ ! -d "node_modules" ]; then
   npm install
 fi
-npm run clone-remote-content
 npm start

@@ -6,10 +6,11 @@ import { Link } from "gatsby";
 import { PageSection, PageSectionVariants, TextContent } from "@patternfly/react-core";
 
 import Layout from "../components/Layout";
+import JupyterNotebook from "../components/JupyterNotebook";
 import SEO from "../components/seo";
 import "./Doc.scss";
 
-const shortcodes = { Link }; // Provide common components here
+const shortcodes = { Link, JupyterNotebook }; // Provide common components here
 
 export default function DocTemplate({ data: { site, mdx }, pageContext, location }) {
   const siteTitle = site.siteMetadata.title;
