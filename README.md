@@ -1,52 +1,90 @@
 # Operate First Website
 
-For more information regarding the purpose and roadmap, view the [website](https://operate-first.cloud/) or the [markdown doc](https://github.com/operate-first/operate-first.github.io/blob/master/content/index.md)
+This repository contains some content and the code to build [operate-first.cloud](https://www.operate-first.cloud/). It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [OpenShift](scripts/templates/base) or [GitHub Pages](https://pages.github.com/).
 
-## Development / Contributing
+## Adding Content
 
-Documentation can be added directly from the repository or from a remote repository.
+We want to make it really easy for content contributors to add their material to the website.
+Content can be added directly to this repository or from a remote repository. The latter is the preferred way, so that content creators dont need to duplicate their content into this repository.
+This site is merely an aggregator.
 
-## Adding a document / post
+### Remote Content
 
-Files formatted as Markdown (`.md` file) or Jupyter notebook (`.ipynb`) can be added to this website. See below for instructions on how to add the files to the website.
+Prefer adding content remotely to this website. This means, your content is in another git repository and you configure this site to pull in the content. You'll only add entries to the sitemap, so that your content can be accessed via links.
 
-1. Format the Markdown file as follows:
+Add a [gatsby-source-git](https://www.gatsbyjs.com/plugins/gatsby-source-git/) section to [gatsby-config.js](gatsby-config.js).
 
-    ```markdown
-    ---
-    title: My Document
-    description: My Document Description
-    ---
+```js
+{
+  resolve: `gatsby-source-git`,
+  options: {
+    name: `data-science/ocp-ci-analysis`,
+    remote: `https://github.com/aicoe-aiops/ocp-ci-analysis.git`,
+    patterns: [`**/*.md`, `**/*.ipynb`],
+  }
+},
+```
 
-    # Content goes here
+The `name` for the plugin will be the prefix for URLs generated from that repository.
+In the following example, all Markdown and JupyterNotebook files will be rendered as pages under the `/data-science/ocp-ci-analysis` path.
 
-    valid markdown
-    ```
+The [notebooks/TestGrid_EDA.ipynb](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/notebooks/TestGrid_EDA.ipynb) Notebook will be rendered at [/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA/](http://www.operate-first.cloud/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA/).
 
-2. Jupyter Notebooks (`.ipynb`) can be added by creating an `notebook.mdx` file where you can import the notebook(s) to be included.
+### Local Content
 
-    Add an `notebook.mdx` file in the same directory where the notebook is being added.
-    eg:
+All local content goes into the [/content](/content) folder. All files will be available as pages, starting from the root URL of the site.
 
-    `/notebooks/notebook.mdx`  
-    `/notebooks/notebook.ipynb`  
+For example, to add content locally to the `blueprints` category, create a document located at `content/blueprints/my_doc.md`.
 
-    Format the `notebook.mdx` file as follows:
+### Supported File Types
 
-    ```markdown
-    ---
-    title: My Notebook
-    description: My Notebook Description
-    ---
+Files formatted as 
+* [Markdown .md](https://daringfireball.net/projects/markdown/)
+* [JupyterNotebook .ipynb](https://jupyter.org/)
+* [MarkdownX .mdx](https://mdxjs.com/)
 
-    import JupyterNotebook from '../../../src/components/JupyterNotebook'
+#### Markdown
 
-    ### Title
+Markdown files can be prefixed with [frontmatter](https://www.gatsbyjs.com/docs/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files). 
 
-    <JupyterNotebook path="notebook.ipynb"/>
-    ```
+See [/content/examples/markdown.md](/content/examples/markdown.md) rendered [here](https://www.operate-first.cloud/examples/markdown)
 
-## Location of Content
+```markdown
+---
+title: My Document
+description: My Document Description
+---
+
+# Content goes here
+
+valid markdown
+```
+
+#### JupyterNotebook
+
+Any file with the `.ipynb` extension will be rendered as HTML. This is done via the [gatsby-transformer-ipynb](https://www.gatsbyjs.com/plugins/@rafaelquintanilha/gatsby-transformer-ipynb/).
+
+See [/content/examples/jupyter_notebook.ipynb](/content/examples/jupyter_notebook.ipynb) rendered [here](https://www.operate-first.cloud/examples/jupyter_notebook)
+
+#### MDX
+
+Similar to Markdown, but you can add [React Components](https://www.gatsbyjs.com/docs/glossary#component), which basically extend HTML. E.g. you can embedd a JupyterNotebook into the MDX file.
+
+See [/content/examples/mdx.mdx](/content/examples/mdx.mdx) rendered [here](https://www.operate-first.cloud/examples/mdx)
+
+
+```markdown
+---
+title: My MDX
+description: MarkdownX
+---
+
+This is how I include a Notebook:
+
+<JupyterNotebook path="jupyter_notebook.ipynb"/>
+```
+
+### Site structure
 
 Content will be added to one of the four categories on this website:
 
@@ -55,62 +93,8 @@ Content will be added to one of the four categories on this website:
 * **operators**: Examples and documentation from operators of ODH. 
 * **blueprints**: Generic information that can be applied to other projects as well.
 
-Add content remotely(preferred) or locally to this repo.
 
-### Remote Content
-
-Prefer adding content remotely to this website wherever applicable (where the content exists on some Github repo). Remote content can be added from a Github repository. To add remote content to this website, it is recommended you clone any remote content repositories or forks as you prefer at the root of this repository:
-
-```shell script
-git clone git@github.com:operate-first/continuous-deployment.git
-```
-Include the remote repository to `.gitignore`.
-
-Add remote repository url and directory to get content from in `content-sources.yaml`. 
-
-Add the Git source where you are adding content from. Set the name of the repo as the `dir` (ie. the root directory of the repo) and set the urlPrefix as the content category you are adding that content to (see the four categories mentioned above) and the name of the repository.
-
-See example:
-
-```yaml
-- name: continuous delivery docs
-  gitSrc: https://github.com/operate-first/continuous-delivery.git
-  dir: continuous-delivery
-  urlPrefix: blueprints/continuous-delivery
-```
-
-**If adding remote notebooks**, it's required to create an *.mdx file in your remote repository's `notebooks` folder for each notebook you want to render (this file is what actually gets displayed). We recommend the following naming convention `notebook-you-want-to-publish-name.mdx` .
-
-It is also possible to render multiple notebooks within one .mdx file if needed. Create an single .mdx file within your repository's `notebooks` folder referencing the notebooks in the .mdx file as follows.
-
-```markdown
----
-title: My Notebook
-description: My Notebook Description
----
-
-import JupyterNotebook from '../../../src/components/JupyterNotebook'
-
-### Title
-<JupyterNotebook path="notebooks/notebook1.ipynb"/>
-<JupyterNotebook path="notebooks/notebook2.ipynb"/>
-...
-...
-```
-
-The *.mdx files should follow the format outlined in the example above. However, depending on the directory structure of your repository the following path may need to be updated to navigate out of your cloned repo and into the correct `JupyterNotebook` directory.    
-
-```
-import JupyterNotebook from '../../../src/components/JupyterNotebook'
-```
-
-### Local Content
-
-Local content can be added to a sub-folder in `content/category` one of the four categories mentioned above.
-
-For example, to add content locally to the `blueprints` category, create an index.md located at `content/blueprints/content-name/index.md`.
-
-### Configuring Table of Contents
+#### Configuring Table of Contents
 
 Whether adding content remotely, or locally, the content needs to be added to the vertical navigation bar on the left and will belong to one of the four categories.
 
@@ -119,10 +103,11 @@ The `content` directory contains `category.yaml` files for each category eg: `bl
 The (`.yaml`) config looks as follows:
 
 ```yaml
-- id: repo-name
-  label: Repo Name #Camel Cased without hyphens
-  href: urlPrefix-from-content-sources/path-to-document-to-be-published
+- id: my-uniq-id
+  label: The Navigation Item
+  href: /the/url/to/the/page
 ```
+
 Following is an example of 2 level hierarchy from a repo, for cases where you have to add more than one document from a repository as remote content.
 
 ```yaml
@@ -139,7 +124,6 @@ Following is an example of 2 level hierarchy from a repo, for cases where you ha
 
 
 ## Local Development
-
 
 You can run the app locally to preview your changes.
 In terminal:
@@ -182,13 +166,13 @@ Now you can view your work on `https://githubuserid.github.io/operate-first.gith
 
 ### Manual Site Deployment (Production GitHub Pages)
 
-CI should deploy to GitHub pages automatically, but to manually redeploy
+[CI](https://travis-ci.org/github/operate-first/operate-first.github.io) should deploy to GitHub pages automatically, but to manually redeploy
 
 ```shell script
 make gh-pages
 ```
 
-## Running on OpenShift
+## Building the site in a container
 
 Customize your `.env` file similar to `.env.default`(.env.default)
 
