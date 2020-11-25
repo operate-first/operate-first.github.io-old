@@ -98,7 +98,7 @@ Content will be added to one of the four categories on this website:
 
 Whether adding content remotely, or locally, the content needs to be added to the vertical navigation bar on the left and will belong to one of the four categories.
 
-The `content` directory contains `category.yaml` files for each category eg: `blueprints.yaml` for the Blueprints category and this file will contain the table of content navigation items for each document that you add.
+The `config` directory contains `category.yaml` files for each category eg: `blueprints.yaml` for the Blueprints category and this file will contain the table of content navigation items for each document that you add.
 
 The (`.yaml`) config looks as follows:
 

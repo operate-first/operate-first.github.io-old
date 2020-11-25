@@ -3,8 +3,8 @@ const { createFilePath } = require("gatsby-source-filesystem");
 const yaml = require(`js-yaml`);
 const path = require(`path`);
 
-const contentSources = yaml.safeLoad(fs.readFileSync(`./content-sources.yaml`, `utf-8`));
-const tocSources = yaml.safeLoad(fs.readFileSync(`./toc-sources.yaml`, `utf-8`));
+const contentSources = yaml.safeLoad(fs.readFileSync(`./config/content-sources.yaml`, `utf-8`));
+const tocSources = yaml.safeLoad(fs.readFileSync(`./config/toc-sources.yaml`, `utf-8`));
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField, getParent } = actions
