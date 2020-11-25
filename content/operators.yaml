@@ -1,6 +1,6 @@
 - id: argocd
   label: ArgoCD Operations
-  links: 
+  links:
     - id: argocd-application-manifests
       label: Create ArgoCD Application Manifest
       href: /operators/continuous-deployment/docs/create_argocd_application_manifest
@@ -34,6 +34,9 @@
     - id: quicklab-setup
       label: Quicklab Setup
       href: /operators/continuous-deployment/docs/downstream/quicklab
+    - id: quicklab-pv
+      label: Create persistent volumes
+      href: /operators/continuous-deployment/docs/downstream/on-cluster-persistent-storage/README
     - id: quicklab-odh
       label: Installing ODH on Quicklab
       href: /operators/continuous-deployment/docs/downstream/odh-install-quicklab
