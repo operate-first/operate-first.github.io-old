@@ -81,7 +81,7 @@ let config = {
       options: {
         name: `data-science/data-science-workflows`,
         remote: `https://github.com/aicoe-aiops/data-science-workflows.git`,
-        patterns: [`**/*.md`, `!**/Thoth-bots.md`],
+        patterns: [`**/*.md`, `**/*.png`, `!**/Thoth-bots.md`],
       }
     },
     {
@@ -89,7 +89,7 @@ let config = {
       options: {
         name: `data-science/categorical-encoding`,
         remote: `https://github.com/aicoe-aiops/categorical-encoding.git`,
-        patterns: [`**/*.md`, `**/*.ipynb`],
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
     },
     {
@@ -97,7 +97,7 @@ let config = {
       options: {
         name: `data-science/configuration-files-analysis`,
         remote: `https://github.com/aicoe-aiops/configuration-files-analysis.git`,
-        patterns: [`**/*.md`, `**/*.ipynb`],
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
     },
     {
@@ -105,7 +105,7 @@ let config = {
       options: {
         name: `data-science/ocp-ci-analysis`,
         remote: `https://github.com/aicoe-aiops/ocp-ci-analysis.git`,
-        patterns: [`**/*.md`, `**/*.ipynb`],
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
     },
     {
@@ -113,7 +113,7 @@ let config = {
       options: {
         name: `users/odh-moc-support`,
         remote: `https://github.com/operate-first/odh-moc-support.git`,
-        patterns: [`**/*.md`],
+        patterns: [`**/*.md`, `**/*.png`],
       }
     },
     {
@@ -121,7 +121,7 @@ let config = {
       options: {
         name: `operators/continuous-deployment`,
         remote: `https://github.com/operate-first/continuous-deployment.git`,
-        patterns: [`**/*.md`, `!**/docs/downstream/on-cluster-persistent-storage/README.md`],
+        patterns: [`**/*.md`, `**/*.png`, `!**/docs/downstream/on-cluster-persistent-storage/README.md`],
       }
     },
     {
@@ -129,7 +129,7 @@ let config = {
       options: {
         name: `operators/moc-cnv-sandbox`,
         remote: `https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox.git`,
-        patterns: `**/*.md`,
+        patterns: [`**/*.md`, `**/*.png`],
       }
     },
     {
@@ -137,7 +137,7 @@ let config = {
       options: {
         name: `blueprints/blueprint`,
         remote: `https://github.com/operate-first/blueprint.git`,
-        patterns: `**/*.md`,
+        patterns: [`**/*.md`, `**/*.png`],
       }
     },
     {
@@ -145,7 +145,7 @@ let config = {
       options: {
         name: `blueprints/continuous-delivery`,
         remote: `https://github.com/operate-first/continuous-delivery.git`,
-        patterns: `**/*.md`,
+        patterns: [`**/*.md`, `**/*.png`],
       }
     },
   ],
