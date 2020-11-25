@@ -31,7 +31,7 @@ export const Header = ({ isNavOpen, onNavToggle, location }) => (
     className="header"
     logoProps={{href: "/"}}
     logo={<Brand src={logo} alt="ODH Logo" />}
-    showNavToggle
+    showNavToggle={(location.pathname !== "/")}
     isNavOpen={isNavOpen}
     onNavToggle={onNavToggle}
     topNav={topNav(location)}
