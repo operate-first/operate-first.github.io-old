@@ -81,7 +81,7 @@ let config = {
       options: {
         name: `data-science/data-science-workflows`,
         remote: `https://github.com/aicoe-aiops/data-science-workflows.git`,
-        patterns: [`**/*.md`, `**/*.png`, `!**/Thoth-bots.md`],
+        patterns: [`**/*.md`, `**/*.png`],
       }
     },
     {
@@ -121,7 +121,7 @@ let config = {
       options: {
         name: `operators/continuous-deployment`,
         remote: `https://github.com/operate-first/continuous-deployment.git`,
-        patterns: [`**/*.md`, `**/*.png`, `!**/docs/downstream/on-cluster-persistent-storage/README.md`],
+        patterns: [`**/*.md`, `**/*.png`],
       }
     },
     {
