@@ -2,6 +2,7 @@ const fs = require(`fs`);
 const { createFilePath } = require("gatsby-source-filesystem");
 const yaml = require(`js-yaml`);
 const path = require(`path`);
+const { nanoid } = require(`nanoid`);
 
 const contentSources = yaml.safeLoad(fs.readFileSync(`./config/content-sources.yaml`, `utf-8`));
 const tocSources = yaml.safeLoad(fs.readFileSync(`./config/toc-sources.yaml`, `utf-8`));
@@ -128,7 +129,22 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest, reporter })
       return;
     }
     const toc = yaml.safeLoad(fs.readFileSync(fileLocation, `utf-8`));
-    toc.forEach((navItem) => navItems.push(navItem));
+
+    // adding ids to navItems
+    toc.forEach((navItem) => {
+      if (!navItem.id) {
+        navItem.id = nanoid();
+      }
+      if (navItem.links) {
+        navItem.links.forEach((link) => {
+          if (!link.id) {
+            link.id = nanoid();
+          }
+        })
+      }
+      navItems.push(navItem);
+    }); 
+
     actions.createNode({
       id: createNodeId(`NavData`),
       navItems: navItems,

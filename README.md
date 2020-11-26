@@ -100,25 +100,19 @@ Whether adding content remotely, or locally, the content needs to be added to th
 
 The `config` directory contains `category.yaml` files for each category eg: `blueprints.yaml` for the Blueprints category and this file will contain the table of content navigation items for each document that you add.
 
-The (`.yaml`) config looks as follows:
-
 ```yaml
-- id: my-uniq-id
-  label: The Navigation Item
+- label: The Navigation Item
   href: /the/url/to/the/page
 ```
 
 Following is an example of 2 level hierarchy from a repo, for cases where you have to add more than one document from a repository as remote content.
 
 ```yaml
-- id: continuous-delivery
-  label: Continuous Delivery
+- label: Continuous Delivery
   links:
-    - id: cicd_intro
-      label: (Opinionated) Continuous Delivery
+    - label: (Opinionated) Continuous Delivery
       href: /blueprints/continuous-delivery/docs/continuous_delivery
-    - id: continuous-delivery-setup-source-operations
-      label: Setting up Source Code Operations
+    - label: Setting up Source Code Operations
       href: /blueprints/continuous-delivery/docs/setup_source_operations
 ```
 

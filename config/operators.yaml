@@ -1,48 +1,32 @@
-- id: argocd
-  label: ArgoCD Operations
+- label: ArgoCD Operations
   links:
-    - id: argocd-application-manifests
-      label: Create ArgoCD Application Manifest
+    - label: Create ArgoCD Application Manifest
       href: /operators/continuous-deployment/docs/create_argocd_application_manifest
-    - id: argocd-manage-app
-      label: Get ArgoCD to Manage your app
+    - label: Get ArgoCD to Manage your app
       href: /operators/continuous-deployment/docs/get_argocd_to_manage_your_app
-    - id: argocd-access-project
-      label: Give ArgoCD Access to your Project
+    - label: Give ArgoCD Access to your Project
       href: /operators/continuous-deployment/docs/give_argocd_access_to_your_project
-    - id: argocd-inclusions
-      label: Inclusions Explained
+    - label: Inclusions Explained
       href: /operators/continuous-deployment/docs/inclusions_explained
-    - id: argocd-setup
-      label: ArgoCD Setup
+    - label: ArgoCD Setup
       href: /operators/continuous-deployment/docs/setup_argocd_dev_environment
-- id: crc
-  label: CRC
+- label: CRC
   links:
-    - id: crc-setup
-      label: CRC Setup
+    - label: CRC Setup
       href: /operators/continuous-deployment/docs/downstream/crc
-    - id: crc-odh
-      label: Installing ODH on CRC
+    - label: Installing ODH on CRC
       href: /operators/continuous-deployment/docs/downstream/odh-install-crc
-    - id: crc-disk
-      label: CRC Disk Size
+    - label: CRC Disk Size
       href: /operators/continuous-deployment/docs/downstream/crc-disk-size
-- id: quicklab
-  label: Quicklab
+- label: Quicklab
   links:
-    - id: quicklab-setup
-      label: Quicklab Setup
+    - label: Quicklab Setup
       href: /operators/continuous-deployment/docs/downstream/quicklab
-    - id: quicklab-pv
-      label: Create persistent volumes
+    - label: Create persistent volumes
       href: /operators/continuous-deployment/docs/downstream/on-cluster-persistent-storage/README
-    - id: quicklab-odh
-      label: Installing ODH on Quicklab
+    - label: Installing ODH on Quicklab
       href: /operators/continuous-deployment/docs/downstream/odh-install-quicklab
-- id: moc-ops-docs
-  label: MOC - ODH Operations
+- label: MOC - ODH Operations
   links:
-    - id: moc-getting-access
-      label: Getting Access
+    - label: Getting Access
       href: /operators/moc-cnv-sandbox/docs/about-the-cluster
