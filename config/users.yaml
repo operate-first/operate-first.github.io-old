@@ -1,6 +1,6 @@
 - label: User support
-  href: /users/odh-moc-support/README
+  href: /users/odh-moc-support/
 - label: Components
   links:
     - label: JupyterHub
-      href: /users/odh-moc-support/docs/user-docs/jupyterhub
+      href: /users/odh-moc-support/docs/user-docs/jupyterhub.md

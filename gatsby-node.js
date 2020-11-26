@@ -18,12 +18,22 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       getNode,
       basePath: "",
+      trailingSlash: false
     })
 
     if (gitRemoteNode) {
       slug = gitRemoteNode.sourceInstanceName + relativeFilePath;
     } else {
       slug = relativeFilePath;
+    }
+    // add extension, e.g. `.md` back to the URL, except for index and README
+    if (fileNode.name != "index") {
+      if (fileNode.name.toLowerCase() == "readme") {
+        // README is also like an index. Don't use it in the URL
+        slug = slug.slice(0,-6);
+      } else {
+        slug = slug + "." + fileNode.extension;
+      }
     }
 
     createNodeField({

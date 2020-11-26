@@ -1,32 +1,34 @@
-- label: ArgoCD Operations
+- label: Continous Deployment
   links:
+    - label: Opinionated reference architecture
+      href: /operators/continuous-deployment/
     - label: Create ArgoCD Application Manifest
-      href: /operators/continuous-deployment/docs/create_argocd_application_manifest
+      href: /operators/continuous-deployment/docs/create_argocd_application_manifest.md
     - label: Get ArgoCD to Manage your app
-      href: /operators/continuous-deployment/docs/get_argocd_to_manage_your_app
+      href: /operators/continuous-deployment/docs/get_argocd_to_manage_your_app.md
     - label: Give ArgoCD Access to your Project
-      href: /operators/continuous-deployment/docs/give_argocd_access_to_your_project
+      href: /operators/continuous-deployment/docs/give_argocd_access_to_your_project.md
     - label: Inclusions Explained
-      href: /operators/continuous-deployment/docs/inclusions_explained
+      href: /operators/continuous-deployment/docs/inclusions_explained.md
     - label: ArgoCD Setup
-      href: /operators/continuous-deployment/docs/setup_argocd_dev_environment
+      href: /operators/continuous-deployment/docs/setup_argocd_dev_environment.md
 - label: CRC
   links:
     - label: CRC Setup
-      href: /operators/continuous-deployment/docs/downstream/crc
+      href: /operators/continuous-deployment/docs/downstream/crc.md
     - label: Installing ODH on CRC
-      href: /operators/continuous-deployment/docs/downstream/odh-install-crc
+      href: /operators/continuous-deployment/docs/downstream/odh-install-crc.md
     - label: CRC Disk Size
-      href: /operators/continuous-deployment/docs/downstream/crc-disk-size
+      href: /operators/continuous-deployment/docs/downstream/crc-disk-size.md
 - label: Quicklab
   links:
     - label: Quicklab Setup
-      href: /operators/continuous-deployment/docs/downstream/quicklab
+      href: /operators/continuous-deployment/docs/downstream/quicklab.md
     - label: Create persistent volumes
-      href: /operators/continuous-deployment/docs/downstream/on-cluster-persistent-storage/README
+      href: /operators/continuous-deployment/docs/downstream/on-cluster-persistent-storage/
     - label: Installing ODH on Quicklab
-      href: /operators/continuous-deployment/docs/downstream/odh-install-quicklab
+      href: /operators/continuous-deployment/docs/downstream/odh-install-quicklab.md
 - label: MOC - ODH Operations
   links:
     - label: Getting Access
-      href: /operators/moc-cnv-sandbox/docs/about-the-cluster
+      href: /operators/moc-cnv-sandbox/docs/about-the-cluster.md

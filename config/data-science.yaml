@@ -3,22 +3,22 @@
     - label: Projects Overview
       href: /data-science/
     - label: Categorical Encoding
-      href: /data-science/categorical-encoding/docs/blog/blog
+      href: /data-science/categorical-encoding/docs/blog/blog.md
     - label: Configuration File Analysis
-      href: /data-science/configuration-files-analysis/docs/blog/configuration-file-analysis-blog
+      href: /data-science/configuration-files-analysis/docs/blog/configuration-file-analysis-blog.md
 - label: Data Science Workflow
   links:
     - label: Data Science Workflow Overview
-      href: /data-science/data-science-workflows/README
+      href: /data-science/data-science-workflows/
     - label: Project Template
-      href: /data-science/data-science-workflows/docs/publish/project-document-template/
+      href: /data-science/data-science-workflows/docs/publish/project-document-template.md
 - label: AI for Continuous Integration
   links:
     - label: AI for Continuous Integration Overview
-      href: /data-science/ocp-ci-analysis/README
+      href: /data-science/ocp-ci-analysis/
     - label: Failure type classification with the TestGrid
-      href: /data-science/ocp-ci-analysis/docs/publish/failure-type-classification-with-the-testgrid-data-project-doc
+      href: /data-science/ocp-ci-analysis/docs/publish/failure-type-classification-with-the-testgrid-data-project-doc.md
     - label: Initial TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_EDA/
+      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb
     - label: Indepth TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_indepth_EDA/
+      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_indepth_EDA.ipynb

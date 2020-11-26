@@ -1,18 +1,18 @@
 - label: Architecture Decision Records
   links:
     - label: Use Markdown Architectural Decision Records
-      href: /blueprints/blueprint/docs/adr/0000-use-markdown-architectural-decision-records
+      href: /blueprints/blueprint/docs/adr/0000-use-markdown-architectural-decision-records.md
     - label: Use GNU GPL as license
-      href: /blueprints/blueprint/docs/adr/0001-use-gpl3-as-license
+      href: /blueprints/blueprint/docs/adr/0001-use-gpl3-as-license.md
     - label: Operate First deployment feature selection Policy
-      href: /blueprints/blueprint/docs/adr/0003-feature-selection-policy
+      href: /blueprints/blueprint/docs/adr/0003-feature-selection-policy.md
 - label: Continuous Delivery
   links:
     - label: (Opinionated) Continuous Delivery
-      href: /blueprints/continuous-delivery/docs/continuous_delivery
+      href: /blueprints/continuous-delivery/docs/continuous_delivery.md
     - label: Setting up Source Code Operations
-      href: /blueprints/continuous-delivery/docs/setup_source_operations
+      href: /blueprints/continuous-delivery/docs/setup_source_operations.md
     - label: Setting up a Continuous Integration Pipeline
-      href: /blueprints/continuous-delivery/docs/setup_ci_pipeline
+      href: /blueprints/continuous-delivery/docs/setup_ci_pipeline.md
     - label: Setting up a Continuous Delivery Pipeline
-      href: /blueprints/continuous-delivery/docs/setup_cd_pipeline
+      href: /blueprints/continuous-delivery/docs/setup_cd_pipeline.md
