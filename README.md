@@ -28,7 +28,7 @@ Add a [gatsby-source-git](https://www.gatsbyjs.com/plugins/gatsby-source-git/) s
 The `name` for the plugin will be the prefix for URLs generated from that repository.
 In the following example, all Markdown and JupyterNotebook files will be rendered as pages under the `/data-science/ocp-ci-analysis` path.
 
-The [notebooks/TestGrid_EDA.ipynb](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/notebooks/TestGrid_EDA.ipynb) Notebook will be rendered at [/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA/](http://www.operate-first.cloud/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA/).
+The [notebooks/TestGrid_EDA.ipynb](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/notebooks/TestGrid_EDA.ipynb) Notebook will be rendered at [/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb](http://www.operate-first.cloud/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb).
 
 ### Local Content
 
@@ -47,7 +47,7 @@ Files formatted as
 
 Markdown files can be prefixed with [frontmatter](https://www.gatsbyjs.com/docs/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files). 
 
-See [/content/examples/markdown.md](/content/examples/markdown.md) rendered [here](https://www.operate-first.cloud/examples/markdown)
+See [/content/examples/markdown.md](/content/examples/markdown.md) rendered [here](https://www.operate-first.cloud/examples/markdown.md)
 
 ```markdown
 ---
@@ -64,13 +64,13 @@ valid markdown
 
 Any file with the `.ipynb` extension will be rendered as HTML. This is done via the [gatsby-transformer-ipynb](https://www.gatsbyjs.com/plugins/@rafaelquintanilha/gatsby-transformer-ipynb/).
 
-See [/content/examples/jupyter_notebook.ipynb](/content/examples/jupyter_notebook.ipynb) rendered [here](https://www.operate-first.cloud/examples/jupyter_notebook)
+See [/content/examples/jupyter_notebook.ipynb](/content/examples/jupyter_notebook.ipynb) rendered [here](https://www.operate-first.cloud/examples/jupyter_notebook.ipynb)
 
 #### MDX
 
 Similar to Markdown, but you can add [React Components](https://www.gatsbyjs.com/docs/glossary#component), which basically extend HTML. E.g. you can embedd a JupyterNotebook into the MDX file.
 
-See [/content/examples/mdx.mdx](/content/examples/mdx.mdx) rendered [here](https://www.operate-first.cloud/examples/mdx)
+See [/content/examples/mdx.mdx](/content/examples/mdx.mdx) rendered [here](https://www.operate-first.cloud/examples/mdx.mdx)
 
 
 ```markdown
@@ -83,6 +83,15 @@ This is how I include a Notebook:
 
 <JupyterNotebook path="jupyter_notebook.ipynb"/>
 ```
+
+### Linking
+
+All links should be added as relative links, i.e. they should not start with a `/`. 
+If you link to another document in your own content repository, 
+then a relative link will work when the content is rendered at GitHub *and* it will work in the gatsby site.
+
+`index.md` and `README.md` files will be treated as index files. Their name will be stripped from the URL.
+E.g. `/folder/README.md` would result in `/folder/`
 
 ### Site structure
 
@@ -100,25 +109,19 @@ Whether adding content remotely, or locally, the content needs to be added to th
 
 The `config` directory contains `category.yaml` files for each category eg: `blueprints.yaml` for the Blueprints category and this file will contain the table of content navigation items for each document that you add.
 
-The (`.yaml`) config looks as follows:
-
 ```yaml
-- id: my-uniq-id
-  label: The Navigation Item
+- label: The Navigation Item
   href: /the/url/to/the/page
 ```
 
 Following is an example of 2 level hierarchy from a repo, for cases where you have to add more than one document from a repository as remote content.
 
 ```yaml
-- id: continuous-delivery
-  label: Continuous Delivery
+- label: Continuous Delivery
   links:
-    - id: cicd_intro
-      label: (Opinionated) Continuous Delivery
+    - label: (Opinionated) Continuous Delivery
       href: /blueprints/continuous-delivery/docs/continuous_delivery
-    - id: continuous-delivery-setup-source-operations
-      label: Setting up Source Code Operations
+    - label: Setting up Source Code Operations
       href: /blueprints/continuous-delivery/docs/setup_source_operations
 ```
 

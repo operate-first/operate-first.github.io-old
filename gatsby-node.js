@@ -2,6 +2,7 @@ const fs = require(`fs`);
 const { createFilePath } = require("gatsby-source-filesystem");
 const yaml = require(`js-yaml`);
 const path = require(`path`);
+const { nanoid } = require(`nanoid`);
 
 const contentSources = yaml.safeLoad(fs.readFileSync(`./config/content-sources.yaml`, `utf-8`));
 const tocSources = yaml.safeLoad(fs.readFileSync(`./config/toc-sources.yaml`, `utf-8`));
@@ -17,12 +18,22 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       getNode,
       basePath: "",
+      trailingSlash: false
     })
 
     if (gitRemoteNode) {
       slug = gitRemoteNode.sourceInstanceName + relativeFilePath;
     } else {
       slug = relativeFilePath;
+    }
+    // add extension, e.g. `.md` back to the URL, except for index and README
+    if (fileNode.name != "index") {
+      if (fileNode.name.toLowerCase() == "readme") {
+        // README is also like an index. Don't use it in the URL
+        slug = slug.slice(0,-6);
+      } else {
+        slug = slug + "." + fileNode.extension;
+      }
     }
 
     createNodeField({
@@ -128,7 +139,22 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest, reporter })
       return;
     }
     const toc = yaml.safeLoad(fs.readFileSync(fileLocation, `utf-8`));
-    toc.forEach((navItem) => navItems.push(navItem));
+
+    // adding ids to navItems
+    toc.forEach((navItem) => {
+      if (!navItem.id) {
+        navItem.id = nanoid();
+      }
+      if (navItem.links) {
+        navItem.links.forEach((link) => {
+          if (!link.id) {
+            link.id = nanoid();
+          }
+        })
+      }
+      navItems.push(navItem);
+    }); 
+
     actions.createNode({
       id: createNodeId(`NavData`),
       navItems: navItems,

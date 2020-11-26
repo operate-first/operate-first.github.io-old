@@ -1,9 +1,6 @@
-- id: moc
-  label: User support
-  href: /users/odh-moc-support/README
-- id: moc-user-docs
-  label: Components
+- label: User support
+  href: /users/odh-moc-support/
+- label: Components
   links:
-    - id: moc-jh
-      label: JupyterHub
-      href: /users/odh-moc-support/docs/user-docs/jupyterhub
+    - label: JupyterHub
+      href: /users/odh-moc-support/docs/user-docs/jupyterhub.md

@@ -16,19 +16,19 @@ At the Office of the CTO at Red Hat, we can lead the way with [Open Data Hub](ht
  
 ## Getting started
  
-## [Data Science](https://www.operate-first.cloud/data-science/)
+## [Data Science](/data-science/)
  
 Get started with tutorials and examples for data science on Open Data Hub.
  
-## [Users](https://www.operate-first.cloud/users/)
+## [Users](/users/)
  
 Learn how you can engage with Open Data Hub and access the deployed components.
  
-## [Operators](https://www.operate-first.cloud/operators/)
+## [Operators](/operators/)
  
 See how we are deploying and operating Open Data Hub
  
-## [Blueprints](https://www.operate-first.cloud/blueprints/)
+## [Blueprints](/blueprints/)
  
 Apply best practices and tooling to your own projects.
  
