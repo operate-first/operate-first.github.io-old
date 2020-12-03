@@ -227,6 +227,14 @@ OC_PROJECT=operate-first
 OC_TOKEN=my_token
 ```
 
+Modify the image repository in the deployment config `deployment.yaml` present in `scripts/templates/base` to fetch the latest image from the location you pushed the container image to in the previous step. 
+
+Modify the following line to reflect the image repository you pushed it to. 
+
+```yaml
+image: quay.io/cfchase/operate-first-app:latest
+```
+
 Run:
 
 ```shell script
