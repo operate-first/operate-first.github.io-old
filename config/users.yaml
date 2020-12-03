@@ -1,6 +1,2 @@
-- label: User support
+- label: Mass Open Cloud (MOC) users
   href: /users/odh-moc-support/
-- label: Components
-  links:
-    - label: JupyterHub
-      href: /users/odh-moc-support/docs/user-docs/jupyterhub.md
