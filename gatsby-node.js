@@ -41,6 +41,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "slug",
       value: slug
     })
+
+    // Add the URL where the content is pulled from
+    const srcBase = gitRemoteNode ? (
+      `${gitRemoteNode.webLink}/blob/master/`
+    ) : (
+      `${getNode('Site').siteMetadata.srcLinkDefault}/blob/master/content/`
+    );
+
+    createNodeField({
+      node,
+      name: "srcLink",
+      value: srcBase + fileNode.relativePath,
+    })
   }
 }
 

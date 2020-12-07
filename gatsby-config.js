@@ -8,6 +8,8 @@ let config = {
     title: `Operate First`,
     description: `Operate First`,
     siteUrl: `https://operate-first.cloud/`,
+    // default URL for all content within this repository for linking to the source of the content
+    srcLinkDefault: `https://github.com/operate-first/operate-first.github.io`,
   },
   plugins: [
     {
