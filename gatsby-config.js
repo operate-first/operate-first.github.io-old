@@ -18,9 +18,55 @@ let config = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              disableBgImageOnAlpha: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                list: "pf-c-list",
+                table: "pf-c-table",
+              },
+            },
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [`md`],
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [`.md`, `.mdx`],
+        extensions: [`.mdx`],
         defaultLayouts: { default: path.resolve("./src/components/Layout") },
         gatsbyRemarkPlugins: [
           {
