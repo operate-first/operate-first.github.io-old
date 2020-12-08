@@ -22,3 +22,5 @@
       href: /data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb
     - label: Indepth TestGrid EDA
       href: /data-science/ocp-ci-analysis/notebooks/TestGrid_indepth_EDA.ipynb
+    - label: Flaky Test Detection in TestGrid
+      href: /data-science/ocp-ci-analysis/notebooks/Testgrid_flakiness_detection.ipynb
