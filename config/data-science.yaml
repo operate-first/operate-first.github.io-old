@@ -24,3 +24,14 @@
       href: /data-science/ocp-ci-analysis/notebooks/TestGrid_indepth_EDA.ipynb
     - label: Flaky Test Detection in TestGrid
       href: /data-science/ocp-ci-analysis/notebooks/Testgrid_flakiness_detection.ipynb
+- label: Cloud Price Analysis
+  links:
+    - label: Cloud Price Analysis Overview
+      href: /data-science/cloud-price-analysis/
+    - label: Forecasting Overview
+      href: /data-science/cloud-price-analysis/docs/Forecasting.md
+    - label: Intital EDA for AWS data
+      href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-EDA.ipynb
+    - label: In-depth EDA for AWS data
+      href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-indepth-EDA.ipynb
+
