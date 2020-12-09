@@ -55,7 +55,7 @@ let config = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              ignoreFileExtensions: [`md`],
+              ignoreFileExtensions: [`md`, `ipynb`, `mdx`],
             },
           },
           `gatsby-remark-prismjs`,
@@ -94,7 +94,7 @@ let config = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              ignoreFileExtensions: [`md`],
+              ignoreFileExtensions: [`md`, `ipynb`, `mdx`],
             },
           },
           `gatsby-remark-prismjs`,
