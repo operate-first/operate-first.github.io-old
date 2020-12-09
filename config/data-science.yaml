@@ -30,8 +30,7 @@
       href: /data-science/cloud-price-analysis/
     - label: Forecasting Overview
       href: /data-science/cloud-price-analysis/docs/Forecasting.md
-    - label: Intital EDA for AWS data
+    - label: Initial EDA for AWS data
       href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-EDA.ipynb
     - label: In-depth EDA for AWS data
       href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-indepth-EDA.ipynb
-
