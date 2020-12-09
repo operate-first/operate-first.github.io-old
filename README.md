@@ -28,7 +28,7 @@ Add a [gatsby-source-git](https://www.gatsbyjs.com/plugins/gatsby-source-git/) s
 The `name` for the plugin will be the prefix for URLs generated from that repository.
 In the following example, all Markdown and JupyterNotebook files will be rendered as pages under the `/data-science/ocp-ci-analysis` path.
 
-The [notebooks/TestGrid_EDA.ipynb](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/notebooks/TestGrid_EDA.ipynb) Notebook will be rendered at [/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb](http://www.operate-first.cloud/data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb).
+The [notebooks/data-sources/TestGrid/testgrid_EDA.ipynb](https://github.com/aicoe-aiops/ocp-ci-analysis/blob/master/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb) Notebook will be rendered at [/data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb](http://www.operate-first.cloud/data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb).
 
 ### Local Content
 

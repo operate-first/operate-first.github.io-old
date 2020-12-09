@@ -17,13 +17,13 @@
     - label: AI for Continuous Integration Overview
       href: /data-science/ocp-ci-analysis/
     - label: Failure type classification with the TestGrid
-      href: /data-science/ocp-ci-analysis/docs/failure-type-classification-with-the-testgrid-data-project-doc.md
+      href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/README.md
     - label: Initial TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_EDA.ipynb
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb
     - label: Indepth TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/TestGrid_indepth_EDA.ipynb
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_indepth_EDA.ipynb
     - label: Flaky Test Detection in TestGrid
-      href: /data-science/ocp-ci-analysis/notebooks/Testgrid_flakiness_detection.ipynb
+      href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/background/testgrid_flakiness_detection.ipynb
 - label: Cloud Price Analysis
   links:
     - label: Cloud Price Analysis Overview
