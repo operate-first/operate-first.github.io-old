@@ -12,7 +12,7 @@ export default function MarkdownTemplate({ data, pageContext, location }) {
   const md = data.markdownRemark;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} srcLink={md.fields.srcLink}>
       <SEO title={md.frontmatter.title} description={md.frontmatter.description} />
       <PageSection className="doc" variant={PageSectionVariants.light}>
         <TextContent>
@@ -34,6 +34,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        srcLink
+      }
       frontmatter {
         title
         description

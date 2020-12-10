@@ -9,7 +9,7 @@ import "./JupyterNotebook.scss";
 
 export default function JupyterNotebookTemplate(data) {
   return (
-    <Layout location={data.location} title={data.data.site.siteMetadata.title}>
+    <Layout location={data.location} title={data.data.site.siteMetadata.title} srcLink={data.data.jupyterNotebook.fields.srcLink}>
       <SEO title={""} description={""} />
       <PageSection className="jupyterNotebook" variant={PageSectionVariants.light}>
         <TextContent>
@@ -32,6 +32,9 @@ export const pageQuery = graphql`
     jupyterNotebook(id: { eq: $id }) {
       id
       html
+      fields {
+        srcLink
+      }
     }
   }
 `;

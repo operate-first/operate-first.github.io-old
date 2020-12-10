@@ -17,7 +17,7 @@ export default function DocTemplate({ data: { site, mdx }, pageContext, location
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={mdx.frontmatter.title} description={mdx.frontmatter.description} />
+      <SEO title={mdx.frontmatter.title} description={mdx.frontmatter.description} srcLink={mdx.fields.srcLink} />
       <PageSection className="doc" variant={PageSectionVariants.light}>
         <TextContent>
           <h1>{mdx.frontmatter.title}</h1>
@@ -40,6 +40,9 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       body
+      fields {
+        srcLink
+      }
       frontmatter {
         title
         description
