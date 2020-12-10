@@ -26,14 +26,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     } else {
       slug = relativeFilePath;
     }
-    // add extension, e.g. `.md` back to the URL, except for index and README
+    // add extension, e.g. `.md` back to the URL, except for index
     if (fileNode.name != "index") {
-      if (fileNode.name.toLowerCase() == "readme") {
-        // README is also like an index. Don't use it in the URL
-        slug = slug.slice(0,-6);
-      } else {
-        slug = slug + "." + fileNode.extension;
-      }
+      slug = slug + "." + fileNode.extension;
     }
 
     createNodeField({
@@ -121,7 +116,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: jupyterTemplate,
         context: {
           id: node.id,
-          slug: node.fields.slug,
         },
       });
     }
@@ -140,9 +134,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: docTemplate,
       context: {
         id: node.id,
-        slug: node.slug,
       },
     });
+    // create a 2nd URL for README.md files, which mirrors GitHub behaviour
+    if (page_path.toLowerCase().endsWith('readme.md')) {
+      createPage({
+        path: page_path.slice(0,-9),
+        component: docTemplate,
+        context: {
+          id: node.id,
+        },
+      });
+    }
   });
 
   const mdx = result.data.allMdx.edges;
@@ -159,7 +162,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: docTemplate,
         context: {
           id: node.id,
-          slug: node.slug,
         },
       });
     } else {
@@ -168,7 +170,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: docTemplate,
         context: {
           id: node.id,
-          slug: "/",
         },
       });
     }
@@ -227,8 +228,5 @@ function createPagePath(node) {
     prefix = pathMatch.urlPrefix;
   }
   let slug = node.slug;
-  if (node.slug == "README") {
-    slug = ""
-  }
   return path.join(prefix, slug);
 }
