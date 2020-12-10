@@ -17,7 +17,7 @@
     - label: AI for Continuous Integration Overview
       href: /data-science/ocp-ci-analysis/
     - label: Failure type classification with the TestGrid
-      href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/README.md
+      href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/
     - label: Initial TestGrid EDA
       href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb
     - label: Indepth TestGrid EDA
