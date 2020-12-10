@@ -33,6 +33,7 @@
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sass": "^2.7.0",
     "gatsby-plugin-sharp": "^2.10.1",
+    "gatsby-remark-autolink-headers": "^2.7.0",
     "gatsby-remark-classes": "^1.0.0",
     "gatsby-remark-copy-linked-files": "^2.6.0",
     "gatsby-remark-images": "^3.7.0",
