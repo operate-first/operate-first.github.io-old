@@ -135,6 +135,14 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
+        name: `users/data-science-workflows`,
+        remote: `https://github.com/aicoe-aiops/data-science-workflows.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
         name: `data-science/data-science-workflows`,
         remote: `https://github.com/aicoe-aiops/data-science-workflows.git`,
         patterns: [`**/*.md`, `**/*.png`],
