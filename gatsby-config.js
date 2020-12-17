@@ -180,7 +180,7 @@ let config = {
       resolve: `gatsby-source-git`,
       options: {
         name: `operators/moc-cnv-sandbox`,
-        remote: `https://gitlab.com/open-infrastructure-labs/moc-cnv-sandbox.git`,
+        remote: `https://github.com/open-infrastructure-labs/moc-cnv-sandbox.git`,
         patterns: [`**/*.md`, `**/*.png`],
       }
     },
