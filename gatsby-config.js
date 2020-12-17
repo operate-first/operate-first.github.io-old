@@ -220,6 +220,14 @@ let config = {
         patterns: [`**/*.md`, `**/*.png`],
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `data-science/ceph-drive-failure`,
+        remote: `https://github.com/aicoe-aiops/ceph_drive_failure`,
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
+      }
+    },
   ],
 };
 
