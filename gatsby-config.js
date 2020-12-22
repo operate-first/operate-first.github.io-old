@@ -207,6 +207,14 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
+        name: `users/argocd-apps`,
+        remote: `https://github.com/operate-first/argocd-apps.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
         name: `blueprints/blueprint`,
         remote: `https://github.com/operate-first/blueprint.git`,
         patterns: [`**/*.md`, `**/*.png`],
