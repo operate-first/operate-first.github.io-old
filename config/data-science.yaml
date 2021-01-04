@@ -34,3 +34,11 @@
       href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-EDA.ipynb
     - label: In-depth EDA for AWS data
       href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-indepth-EDA.ipynb
+- label: Time series analysis for monitoring
+  links:
+    - label: Time series analysis for monitoring overview
+      href: /data-science/time-series/
+    - label: Fetching time series metrics data
+      href: /data-science/time-series/notebooks/ts-1-fetching-metrics.ipynb
+    - label: Manipulating and visualizing metrics data
+      href: /data-science/time-series/notebooks/ts-2-visualization.ipynb

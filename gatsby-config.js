@@ -183,6 +183,14 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
+        name: `data-science/time-series`,
+        remote: `https://github.com/aicoe-aiops/time-series.git`,
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
+      }
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
         name: `users/odh-moc-support`,
         remote: `https://github.com/operate-first/odh-moc-support.git`,
         patterns: [`**/*.md`, `**/*.png`],
