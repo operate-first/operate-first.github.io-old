@@ -4,3 +4,9 @@
   links:
     - label: Create a Jupyterhub image and deploy it on ODH
       href: /users/data-science-workflows/docs/create_and_deploy_jh_image.md
+- label: ArgoCD Users
+  links:
+    - label: ArgoCD - Onboarding
+      href: /users/argocd-apps/docs/onboard_team_to_argocd.md
+    - label: ArgoCD - Add an Application
+      href: /users/argocd-apps/docs/add_application.md
