@@ -60,6 +60,8 @@ description: My Document Description
 valid markdown
 ```
 
+To add videos to Markdown follow the instructions given in [/content/examples/markdown.md#add-videos](/content/examples/markdown.md#add-videos)
+
 #### JupyterNotebook
 
 Any file with the `.ipynb` extension will be rendered as HTML. This is done via the [gatsby-transformer-ipynb](https://www.gatsbyjs.com/plugins/@rafaelquintanilha/gatsby-transformer-ipynb/).
