@@ -233,3 +233,10 @@ For more information, see Daring Fireball's "[Markdown Syntax](https://daringfir
 - "[About writing and formatting on GitHub](/articles/about-writing-and-formatting-on-github)"
 - "[Working with advanced formatting](/articles/working-with-advanced-formatting)"
 - "[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)"
+
+### Add Videos
+
+To embed YouTube videos to Markdown, reference videos as shown [here](https://www.gatsbyjs.com/plugins/gatsby-remark-embed-video/?=video#usage).
+
+Example embedded video:
+`video: https://www.youtube.com/watch?v=jne4auRnxJ4&feature=youtu.be`

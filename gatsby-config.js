@@ -33,6 +33,22 @@ let config = {
         // Plugins configs
         plugins: [
           {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 500,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+              related: true, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+              urlOverrides: [
+                {
+                  id: 'youtube',
+                  embedURL: (videoId) => `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+              containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -73,16 +89,16 @@ let config = {
         defaultLayouts: { default: path.resolve("./src/components/Layout") },
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
               disableBgImageOnAlpha: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
           {

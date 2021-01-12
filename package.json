@@ -36,6 +36,8 @@
     "gatsby-remark-autolink-headers": "^2.7.0",
     "gatsby-remark-classes": "^1.0.0",
     "gatsby-remark-copy-linked-files": "^2.6.0",
+    "gatsby-remark-embed-video": "^3.0.10",
+    "gatsby-remark-embed-youtube": "0.0.7",
     "gatsby-remark-images": "^3.7.0",
     "gatsby-remark-prismjs": "^3.9.0",
     "gatsby-remark-responsive-iframe": "^2.7.0",
