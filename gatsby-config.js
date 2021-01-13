@@ -268,6 +268,14 @@ let config = {
         patterns: [`**/*.md`, `**/*.png`],
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `data-science/mailing-list-analysis`,
+        remote: `https://github.com/aicoe-aiops/mailing-list-analysis-toolkit.git`,
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
+      }
+    },
   ],
 };
 
