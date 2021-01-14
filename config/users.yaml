@@ -16,3 +16,15 @@
       href: /users/apps/docs/observatorium/loki/README.md
     - label: How to set up Loki as data source in Grafana
       href: /users/apps/docs/observatorium/loki/add_loki_grafana_datasource.md
+- label: Kafka
+  links:
+    - label: How to access Kafka
+      href: /users/apps/docs/odh/kafka/README.md
+    - label: How to add Kafka topics
+      href: /users/apps/docs/odh/kafka/add_kafka_topics.md
+- label: Grafana
+  links:
+    - label: How to access Grafana
+      href: /users/apps/docs/odh/grafana/README.md
+    - label: How to add Grafana dashboards
+      href: /users/apps/docs/odh/grafana/add_grafana_dashboard.md
