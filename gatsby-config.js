@@ -260,6 +260,14 @@ let config = {
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `users/apps`,
+        remote: `https://github.com/operate-first/apps.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
   ],
 };
 

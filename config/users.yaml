@@ -10,3 +10,9 @@
       href: /users/argocd-apps/docs/onboard_team_to_argocd.md
     - label: ArgoCD - Add an Application
       href: /users/argocd-apps/docs/add_application.md
+- label: Loki
+  links:
+    - label: How to access Loki
+      href: /users/apps/docs/observatorium/loki/README.md
+    - label: How to set up Loki as data source in Grafana
+      href: /users/apps/docs/observatorium/loki/add_loki_grafana_datasource.md
