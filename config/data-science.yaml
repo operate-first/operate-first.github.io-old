@@ -13,7 +13,7 @@
     - label: Data Science Workflow Overview
       href: /data-science/data-science-workflows/
     - label: Project Template
-      href: /data-science/data-science-workflows/docs/publish/project-document-template.md
+      href: /data-science/data-science-workflows/docs/project-document-template.md
 - label: AI for Continuous Integration
   links:
     - label: AI for Continuous Integration Overview
