@@ -44,3 +44,11 @@
       href: /data-science/time-series/notebooks/ts-1-fetching-metrics.ipynb
     - label: Manipulating and visualizing metrics data
       href: /data-science/time-series/notebooks/ts-2-visualization.ipynb
+- label: Mailing List Analysis
+  links:
+    - label: Mailing List Analysis Overview
+      href: /data-science/mailing-list-analysis/
+    - label: Keyword Analysis
+      href: /data-science/mailing-list-analysis/notebooks/stage/contributor_analysis.ipynb
+    - label: Contributor Analysis
+      href: /data-science/mailing-list-analysis/notebooks/stage/keyword_analysis.ipynb

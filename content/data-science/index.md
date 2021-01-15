@@ -20,18 +20,22 @@ _This document contains a list of projects within the AI Ops Team at Red Hat._
 
     Github Repo : https://github.com/aicoe-aiops/data-science-workflows
 
-5. **OCP Alert Prediction** : If a customer’s OpenShift cluster goes down, it can have a significant impact on their business. Since there are a variety of reasons why an OpenShift cluster might fail, finding and fixing the issue that the cluster suffers from is not always trivial. However, if we can predict in advance whether a cluster will run into a given issue, then we may be able to fix it before it fails or before it severely impacts the customer. Issues in a cluster are often defined by, or closely related to, the alerts that it fires. So predicting alerts can be a step towards predicting the underlying issue. Thus, the goal of this project is to predict whether a cluster will fire a given alert within the next hour.
+5. **Mailing list Analysis**: This analysis contains example code for how to develop a custom end-to-end email analytics service using the Open Data Hub on OpenShift. We demonstrate this by performing text analysis on the Fedora mailing list. This list contains many discussions about the issues occurring with Fedora development on a monthly basis and suggestions for how to address the issues. This project aims to help the Fedora community bring a more data driven approach to their planning process by performing text analysis and gathering insights into the trends in the email conversations.
+
+    Github Repo : https://github.com/aicoe-aiops/mailing-list-analysis-toolkit
+
+6. **OCP Alert Prediction** : If a customer’s OpenShift cluster goes down, it can have a significant impact on their business. Since there are a variety of reasons why an OpenShift cluster might fail, finding and fixing the issue that the cluster suffers from is not always trivial. However, if we can predict in advance whether a cluster will run into a given issue, then we may be able to fix it before it fails or before it severely impacts the customer. Issues in a cluster are often defined by, or closely related to, the alerts that it fires. So predicting alerts can be a step towards predicting the underlying issue. Thus, the goal of this project is to predict whether a cluster will fire a given alert within the next hour.
 
     Github Repo : https://github.com/aicoe-aiops/ocp-alert-prediction-public
 
-6. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
+7. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
 
     Github Repo : https://github.com/AICoE/prometheus-api-client-python
 
-7. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
+8. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
 
     Github Repo : https://github.com/aicoe-aiops/sentiment-analysis-public
 
-8.  **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
+9. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
 
     Github Repo : https://github.com/aicoe-aiops/sync-pipelines
