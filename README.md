@@ -1,4 +1,5 @@
 # Operate First Website
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.operate-first.cloud%2F)
 
 This repository contains some content and the code to build [operate-first.cloud](https://www.operate-first.cloud/). It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [OpenShift](scripts/templates/base) or [GitHub Pages](https://pages.github.com/).
 
@@ -38,14 +39,14 @@ For example, to add content locally to the `blueprints` category, create a docum
 
 ### Supported File Types
 
-Files formatted as 
+Files formatted as
 * [Markdown .md](https://daringfireball.net/projects/markdown/)
 * [JupyterNotebook .ipynb](https://jupyter.org/)
 * [MarkdownX .mdx](https://mdxjs.com/)
 
 #### Markdown
 
-Markdown files can be prefixed with [frontmatter](https://www.gatsbyjs.com/docs/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files). 
+Markdown files can be prefixed with [frontmatter](https://www.gatsbyjs.com/docs/adding-markdown-pages/#frontmatter-for-metadata-in-markdown-files).
 
 See [/content/examples/markdown.md](/content/examples/markdown.md) rendered [here](https://www.operate-first.cloud/examples/markdown.md)
 
@@ -88,8 +89,8 @@ This is how I include a Notebook:
 
 ### Linking
 
-All links should be added as relative links, i.e. they should not start with a `/`. 
-If you link to another document in your own content repository, 
+All links should be added as relative links, i.e. they should not start with a `/`.
+If you link to another document in your own content repository,
 then a relative link will work when the content is rendered at GitHub *and* it will work in the gatsby site.
 
 `index.md` and `README.md` files will be treated as index files. Their name will be stripped from the URL.
@@ -101,7 +102,7 @@ Content will be added to one of the four categories on this website:
 
 * **data-science**: Examples of data science projects for the data science users that want to learn about data science on ODH.
 * **users**: Documentation for all users of ODH. Access details of various deployed ODH components.
-* **operators**: Examples and documentation from operators of ODH. 
+* **operators**: Examples and documentation from operators of ODH.
 * **blueprints**: Generic information that can be applied to other projects as well.
 
 
@@ -229,9 +230,9 @@ OC_PROJECT=operate-first
 OC_TOKEN=my_token
 ```
 
-Modify the image repository in the deployment config `deployment.yaml` present in `scripts/templates/base` to fetch the latest image from the location you pushed the container image to in the previous step. 
+Modify the image repository in the deployment config `deployment.yaml` present in `scripts/templates/base` to fetch the latest image from the location you pushed the container image to in the previous step.
 
-Modify the following line to reflect the image repository you pushed it to. 
+Modify the following line to reflect the image repository you pushed it to.
 
 ```yaml
 image: quay.io/cfchase/operate-first-app:latest
