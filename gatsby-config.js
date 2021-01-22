@@ -207,8 +207,8 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `users/odh-moc-support`,
-        remote: `https://github.com/operate-first/odh-moc-support.git`,
+        name: `users/support`,
+        remote: `https://github.com/operate-first/support.git`,
         patterns: [`**/*.md`, `**/*.png`],
       }
     },
