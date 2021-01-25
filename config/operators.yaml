@@ -1,4 +1,16 @@
-- label: Continous Deployment
+- label: Onboarding
+  links:
+    - label: First steps
+      href: /users/support/docs/onboarding_to_cluster.md
+    - label: ArgoCD - Onboarding
+      href: /users/support/docs/onboarding_to_argocd.md
+    - label: ArgoCD - Add an Application
+      href: /users/argocd-apps/docs/add_application.md
+    - label: Secret management
+      href: /users/support/docs/secret_management.md
+    - label: Secret management
+      href: /users/support/docs/claiming_object_store.md
+- label: Continuous Deployment
   links:
     - label: Opinionated reference architecture
       href: /operators/continuous-deployment/

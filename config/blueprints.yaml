@@ -6,6 +6,20 @@
       href: /blueprints/blueprint/docs/adr/0001-use-gpl3-as-license.md
     - label: Operate First deployment feature selection Policy
       href: /blueprints/blueprint/docs/adr/0003-feature-selection-policy.md
+    - label: ArgoCD Apps of Apps Structure
+      href: /blueprints/blueprint/docs/adr/0004-argocd-apps-of-apps-structure.md
+    - label: Repositories supporting multiple environment deployments
+      href: /blueprints/blueprint/docs/adr/0005-support-multi-environments-in-repos.md
+    - label: Application Monitoring in Operate First using Prometheus
+      href: /blueprints/blueprint/docs/adr/0006-monitoring-structure.md
+    - label: Alerting setup for Operate First monitoring
+      href: /blueprints/blueprint/docs/adr/0007-alerting-setup.md
+    - label: GitOPS and Secrets Management
+      href: /blueprints/blueprint/docs/adr/0008-secrets-management.md
+    - label: Declarative definitions for cluster scoped resources
+      href: /blueprints/blueprint/docs/adr/0009-cluster-resources.md
+    - label: Common authentication for applications
+      href: /blueprints/blueprint/docs/adr/0010-common-auth-for-applications.md
 - label: Continuous Delivery
   links:
     - label: (Opinionated) Continuous Delivery
