@@ -8,7 +8,7 @@
       href: /users/argocd-apps/docs/add_application.md
     - label: Secret management
       href: /users/support/docs/secret_management.md
-    - label: Secret management
+    - label: Provisioning S3 buckets
       href: /users/support/docs/claiming_object_store.md
 - label: Continuous Deployment
   links:
