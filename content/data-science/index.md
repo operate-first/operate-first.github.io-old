@@ -24,18 +24,24 @@ _This document contains a list of projects within the AI Ops Team at Red Hat._
 
     Github Repo : https://github.com/aicoe-aiops/mailing-list-analysis-toolkit
 
-6. **OCP Alert Prediction** : If a customer’s OpenShift cluster goes down, it can have a significant impact on their business. Since there are a variety of reasons why an OpenShift cluster might fail, finding and fixing the issue that the cluster suffers from is not always trivial. However, if we can predict in advance whether a cluster will run into a given issue, then we may be able to fix it before it fails or before it severely impacts the customer. Issues in a cluster are often defined by, or closely related to, the alerts that it fires. So predicting alerts can be a step towards predicting the underlying issue. Thus, the goal of this project is to predict whether a cluster will fire a given alert within the next hour.
+6. **OpenShift Alert Prediction** : If a customer’s OpenShift cluster goes down, it can have a significant impact on their business. Since there are a variety of reasons why an OpenShift cluster might fail, finding and fixing the issue that the cluster suffers from is not always trivial. However, if we can predict in advance whether a cluster will run into a given issue, then we may be able to fix it before it fails or before it severely impacts the customer. Issues in a cluster are often defined by, or closely related to, the alerts that it fires. So predicting alerts can be a step towards predicting the underlying issue. Thus, the goal of this project is to predict whether a cluster will fire a given alert within the next hour.
 
     Github Repo : https://github.com/aicoe-aiops/ocp-alert-prediction-public
 
-7. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
+7. **OpenShift Anomaly Detection**: OpenShift deployments could suffer from a variety of issues and bugs. So it can be tedious for an engineer to inspect and diagnose each deployment individually, which in turn can adversely affect customer experience. In this project, we work on the following two initiatives to address this problem:
+    - Anomaly Detection: In this approach, we try to identify issues before they occur, or before they significantly impact customers. To do so, we find deployments that behave “anomalously” and try to explain this behaviour.
+    - Diagnosis Discovery: In this approach, we try to identify deployments that exhibit similar “symptoms” (issues), and determine exactly what makes these deployments similar to one another. Engineers can then use this information to determine the “diagnosis” of the issues, and apply the same or similar fix to all the deployments.
+
+    Github Repo : https://github.com/aicoe-aiops/openshift-anomaly-detection
+
+8. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
 
     Github Repo : https://github.com/AICoE/prometheus-api-client-python
 
-8. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
+9. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
 
     Github Repo : https://github.com/aicoe-aiops/sentiment-analysis-public
 
-9. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
+10. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
 
     Github Repo : https://github.com/aicoe-aiops/sync-pipelines
