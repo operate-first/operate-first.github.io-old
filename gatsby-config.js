@@ -276,6 +276,14 @@ let config = {
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `data-science/openshift-anomaly-detection`,
+        remote: `https://github.com/aicoe-aiops/openshift-anomaly-detection.git`,
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
+      }
+    },
   ],
 };
 

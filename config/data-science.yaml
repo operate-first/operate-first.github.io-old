@@ -8,6 +8,8 @@
       href: /data-science/configuration-files-analysis/docs/blog/configuration-file-analysis-blog.md
     - label: Hard Drive Failure Prediction
       href: /data-science/ceph-drive-failure/docs/blog/hard-drive-failure-prediction-blog.md
+    - label: Data Driven Diagnosis Discovery
+      href: /data-science/openshift-anomaly-detection/docs/blog/diagnosis-discovery-blog.md
 - label: Data Science Workflow
   links:
     - label: Data Science Workflow Overview
