@@ -44,3 +44,9 @@
   links:
     - label: Getting Access
       href: /operators/moc-cnv-sandbox/docs/about-the-cluster.md
+- label: SRE (Site Reliability Engineering)
+  links:
+    - label: Setup GitHub Receiver
+      href: /operators/sre/incident-management/github-receiver-setup.md
+    - label: Configure Prometheus Alerts
+      href: /operators/sre/incident-management/configure-prometheus-alerts.md

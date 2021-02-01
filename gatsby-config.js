@@ -284,6 +284,14 @@ let config = {
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `operators/sre`,
+        remote: `https://github.com/operate-first/SRE.git`,
+        patterns: [`**/*.md`],
+      }
+    },
   ],
 };
 
