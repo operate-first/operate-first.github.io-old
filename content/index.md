@@ -12,6 +12,8 @@ Open means, onboarding and getting involved should mimic the process of an Open 
 Reproducibility caters towards being a blueprint for other setups. If we don’t want each environment to be a snowflake, we should be able to extract best practices that are easy to apply to new environments.
  
 At the Office of the CTO at Red Hat, we can lead the way with [Open Data Hub](https://opendatahub.io/) by opening up our operational knowledge to all open source communities to improve the integration and operability from the source.
+
+Read more about it in an article on [How to "open source" cloud operations](/how-to-open-source-cloud-operations.md)
  
  
 ## Getting started
