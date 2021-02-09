@@ -51,6 +51,6 @@
     - label: Mailing List Analysis Overview
       href: /data-science/mailing-list-analysis/
     - label: Keyword Analysis
-      href: /data-science/mailing-list-analysis/notebooks/stage/contributor_analysis.ipynb
+      href: /data-science/mailing-list-analysis/notebooks/02_analyses/contributor_analysis.ipynb
     - label: Contributor Analysis
-      href: /data-science/mailing-list-analysis/notebooks/stage/keyword_analysis.ipynb
+      href: /data-science/mailing-list-analysis/notebooks/02_analyses/keyword_analysis.ipynb
