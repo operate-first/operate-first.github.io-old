@@ -22,3 +22,9 @@
       href: /users/apps/docs/odh/grafana/README.md
     - label: How to add Grafana dashboards
       href: /users/apps/docs/odh/grafana/add_grafana_dashboard.md
+- label: Kubeflow
+  links:
+    - label: How to access Kubeflow Dashboard
+      href: /users/apps/docs/kubeflow/kubeflow-dashboard/README.md
+    - label: How to access Kubeflow Pipelines
+      href: /users/apps/docs/kubeflow/kubeflow-pipelines/README.md
