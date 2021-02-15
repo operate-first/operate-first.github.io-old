@@ -13,6 +13,14 @@ let config = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-redirect-to`,
+      options: {
+        force: true,
+        isPermanent: true,
+        redirectInBrowser: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static`,
