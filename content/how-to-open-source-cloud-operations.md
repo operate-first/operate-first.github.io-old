@@ -29,7 +29,7 @@ Researchers can collaborate with the operations team to validate their models ag
 ### Call to keyboards
 Sounds like a story from the future? The process has already begun as Red Hat is working with an evolving open cloud community, at the Massachusetts Open Cloud, to help define an architecture of an open cloud environment where operability is paramount and data driven tools can play a key role. All discussions happen in public meetings and, even better, are tracked in a git repository, so that we can involve all parties early in the process and trace back how we came to a certain decision - since the decision process is equally important as the final outcome. All operational data will be accessible and it will be easy to run a workload there and to get access to backend data. 
 
-If you’re interested in collaborating, join us at [https://operate-first.cloud](https://operate-first.cloud)
+If you’re interested in collaborating, join us at [https://www.operate-first.cloud](https://operate-first.cloud)
 
 <small>
 This article appeared first in <a href="https://research.redhat.com/research-quarterly-2-2/">Red Hat Research Quarterly Issue 2:2</a>
