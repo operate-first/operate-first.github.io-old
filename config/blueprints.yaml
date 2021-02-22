@@ -30,3 +30,5 @@
       href: /blueprints/continuous-delivery/docs/setup_ci_pipeline.md
     - label: Setting up a Continuous Delivery Pipeline
       href: /blueprints/continuous-delivery/docs/setup_cd_pipeline.md
+- label: Additional Resources
+  href: /blueprints/additional-resources.md
