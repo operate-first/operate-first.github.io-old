@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Page, PageSection, PageSectionVariants, TextContent, Button } from "@patternfly/react-core";
-import { Header, NavSidebar } from "./";
+import { Header, NavSidebar, Footer } from "./";
 
 import "@patternfly/patternfly/patternfly.css";
 import "./Layout.scss";
@@ -13,6 +13,7 @@ export const Layout = ({ location, title, srcLink, children }) => {
   };
 
   return (
+    <React.Fragment>
     <Page
       header={<Header isNavOpen={isNavOpen} onNavToggle={onNavToggle} location={location} />}
       sidebar={<NavSidebar isNavOpen={isNavOpen} location={location} />}
@@ -28,6 +29,8 @@ export const Layout = ({ location, title, srcLink, children }) => {
         </TextContent>
       </PageSection>
     </Page>
+    <Footer/>
+    </React.Fragment>
   );
 };
 

@@ -1,0 +1,28 @@
+.ws-org-pfsite-l-footer-dark {
+    background: #151515 !important;
+  }
+  .pf-c-page__main-section.ws-org-pfsite-l-footer-dark > * {
+    color: #d2d2d2;
+  }
+  .ws-org-pfsite-l-footer-dark a {
+    padding-right: var(--pf-global--spacer--sm);
+    padding-left: var(--pf-global--spacer--sm);
+    border-right: var(--pf-global--BorderWidth--sm) solid #d2d2d2;
+    font-weight: 100;
+    font-size: 10px;
+    color: #d2d2d2;
+    text-decoration: underline;
+  }
+  .ws-org-pfsite-l-footer-dark a:first-of-type {
+    padding-left: 0;
+  }
+  .ws-org-pfsite-l-footer-dark a:last-of-type {
+    padding-right: 0;
+    border: none;
+  }
+  .ws-org-pfsite-site-copyright {
+    white-space: nowrap;
+    color: #d2d2d2;
+    font-size: 10px;
+  }
+  
