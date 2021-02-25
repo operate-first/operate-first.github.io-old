@@ -4,6 +4,8 @@
   links:
     - label: Create a Jupyterhub image and deploy it on ODH
       href: /users/data-science-workflows/docs/create_and_deploy_jh_image.md
+    - label: Elyra AIDevSecOps Tutorial
+      href: /users/elyra/README.md
 - label: Loki
   links:
     - label: How to access Loki
