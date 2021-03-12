@@ -223,6 +223,14 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
+        name: `users/moc-ray-demo`,
+        remote: `https://github.com/erikerlandson/moc-ray-demo.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
         name: `users/support`,
         remote: `https://github.com/operate-first/support.git`,
         patterns: [`**/*.md`, `**/*.png`],
