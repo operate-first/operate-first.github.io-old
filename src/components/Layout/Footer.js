@@ -9,7 +9,7 @@ import redhatLogo from "./RHLogo.png";
 import "./Footer.scss";
 
 export const Footer = () => (
-<footer key="footer-2" style={{"min-height": "50px", "paddingTop": "10px"}} className="ws-org-pfsite-l-footer-dark pf-m-no-fill">
+<footer key="footer-2" style={{"minHeight": "50px", "paddingTop": "10px"}} className="ws-org-pfsite-l-footer-dark pf-m-no-fill">
   <Grid className="pf-u-py-xl-on-sm pf-u-py-0-on-md pf-u-align-items-center">
     <GridItem md={2} mdOffset={1}>
       <Text
