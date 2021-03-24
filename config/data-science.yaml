@@ -22,6 +22,8 @@
       href: /data-science/ocp-ci-analysis/
     - label: AI/ML for CI/CD Landscape
       href: /data-science/ocp-ci-analysis/docs/aiml-cicd-market-research.md
+    - label : KPI Metrics
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/README.md
     - label: Failure type classification with the TestGrid
       href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/
     - label: Initial TestGrid EDA
