@@ -24,6 +24,8 @@
       href: /data-science/ocp-ci-analysis/docs/aiml-cicd-market-research.md
     - label : KPI Metrics
       href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/README.md
+    - label : KPI Metric Template Notebook
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/metric_template.ipynb
     - label: Failure type classification with the TestGrid
       href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/
     - label: Initial TestGrid EDA
@@ -32,6 +34,22 @@
       href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_indepth_EDA.ipynb
     - label: Flaky Test Detection in TestGrid
       href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/background/testgrid_flakiness_detection.ipynb
+    - label: Tests Blocked and Timed out in TestGrid
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/blocked_timed_out.ipynb
+    - label: Builds Passing and Failing
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/build_pass_failure.ipynb
+    - label: Find Correlated Tests
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/correlated_failures.ipynb
+    - label: Flake Rate of Test
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/number_of_flakes.ipynb
+    - label: Percent of Tests Fixed
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/pct_fixed_each_ts.ipynb
+    - label: Mean Time to Fix and Length of Failures
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/persistent_failures_analysis.ipynb
+    - label: Percent of Tests Passing and Failing
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/test_pass_failures.ipynb
+    - label: Average Time to Test
+      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/time_to_test.ipynb
 - label: Cloud Price Analysis
   links:
     - label: Cloud Price Analysis Overview
