@@ -14,6 +14,10 @@
       href: /users/apps/docs/observatorium/loki/README.md
     - label: How to set up Loki as data source in Grafana
       href: /users/apps/docs/observatorium/loki/add_loki_grafana_datasource.md
+- label: Thanos
+  links:
+    - label: How to access Thanos
+      href: /users/apps/docs/observatorium/thanos/README.md
 - label: Kafka
   links:
     - label: How to access Kafka
