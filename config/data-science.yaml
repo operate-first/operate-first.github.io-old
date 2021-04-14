@@ -60,3 +60,9 @@
       href: /data-science/mailing-list-analysis/notebooks/02_analyses/contributor_analysis.ipynb
     - label: Contributor Analysis
       href: /data-science/mailing-list-analysis/notebooks/02_analyses/keyword_analysis.ipynb
+- label: Pet Image Detection
+  links:
+    - label: Pet Image Detection Overview
+      href: /data-science/pet-image-detection/
+    - label: Pet Image Detection
+      href: /data-science/pet-image-detection/notebooks/image-explainability.ipynb
