@@ -8,6 +8,12 @@
       href: /users/elyra/README.md
     - label: Using Ray with Jupyter and ODH
       href: '/users/moc-ray-demo/README.md'
+- label: Prometheus
+  links:
+    - label: How to access Prometheus
+      href: /users/apps/docs/odh/prometheus/README.md
+    - label: How to monitor services using Prometheus
+      href: /users/apps/docs/odh/prometheus/add_service_monitoring.md
 - label: Loki
   links:
     - label: How to access Loki
