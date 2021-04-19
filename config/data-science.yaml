@@ -26,6 +26,8 @@
       href: /data-science/ocp-ci-analysis/docs/aiml-cicd-market-research.md
     - label : KPI Metrics
       href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/README.md
+    - label : Automated Notebook Pipeline
+      href: /data-science/ocp-ci-analysis/docs/automating-using-elyra.md
     - label: Failure type classification with the TestGrid
       href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/
     - label: Initial TestGrid EDA
