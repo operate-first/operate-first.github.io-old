@@ -1,39 +1,92 @@
 ---
-title: Operate First for Open Data Hub
+title: Operate software in a production grade environment
 description: "Operate First for ODH"
 ---
- 
-[Operate First](https://openinfralabs.org/operate-first-manifesto/) is an initiative to operate software in a production-grade environment - bringing users, developers and operators closer together.
+## What is Operate First?
 
-The goal is to create an Open Cloud environment, with reproducibility built-in, operated by a Community.
+Operate First is a concept where open source developers bring their projects to a production
+cloud during development where they can interact with a cloud provider's operators and gain valuable
+feedback on the operational considerations of their project. The motivation for the Operate First
+initiative is the shift of focus from software availability to operating services. Open Source removed
+the access to software as a limiting factor for businesses and individuals. However, with software
+proliferating into every aspect of the business - and our world in general - resulting in ever growing
+complexity of software stacks, the challenge is now operationalizing software.
 
-Open means, onboarding and getting involved should mimic the process of an Open Source project, where planning, issue tracking and the code are accessible in a read-only fashion.
+## Why Operate First?
 
-Reproducibility caters towards being a blueprint for other setups. If we don’t want each environment to be a snowflake, we should be able to extract best practices that are easy to apply to new environments.
- 
-At the Office of the CTO at Red Hat, we can lead the way with [Open Data Hub](https://opendatahub.io/) by opening up our operational knowledge to all open source communities to improve the integration and operability from the source.
+> <p>"The ability to have hands on the MOC environment while installing two open source project releases was of real value. Our teams were able to resolve critical interdependencies that the test suites had not found. I could not imagine trying to work with a customer to debug this problem."</p> <small><cite>- An operate first member</cite></small>
 
-Read more about it in an article on [How to "open source" cloud operations](/how-to-open-source-cloud-operations.md)
- 
- 
-## Getting started
- 
-## [Data Science](/data-science/)
- 
-Get started with tutorials and examples for data science on Open Data Hub.
- 
-## [Users](/users/)
- 
-Learn how you can engage with Open Data Hub and access the deployed components.
- 
-## [Operators](/operators/)
- 
-See how we are deploying and operating Open Data Hub
- 
-## [Blueprints](/blueprints/)
- 
-Apply best practices and tooling to your own projects.
- 
-## Contribute
- 
-To contribute to the Operate First initiative, seek support or report bugs on the website, please open an issue [here](https://github.com/operate-first/operate-first.github.io/issues).
+## Key Personas
+
+<div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
+
+  <div class="pf-c-card pf-m-flat ofc-gallery-card">
+    <div class="pf-c-card__body">
+      <img src="https://cdn2.vectorstock.com/i/thumbs/20/76/man-avatar-profile-vector-21372076.jpg" alt="Developer/QE">
+    </div>
+    <div class="pf-c-card__title">
+      <h3>Developer/QE</h3>
+    </div>
+    <div class="pf-c-card__body">
+      <p>To start streamlining your development workflows, e.g. CI/CD, join the Operate First effort at the OI Labs community.</p>
+      <small><a href="https://github.com/open-infrastructure-labs/operate-first-workloads" target="_blank">OpenInfra Labs Community</a></small>
+    </div>
+  </div>
+
+  <div class="pf-c-card pf-m-flat ofc-gallery-card">
+    <div class="pf-c-card__body">
+      <img src="https://cdn2.vectorstock.com/i/thumbs/20/76/man-avatar-profile-vector-21372076.jpg" alt="Cloud Operator/SRE &amp; Sys Admin">
+    </div>
+    <div class="pf-c-card__title">
+      <h3>Cloud Operator/SRE &amp; Sys Admin</h3>
+    </div>
+    <div class="pf-c-card__body">
+      <p>To improve observability and monitoring capabilities, join the telemetry working group.</p>
+      <small><a href="https://openinfralabs.org/telemetry/" target="_blank">Telemetry Working Group</a></small>
+    </div>
+  </div>
+
+</div>
+
+## Benefits of Operate First
+
+<div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
+
+  <div class="pf-c-card pf-m-flat ofc-gallery-card">
+    <div class="pf-c-card__title">
+      <h3>Operationalize Software</h3>
+    </div>
+    <div class="pf-c-card__body">
+      <p>Making software available is not sufficient unless we are also making available the
+        capability to operate the software in production. Proprietary services based on Open Source are undermining
+        the
+        Open Source model. In order to address this issue the software development and productization process must
+        include building the required operational knowledge and encapsulating it in the software itself.</p>
+    </div>
+  </div>
+
+  <div class="pf-c-card pf-m-flat ofc-gallery-card">
+    <div class="pf-c-card__title">
+      <h3>Establish a feedback loop</h3>
+    </div>
+    <div class="pf-c-card__body">
+      <p>Developers bring their projects to a production cloud during development where they can
+        interact with a cloud provider's operators and gain valuable feedback on the operational considerations of
+        their project.
+        They gain first hand knowledge of the operations and take that knowledge back to factor into their ongoing
+        development processes.</p>
+    </div>
+  </div>
+
+  <div class="pf-c-card pf-m-flat ofc-gallery-card">
+    <div class="pf-c-card__title">
+      <h3>Evaluate functionality and operability</h3>
+    </div>
+    <div class="pf-c-card__body">
+      <p>Using real world workloads at scale, developers can evaluate quality, performance and
+        scale, using open source software in an open source production cloud environment, catching issues, ensuring
+        scale and improving operations.</p>
+    </div>
+  </div>
+
+</div>

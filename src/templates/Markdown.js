@@ -14,7 +14,7 @@ export default function MarkdownTemplate({ data, pageContext, location }) {
   return (
     <Layout location={location} title={siteTitle} srcLink={md.fields.srcLink}>
       <SEO title={md.frontmatter.title} description={md.frontmatter.description} />
-      <PageSection className="doc" variant={PageSectionVariants.light}>
+      <PageSection className="doc ofc-page-section-center ofc-text-center" variant={PageSectionVariants.light} isWidthLimited>
         <TextContent>
           <h1>{md.frontmatter.title}</h1>
           <section dangerouslySetInnerHTML={{ __html: md.html }} />

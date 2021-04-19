@@ -11,3 +11,22 @@
     text-align: left;
   }
 }
+
+.ofc-text-center {
+  text-align: center;
+}
+
+.ofc-page-section-center {
+  --pf-c-page--section--m-limit-width--MaxWidth: 1150px; // with `isWidthLimited` on `<PageSection>` will limit the page content width
+
+  .pf-c-page__main-body {
+    margin: auto; // with `isWidthLimited` on `<PageSection>` will center the section content
+  }
+}
+
+.ofc-gallery-card {
+  flex: 1 1 0;
+  margin: var(--pf-global--spacer--md); // creates a gap around/between cards
+  min-width: 250px;
+  max-width: 350px;
+}
