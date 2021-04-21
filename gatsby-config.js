@@ -327,6 +327,14 @@ let config = {
         patterns: [`**/*.md`],
       }
     },
+   {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `users/sre`,
+        remote: `https://github.com/operate-first/SRE.git`,
+        patterns: [`**/*.md`],
+      }
+    },
   ],
 };
 

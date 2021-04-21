@@ -2,6 +2,8 @@
   href: /users/support/
 - label: Jupyterhub
   links:
+    - label: Troubleshooting
+      href: /users/sre/runbooks/jupyterhub.md
     - label: Create a Jupyterhub image and deploy it on ODH
       href: /users/data-science-workflows/docs/create_and_deploy_jh_image.md
     - label: Elyra AIDevSecOps Tutorial
