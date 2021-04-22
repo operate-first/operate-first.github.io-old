@@ -4,5 +4,5 @@
 
 - config/data-science.yaml
 - config/users.yaml
-- config/operators.yaml
+- config/operations.yaml
 - config/blueprints.yaml

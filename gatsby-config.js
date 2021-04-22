@@ -242,7 +242,7 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `operators/continuous-deployment`,
+        name: `operations/continuous-deployment`,
         remote: `https://github.com/operate-first/continuous-deployment.git`,
         patterns: [`**/*.md`, `**/*.png`],
       }
@@ -250,7 +250,7 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `operators/moc-cnv-sandbox`,
+        name: `operations/moc-cnv-sandbox`,
         remote: `https://github.com/open-infrastructure-labs/moc-cnv-sandbox.git`,
         patterns: [`**/*.md`, `**/*.png`],
       }
@@ -276,6 +276,14 @@ let config = {
       options: {
         name: `blueprints/continuous-delivery`,
         remote: `https://github.com/operate-first/continuous-delivery.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `operations/toolbox`,
+        remote: `https://github.com/operate-first/toolbox`,
         patterns: [`**/*.md`, `**/*.png`],
       }
     },
@@ -322,7 +330,7 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `operators/sre`,
+        name: `operations/sre`,
         remote: `https://github.com/operate-first/SRE.git`,
         patterns: [`**/*.md`],
       }

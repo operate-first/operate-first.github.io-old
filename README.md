@@ -102,7 +102,7 @@ Content will be added to one of the four categories on this website:
 
 * **data-science**: Examples of data science projects for the data science users that want to learn about data science on ODH.
 * **users**: Documentation for all users of ODH. Access details of various deployed ODH components.
-* **operators**: Examples and documentation from operators of ODH.
+* **operations**: Documentation pertaining to Operate First operation procedures.
 * **blueprints**: Generic information that can be applied to other projects as well.
 
 

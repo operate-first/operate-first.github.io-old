@@ -1,0 +1,12 @@
+- label: SRE (Site Reliability Engineering)
+  links:
+    - label: Incident Management Procedure
+      href: /operations/sre/incident-management/incident-management-procedure.md
+    - label: Setup GitHub Receiver
+      href: /operations/sre/incident-management/github-receiver-setup.md
+    - label: Configure Prometheus Alerts
+      href: /operations/sre/incident-management/configure-prometheus-alerts.md
+    - label: Alerts
+      href: /operations/alerts.md
+- label: Toolbox
+  href: /operations/toolbox/README.md
