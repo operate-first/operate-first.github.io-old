@@ -22,7 +22,7 @@ function topNav(location) {
     <NavList>
       { createNavItem('data-science', 'Data Science', '/data-science/', location.pathname) }
       { createNavItem('users', 'Users', '/users/', location.pathname) }
-      { createNavItem('operators', 'Operators', '/operators/', location.pathname) }
+      { createNavItem('operations', 'Operations', '/operations/', location.pathname) }
       { createNavItem('blueprints', 'Blueprints', '/blueprints/', location.pathname) }
     </NavList>
   </Nav>

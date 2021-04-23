@@ -1,5 +1,17 @@
-- label: Mass Open Cloud (MOC) users
+- label: Operate First Support
   href: /users/support/
+- label: Mass Open Cloud (MOC)
+  links:
+    - label: Request Access to Clusters
+      href: /users/moc_cluster_access.md
+    - label: Self Provision Access
+      href: /users/support/docs/onboarding_to_cluster.md
+- label: General FAQ
+  links:
+    - label: Secret management
+      href: /users/support/docs/secret_management.md
+    - label: Provisioning S3 buckets
+      href: /users/support/docs/claiming_object_store.md
 - label: Jupyterhub
   links:
     - label: Troubleshooting
@@ -10,6 +22,16 @@
       href: /users/elyra/README.md
     - label: Using Ray with Jupyter and ODH
       href: '/users/moc-ray-demo/README.md'
+- label: ArgoCD
+  links:
+    - label: Request Access
+      href: /users/argocd_access.md
+    - label: Self Provision Access
+      href: /users/support/docs/onboarding_to_argocd.md
+    - label: Add an Application
+      href: /users/argocd-apps/docs/add_application.md
+    - label: Add permissions to ArgoCD Project
+      href: /users/argocd-apps/docs/add_permissions_to_project.md
 - label: Prometheus
   links:
     - label: How to access Prometheus
@@ -28,6 +50,8 @@
       href: /users/apps/docs/observatorium/thanos/README.md
 - label: Kafka
   links:
+    - label: Troubleshooting
+      href: /users/sre/runbooks/kafka.md
     - label: How to access Kafka
       href: /users/apps/docs/odh/kafka/README.md
     - label: How to add Kafka topics
