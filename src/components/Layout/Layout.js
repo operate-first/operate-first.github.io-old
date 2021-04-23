@@ -21,15 +21,17 @@ export const Layout = ({ location, title, srcLink, children }) => {
       className="layout"
     >
       {children}
-      <PageSection variant={PageSectionVariants.dark}>
+      <PageSection className="ofc-text-center" variant={PageSectionVariants.dark}>
         <TextContent>
           <Button variant="primary" isLarge component="a" href={srcLink} target="_contribute">
             Contribute to this page
           </Button>
         </TextContent>
       </PageSection>
+      <PageSection sticky="bottom" padding={{ default: 'noPadding' }}>
+        <Footer/>
+      </PageSection>
     </Page>
-    <Footer/>
     </React.Fragment>
   );
 };
