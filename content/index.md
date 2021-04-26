@@ -1,7 +1,7 @@
 ---
 title: Operate software in a production grade environment
 description: "Operate First for ODH"
-extraClasses: ofc-text-center
+extraClasses: ofc-text-center ofc-page-section-center 
 ---
 ## What is Operate First?
 
