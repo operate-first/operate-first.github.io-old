@@ -343,6 +343,14 @@ let config = {
         patterns: [`**/*.md`],
       }
     },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `data-science/stateful-sessions-for-intelligent-apps`,
+        remote: `https://github.com/Gkrumbach07/audio-decoder-demo.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
   ],
 };
 
