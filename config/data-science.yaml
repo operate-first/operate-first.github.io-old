@@ -36,6 +36,10 @@
       href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_indepth_EDA.ipynb
     - label: Flaky Test Detection in TestGrid
       href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/background/testgrid_flakiness_detection.ipynb
+    - label: Telemetry EDA
+      href: /data-sources/Telemetry/telemetry_EDA.ipynb
+    - label: Bugzilla EDA
+      href: /data-sources/Bugzilla/bugzilla_EDA.ipynb
 - label: Cloud Price Analysis
   links:
     - label: Cloud Price Analysis Overview
