@@ -10,6 +10,8 @@
       href: /data-science/ceph-drive-failure/docs/blog/hard-drive-failure-prediction-blog.md
     - label: Data Driven Diagnosis Discovery
       href: /data-science/openshift-anomaly-detection/docs/blog/diagnosis-discovery-blog.md
+    - label: Stateful Sessions for Intelligent Apps
+      href: /data-science/stateful-sessions-for-intelligent-apps/docs/blog.md
 - label: Data Science Workflow
   links:
     - label: Data Science Workflow Overview
