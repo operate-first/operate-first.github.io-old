@@ -63,6 +63,14 @@ export const Footer = () => (
       >
         Creator of Operate-First Logo
       </Text>
+        <Text
+        component={TextVariants.a}
+        href="//www.openstack.org/legal/community-code-of-conduct/"
+        target="top"
+        aria-label="Code of Conduct"
+      >
+        Code of Conduct
+      </Text>
     </GridItem>
   </Grid>
 </footer>
