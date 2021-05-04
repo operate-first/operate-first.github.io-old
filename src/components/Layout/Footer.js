@@ -69,7 +69,7 @@ export const Footer = () => (
         target="top"
         aria-label="Code of Conduct"
       >
-        Creator of Operate-First Logo
+        Code of Conduct
       </Text>
     </GridItem>
   </Grid>
