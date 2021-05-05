@@ -2,6 +2,8 @@
   href: /users/support/
 - label: Mass Open Cloud (MOC)
   links:
+    - label: Introduction
+      href: /users/support/docs/intro.md
     - label: Request Access to Clusters
       href: /users/moc_cluster_access.md
     - label: Self Provision Access
