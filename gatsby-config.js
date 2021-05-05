@@ -326,7 +326,7 @@ let config = {
         remote: `https://github.com/aicoe-aiops/pet-image-detection.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       }
-    },      
+    },
     {
       resolve: `gatsby-source-git`,
       options: {
