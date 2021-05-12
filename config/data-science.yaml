@@ -22,26 +22,14 @@
       href: /data-science/data-science-workflows/docs/guidelines-for-reviewing-datascience-code.md
 - label: AI for Continuous Integration
   links:
-    - label: AI for Continuous Integration Overview
+    - label: Overview
       href: /data-science/ocp-ci-analysis/
-    - label: AI/ML for CI/CD Landscape
-      href: /data-science/ocp-ci-analysis/docs/aiml-cicd-market-research.md
-    - label : KPI Metrics
-      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/metrics/README.md
-    - label : Automated Notebook Pipeline
-      href: /data-science/ocp-ci-analysis/docs/automating-using-elyra.md
-    - label: Failure type classification with the TestGrid
-      href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/
-    - label: Initial TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_EDA.ipynb
-    - label: Indepth TestGrid EDA
-      href: /data-science/ocp-ci-analysis/notebooks/data-sources/TestGrid/testgrid_indepth_EDA.ipynb
-    - label: Flaky Test Detection in TestGrid
-      href: /data-science/ocp-ci-analysis/notebooks/failure-type-classification/background/testgrid_flakiness_detection.ipynb
-    - label: Telemetry EDA
-      href: /data-science/ocp-ci-analysis/notebooks/data-sources/Telemetry/telemetry_EDA.ipynb
-    - label: Bugzilla EDA
-      href: /data-science/ocp-ci-analysis/notebooks/data-sources/Bugzilla/bugzilla_EDA.ipynb
+    - label: Get Started
+      href: /data-science/ocp-ci-analysis/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/ocp-ci-analysis/docs/how-to-contribute.md
+    - label: Content
+      href: /data-science/ocp-ci-analysis/docs/content.md
 - label: Cloud Price Analysis
   links:
     - label: Cloud Price Analysis Overview
