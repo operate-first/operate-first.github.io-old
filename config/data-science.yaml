@@ -48,6 +48,10 @@
       href: /data-science/time-series/notebooks/ts-1-fetching-metrics.ipynb
     - label: Manipulating and visualizing metrics data
       href: /data-science/time-series/notebooks/ts-2-visualization.ipynb
+    - label: Concepts and modeling 
+      href: /data-science/time-series/notebooks/ts-3-concepts.ipynb
+    - label: Forecasting
+      href: /data-science/time-series/notebooks/ts-4-forecasting.ipynb
 - label: Mailing List Analysis
   links:
     - label: Mailing List Analysis Overview
