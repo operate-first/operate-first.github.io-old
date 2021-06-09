@@ -17,7 +17,7 @@ complexity of software stacks, the challenge is now operationalizing software.
 
 > <p>"The ability to have hands on the MOC environment while installing two open source project releases was of real value. Our teams were able to resolve critical interdependencies that the test suites had not found. I could not imagine trying to work with a customer to debug this problem."</p> <small><cite>- An operate first member</cite></small>
 
-"Operate First" is inspired by Red Hat's ["Upstream First" philosophy](https://www.redhat.com/en/blog/what-open-source-upstream), which emphasizes **working in the open**, even for Red Hat products. Operate First tries to extend "working in the open" to a part of the codebase that teams typically keep closed, even when deploying open source projects: their operations code.
+Operate First is inspired by Red Hat's ["Upstream First" philosophy](https://www.redhat.com/en/blog/what-open-source-upstream), which emphasizes **working in the open**, even for Red Hat products. Operate First tries to extend "working in the open" to a part of the codebase that teams typically keep closed, even when deploying open source projects: their operations code.
 
 ## Key Personas
 
