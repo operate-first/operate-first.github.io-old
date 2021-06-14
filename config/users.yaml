@@ -12,6 +12,8 @@
       href: /users/support/docs/secret_management.md
     - label: Provisioning S3 buckets
       href: /users/support/docs/claiming_object_store.md
+    - label: Issuing certificates
+      href: /users/apps/docs/issuing_certificates.md
 - label: Jupyterhub
   links:
     - label: Troubleshooting
