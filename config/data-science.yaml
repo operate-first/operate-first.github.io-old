@@ -18,7 +18,7 @@
       href: /data-science/data-science-workflows/
     - label: Project Template
       href: /data-science/data-science-workflows/docs/project-document-template.md
-    - label: Guidelines for Reviewing Data Science Code
+    - label: 10 Principles for Reviewing Data Science Code
       href: /data-science/data-science-workflows/docs/guidelines-for-reviewing-datascience-code.md
 - label: AI for Continuous Integration
   links:
