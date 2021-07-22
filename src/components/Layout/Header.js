@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import { Brand, PageHeader, PageHeaderTools, PageHeaderToolsItem, Nav, NavList, NavItem, Button } from "@patternfly/react-core";
+import { Brand, PageHeader, PageHeaderTools, PageHeaderToolsItem, Nav, NavList, NavItem, Button, } from "@patternfly/react-core";
 import logo from "./logo.png";
 import GithubIcon from '@patternfly/react-icons/dist/esm/icons/github-icon';
 import SlackIcon from '@patternfly/react-icons/dist/esm/icons/slack-icon';
 import YoutubeIcon from '@patternfly/react-icons/dist/esm/icons/youtube-icon';
+import Launcher from "./Launcher";
 
 function createNavItem(id, label, href, pathname) {
   let isActive = pathname.startsWith(href);
@@ -64,6 +65,9 @@ const HeaderTools = () => {
 
   return (
     <PageHeaderTools>
+      <PageHeaderToolsItem>
+        <Launcher />
+      </PageHeaderToolsItem>
       { headerTools.map(t => (
         <PageHeaderToolsItem key={ t.href }>
           <Button

@@ -12,7 +12,31 @@ let config = {
     srcLinkDefault: `https://github.com/operate-first/operate-first.github.io`,
     github: 'https://github.com/operate-first',
     youtube: 'https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg',
-    slack: 'https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww'
+    slack: 'https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww',
+    clusters: [
+      {
+        name: "MOC",
+        clusters: [
+          {
+            name: "Zero",
+            url: "http://console-openshift-console.apps.zero.massopen.cloud/"
+          },
+          {
+            name: "Infra",
+            url: "http://console-openshift-console.apps.moc-infra.massopen.cloud/"
+          },
+        ]
+      },
+      {
+        name: "EMEA",
+        clusters: [
+          {
+            name: "Rick",
+            url: "https://console-openshift-console.apps.rick.emea.operate-first.cloud/"
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     {
