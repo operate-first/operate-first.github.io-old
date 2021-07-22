@@ -1,0 +1,1 @@
+{"data":{"site":{"siteMetadata":{"clusters":[{"name":"MOC","clusters":[{"name":"Zero","url":"http://console-openshift-console.apps.zero.massopen.cloud/"},{"name":"Infra","url":"http://console-openshift-console.apps.moc-infra.massopen.cloud/"}]},{"name":"EMEA","clusters":[{"name":"Rick","url":"https://console-openshift-console.apps.rick.emea.operate-first.cloud/"}]}]}}}}
