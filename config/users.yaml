@@ -72,3 +72,7 @@
       href: /users/apps/docs/kubeflow/kubeflow-dashboard/README.md
     - label: How to access Kubeflow Pipelines
       href: /users/apps/docs/kubeflow/kubeflow-pipelines/README.md
+- label: Trino and Superset
+  links:
+    - label: How to interact with Trino and Superset
+      href: /users/support/docs/trino_superset_user_guide.md
