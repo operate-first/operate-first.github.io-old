@@ -88,6 +88,7 @@ let config = {
             options: {
               maxWidth: 590,
               disableBgImageOnAlpha: true,
+              backgroundColor: 'transparent',
             },
           },
           {

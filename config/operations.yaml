@@ -1,5 +1,7 @@
 - label: SRE (Site Reliability Engineering)
   links:
+    - label: Overview
+      href: /operations/sre/README.md
     - label: Incident Management Procedure
       href: /operations/sre/incident-management/incident-management-procedure.md
     - label: Setup GitHub Receiver
