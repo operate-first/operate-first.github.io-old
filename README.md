@@ -131,6 +131,15 @@ Following is an example of 2 level hierarchy from a repo, for cases where you ha
 
 ## Local Development
 
+## Pre-Requisites
+
+To build the site locally, you need to install [Gatsby](https://www.gatsbyjs.com/) on your machine.
+
+* Install [Node.js](https://www.gatsbyjs.com/docs/tutorial/part-0/#nodejs)
+* Install [Gatsby-CLI](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
+
+## Build Site Locally
+
 You can run the app locally to preview your changes.
 In terminal:
 
