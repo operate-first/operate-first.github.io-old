@@ -258,6 +258,14 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
+        name: `users/pulp`,
+        remote: `https://github.com/thoth-station/pulp-operate-first-web.git`,
+        patterns: [`**/*.md`, `**/*.png`],
+      }
+    },
+    {
+      resolve: `gatsby-source-git`,
+      options: {
         name: `users/support`,
         remote: `https://github.com/operate-first/support.git`,
         patterns: [`**/*.md`, `**/*.png`],

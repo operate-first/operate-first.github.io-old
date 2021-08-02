@@ -26,6 +26,10 @@
       href: /users/elyra/README.md
     - label: Using Ray with Jupyter and ODH
       href: '/users/moc-ray-demo/README.md'
+- label: Pulp
+  links:
+    - label: Using Pulp to host or consume Python packages
+      href: /users/pulp/usage.md
 - label: ArgoCD
   links:
     - label: Request Access
