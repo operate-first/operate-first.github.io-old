@@ -1,25 +1,13 @@
-- label: Data Science Projects
-  links:
-    - label: Projects Overview
-      href: /data-science/
-    - label: Categorical Encoding
-      href: /data-science/categorical-encoding/docs/blog/blog.md
-    - label: Configuration File Analysis
-      href: /data-science/configuration-files-analysis/docs/blog/configuration-file-analysis-blog.md
-    - label: Hard Drive Failure Prediction
-      href: /data-science/ceph-drive-failure/docs/blog/hard-drive-failure-prediction-blog.md
-    - label: Data Driven Diagnosis Discovery
-      href: /data-science/openshift-anomaly-detection/docs/blog/diagnosis-discovery-blog.md
-    - label: Stateful Sessions for Intelligent Apps
-      href: /data-science/stateful-sessions-for-intelligent-apps/docs/blog.md
 - label: Data Science Workflow
   links:
-    - label: Data Science Workflow Overview
+    - label: Overview
       href: /data-science/data-science-workflows/
-    - label: Project Template
-      href: /data-science/data-science-workflows/docs/project-document-template.md
-    - label: 10 Principles for Reviewing Data Science Code
-      href: /data-science/data-science-workflows/docs/guidelines-for-reviewing-datascience-code.md
+    - label: Get Started
+      href: /data-science/data-science-workflows/docs/getting-started.md
+    - label: How to Contribute
+      href: /data-science/data-science-workflows/docs/how-to-contribute.md
+    - label: Data Science Projects
+      href: /data-science/
 - label: AI for Continuous Integration
   links:
     - label: Overview
@@ -30,39 +18,57 @@
       href: /data-science/ocp-ci-analysis/docs/how-to-contribute.md
     - label: Content
       href: /data-science/ocp-ci-analysis/docs/content.md
+- label: Categorical Encoding
+  links:
+    - label: Overview
+      href: /data-science/categorical-encoding/docs/overview.md
+    - label: Get Started
+      href: /data-science/categorical-encoding/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/categorical-encoding/docs/contribute.md
+    - label: Content
+      href: /data-science/categorical-encoding/docs/content.md
 - label: Cloud Price Analysis
   links:
-    - label: Cloud Price Analysis Overview
+    - label: Overview
       href: /data-science/cloud-price-analysis/
-    - label: Forecasting Overview
-      href: /data-science/cloud-price-analysis/docs/Forecasting.md
-    - label: Initial EDA for AWS data
-      href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-EDA.ipynb
-    - label: In-depth EDA for AWS data
-      href: /data-science/cloud-price-analysis/notebooks/experimental/cloud-price-analysis-indepth-EDA.ipynb
-- label: Time series analysis for monitoring
+    - label: Get Started
+      href: /data-science/cloud-price-analysis/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/cloud-price-analysis/docs/contribute.md
+    - label: Content
+      href: /data-science/cloud-price-analysis/docs/content.md
+- label: Hard Drive Failure Prediction
   links:
-    - label: Time series analysis for monitoring overview
-      href: /data-science/time-series/
-    - label: Fetching time series metrics data
-      href: /data-science/time-series/notebooks/ts-1-fetching-metrics.ipynb
-    - label: Manipulating and visualizing metrics data
-      href: /data-science/time-series/notebooks/ts-2-visualization.ipynb
-    - label: Concepts and modeling 
-      href: /data-science/time-series/notebooks/ts-3-concepts.ipynb
-    - label: Forecasting
-      href: /data-science/time-series/notebooks/ts-4-forecasting.ipynb
+    - label: Overview
+      href: /data-science/ceph-drive-failure/
+    - label: Get Started
+      href: /data-science/ceph-drive-failure/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/ceph-drive-failure/docs/how-to-contribute.md
+    - label: Content
+      href: /data-science/ceph-drive-failure/docs/content.md
 - label: Mailing List Analysis
   links:
-    - label: Mailing List Analysis Overview
+    - label: Overview
       href: /data-science/mailing-list-analysis/
-    - label: Keyword Analysis
-      href: /data-science/mailing-list-analysis/notebooks/02_analyses/contributor_analysis.ipynb
-    - label: Contributor Analysis
-      href: /data-science/mailing-list-analysis/notebooks/02_analyses/keyword_analysis.ipynb
+    - label: Get Started
+      href: /data-science/mailing-list-analysis/docs/getting-started.md
+    - label: How to Contribute
+      href: /data-science/mailing-list-analysis/docs/contribute.md
+    - label: Content
+      href: /data-science/mailing-list-analysis/docs/content.md
 - label: Pet Image Detection
   links:
-    - label: Pet Image Detection Overview
+    - label: Overview
       href: /data-science/pet-image-detection/
-    - label: Pet Image Detection
-      href: /data-science/pet-image-detection/notebooks/image-explainability.ipynb
+    - label: Get Started
+      href: /data-science/pet-image-detection/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/pet-image-detection/docs/how-to-contribute.md
+    - label: Content
+      href: /data-science/pet-image-detection/docs/content.md
+- label: Time series analysis for monitoring
+  links:
+    - label: Overview
+      href: /data-science/time-series/

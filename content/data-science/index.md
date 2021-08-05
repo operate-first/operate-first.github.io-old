@@ -1,8 +1,8 @@
 ---
 title: Projects Overview
-description: This document contains a list of projects within the AI Ops Team at Red Hat
+description: This document contains a list of data science projects maintained as a part of Operate First at Red Hat
 ---
-_This document contains a list of projects within the AI Ops Team at Red Hat._
+_This document contains a list of data science projects maintained as a part of Operate First at Red Hat._
 
 1. **AI for Continuous Integration** : A container orchestration platform like Kubernetes or OpenShift, produces a lot of build and test related data that can be difficult to parse when you are trying to figure out why a build is failing or why a certain set of tests aren’t passing. Through this project, our aim is to build an open AIOps community involved in developing, integrating and operating AI tools for CI by leveraging the open data that has been made available by OpenShift, Kubernetes and others.  The goal here is to assist developers in decreasing their time to resolution for issues that are signaled by anything present in the CI data. We are working towards this by making the initial tools and relevant data as accessible as possible to foster collaboration and contributions between data scientists and DevOps engineers.
 
@@ -49,20 +49,30 @@ _This document contains a list of projects within the AI Ops Team at Red Hat._
     - Diagnosis Discovery: In this approach, we try to identify deployments that exhibit similar “symptoms” (issues), and determine exactly what makes these deployments similar to one another. Engineers can then use this information to determine the “diagnosis” of the issues, and apply the same or similar fix to all the deployments.
 
     [Github](https://github.com/aicoe-aiops/openshift-anomaly-detection)
+    [Blog](https://www.operate-first.cloud/data-science/openshift-anomaly-detection/docs/blog/diagnosis-discovery-blog.md)
 
-10. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
+10. **Pet Image Detection** : After a data scientist has created and trained a model, the next step is putting the model into production. Model serving deploys machine learning models as microservices that can interact easily with other pieces of a larger intelligent application. This project highlights a simple model serving demo which allows users to send data to the model service and receive predictions and implements an explainability algorithm to understand the model predictions better.
+
+    [Github](https://github.com/aicoe-aiops/pet-image-detection)
+
+11. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
 
     [Github](https://github.com/AICoE/prometheus-api-client-python) 
 
-11. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
+12. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
 
     [Github](https://github.com/aicoe-aiops/sentiment-analysis-public)
 
-12. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
+13. **Stateful Sessions for Intelligent Apps** : Live audio transcription and other similar applications require stateful processing to support both multi-user sessions and dynamic scale-out. We can persist audio state with a Kafka kappa architecture, but that state must also be preserved across the OpenShift cluster boundary to user web clients. Fortunately, OpenShift's sticky sessions allow stateful sessions to be implemented without complicated custom configurations.The goal of this project is to convert your single user constrained application to support stateful sessions with any number of users. Using the power of OpenShift and Open Data Hub's data monitoring and streaming tools, a stateful architecture can be developed and managed easily.
+
+    [Github](https://github.com/Gkrumbach07/audio-decoder-demo)
+    [Blog](https://www.operate-first.cloud/data-science/stateful-sessions-for-intelligent-apps/docs/blog.md)
+
+14. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
 
     [Github](https://github.com/aicoe-aiops/sync-pipelines)
 
-13. **Time Series Analysis** : Data science with time series metric data aims to reduce the search space of root cause analysis by providing concise visualizations and potential hotspots for specific real time problems. For simple monolithic architectures, monitoring using metrics is a viable solution as the system is less complex. However, with cloud applications, it is inefficient to manually monitor a large number of generated metrics. We need automated ways of finding root causes and incidents. In this series of notebooks, we are going to discuss how we can manipulate, visualize, and forecast the time series metrics data to achieve better monitoring systems.
+15. **Time Series Analysis** : Data science with time series metric data aims to reduce the search space of root cause analysis by providing concise visualizations and potential hotspots for specific real time problems. For simple monolithic architectures, monitoring using metrics is a viable solution as the system is less complex. However, with cloud applications, it is inefficient to manually monitor a large number of generated metrics. We need automated ways of finding root causes and incidents. In this series of notebooks, we are going to discuss how we can manipulate, visualize, and forecast the time series metrics data to achieve better monitoring systems.
 
     [Github](https://github.com/aicoe-aiops/time-series)    
     [Blog](https://www.operate-first.cloud/data-science/time-series/)
