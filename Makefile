@@ -16,7 +16,7 @@ endif
 
 .PHONY: dev
 dev:
-	./scripts/dev.sh
+	XDG_CONFIG_HOME=/tmp ./scripts/dev.sh
 
 ##################################
 # DEV-CLEAN - cleans local development environment
