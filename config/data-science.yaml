@@ -72,3 +72,9 @@
   links:
     - label: Overview
       href: /data-science/time-series/
+- label: Data Skipping using Xskipper
+  links:
+    - label: Overview
+      href: /data-science/data-skipping/site/docs/concepts/data-skipping.md
+    - label: Get Started
+      href: /data-science/data-skipping/notebooks/python/Xskipper - Python Sample.ipynb

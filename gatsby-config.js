@@ -352,6 +352,14 @@ let config = {
       }
     },
     {
+       resolve: `gatsby-source-git`,
+       options: {
+         name: `data-science/data-skipping`,
+         remote: `https://github.com/xskipper-io/xskipper.git`,
+         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
+       }
+     },
+    {
       resolve: `gatsby-source-git`,
       options: {
         name: `operations/sre`,
