@@ -75,6 +75,6 @@
 - label: Data Skipping using Xskipper
   links:
     - label: Overview
-      href: /data-science/data-skipping/site/docs/concepts/data-skipping.md
+      href: /data-science/data-skipping/site/docs/getting-started/operatefirst-getting-started.md
     - label: Get Started
       href: /data-science/data-skipping/notebooks/python/Xskipper - Python Sample.ipynb
