@@ -72,6 +72,22 @@
   links:
     - label: Overview
       href: /data-science/time-series/
+    - label: Get Started
+      href: /data-science/time-series/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/time-series/docs/contribute.md
+    - label: Content
+      href: /data-science/time-series/docs/content.md
+- label: Configuration File Analysis
+  links:
+    - label: Overview
+      href: /data-science/configuration-files-analysis/docs/overview.md
+    - label: Get Started
+      href: /data-science/configuration-files-analysis/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/configuration-files-analysis/docs/contribute.md
+    - label: Content
+      href: /data-science/configuration-files-analysis/docs/content.md
 - label: Data Skipping using Xskipper
   links:
     - label: Overview
