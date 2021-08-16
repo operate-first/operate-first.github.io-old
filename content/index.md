@@ -1,95 +1,98 @@
 ---
-title: Operate software in a production grade environment
 description: "Operate First for ODH"
 extraClasses: ofc-text-center ofc-page-section-center 
 ---
-## What is Operate First?
 
-Operate First is a concept where open source developers bring their projects to a production
-cloud during development where they can interact with a cloud provider's operators and gain valuable
-feedback on the operational considerations of their project. The motivation for the Operate First
-initiative is the shift of focus from software availability to operating services. Open Source removed
-the access to software as a limiting factor for businesses and individuals. However, with software
-proliferating into every aspect of the business - and our world in general - resulting in ever growing
-complexity of software stacks, the challenge is now operationalizing software.
+<div class="above-fold-layout">
 
-## Why Operate First?
+  <br>
 
-> <p>"The ability to have hands on the MOC environment while installing two open source project releases was of real value. Our teams were able to resolve critical interdependencies that the test suites had not found. I could not imagine trying to work with a customer to debug this problem."</p> <small><cite>- An operate first member</cite></small>
+  ![Logo](logo.png "logo")
 
-Operate First is inspired by Red Hat's ["Upstream First" philosophy](https://www.redhat.com/en/blog/what-open-source-upstream), which emphasizes **working in the open**, even for Red Hat products. Operate First tries to extend "working in the open" to a part of the codebase that teams typically keep closed, even when deploying open source projects: their operations code.
+  <br>
 
-## Key Personas
+  ### a concept to incorporate operational experience into software projects
+  
+  <br>
+  <br>
+
+  Ready to get started?
+
+  <br>
+
+  <div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
+    <div class= "ofc-gallery-card">
+      <a href="/users/support/docs/intro.md"> <button style="width: 220px; height: 75px; color: black;"><h3>I am an open source developer</h3></button></a>
+    </div>
+    <div class= "ofc-gallery-card">
+      <a href="/operations/sre/"> <button style="width: 220px; height: 75px;"><h3>I want to learn SRE practices</h3></button></a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+</div>
+
+<br>
+
+## The Motivation
+
+<br>
+
+<div class="narrow-text-block">
+
+While open source has made software widely available, it has also exposed another barrier to entry: the ability to operate software in production.
+Proprietary services for operations undermine the open source model, so we must now shift our focus to open sourcing operations.
+
+In doing so, developers and operators collaborate to apply a project’s operational considerations right back into the code.
+The result?
+
+**Better code, better performance, better final product.**
+
+</div>
+
+<br>
+
+## Interested?
+
+<br>
 
 <div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
 
   <div class="pf-c-card pf-m-flat ofc-gallery-card">
     <div class="pf-c-card__body">
-      <img src="https://cdn2.vectorstock.com/i/thumbs/20/76/man-avatar-profile-vector-21372076.jpg" alt="Developer/QE">
-    </div>
-    <div class="pf-c-card__title">
-      <h3>Developer/QE</h3>
+      <i class="pf-icon pf-icon-catalog" style="font-size: 5em;"></i>
     </div>
     <div class="pf-c-card__body">
-      <p>To start streamlining your development workflows, e.g. CI/CD, join the Operate First effort at the OI Labs community.</p>
-      <small><a href="/users/support/docs/intro.md" target="_blank">OpenInfra Labs Community</a></small>
+      <p>Start learning today</p>
+    </div>
+    <div class="pf-c-card__title">
+      <small><h3><a href="/data-science/data-science-workflows/" target="_blank">Data Science Learning Pathway</a></h3></small>
     </div>
   </div>
 
   <div class="pf-c-card pf-m-flat ofc-gallery-card">
     <div class="pf-c-card__body">
-      <img src="https://cdn2.vectorstock.com/i/thumbs/20/76/man-avatar-profile-vector-21372076.jpg" alt="Cloud Operator/SRE &amp; Sys Admin">
-    </div>
-    <div class="pf-c-card__title">
-      <h3>Cloud Operator/SRE &amp; Sys Admin</h3>
+      <i class="pf-icon pf-icon-help" style="font-size: 5em;"></i>
     </div>
     <div class="pf-c-card__body">
-      <p>To improve observability and monitoring capabilities, join the telemetry working group.</p>
-      <small><a href="https://openinfralabs.org/telemetry/" target="_blank">Telemetry Working Group</a></small>
+      <p>Find out about our resources</p>
+    </div>
+    <div class="pf-c-card__title">
+      <small><h3><a href="/users/support/" target="_blank">Operate First Support</a></h3></small>
     </div>
   </div>
 
 </div>
 
-## Benefits of Operate First
+## Get Involved
 
-<div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
+<br>
 
-  <div class="pf-c-card pf-m-flat ofc-gallery-card">
-    <div class="pf-c-card__title">
-      <h3>Operationalize Software</h3>
-    </div>
-    <div class="pf-c-card__body">
-      <p>Making software available is not sufficient unless we are also making available the
-        capability to operate the software in production. Proprietary services based on Open Source are undermining
-        the
-        Open Source model. In order to address this issue the software development and productization process must
-        include building the required operational knowledge and encapsulating it in the software itself.</p>
-    </div>
-  </div>
+<div class="narrow-text-block">
 
-  <div class="pf-c-card pf-m-flat ofc-gallery-card">
-    <div class="pf-c-card__title">
-      <h3>Establish a feedback loop</h3>
-    </div>
-    <div class="pf-c-card__body">
-      <p>Developers bring their projects to a production cloud during development where they can
-        interact with a cloud provider's operators and gain valuable feedback on the operational considerations of
-        their project.
-        They gain first hand knowledge of the operations and take that knowledge back to factor into their ongoing
-        development processes.</p>
-    </div>
-  </div>
-
-  <div class="pf-c-card pf-m-flat ofc-gallery-card">
-    <div class="pf-c-card__title">
-      <h3>Evaluate functionality and operability</h3>
-    </div>
-    <div class="pf-c-card__body">
-      <p>Using real world workloads at scale, developers can evaluate quality, performance and
-        scale, using open source software in an open source production cloud environment, catching issues, ensuring
-        scale and improving operations.</p>
-    </div>
-  </div>
+Find our code on [GitHub](https://github.com/operate-first), meet the community on [slack](https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww), and join our mailing lists for announcements and discussions.
+* [General mailing list](https://listman.redhat.com/mailman/listinfo/operate-first) for Operate First users and contributors (a new mailing list is coming soon!)
+* OpenInfra labs [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs) for those interested in cloud operations more broadly
 
 </div>
