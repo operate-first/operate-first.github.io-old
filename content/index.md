@@ -1,6 +1,6 @@
 ---
 description: "Operate First for ODH"
-extraClasses: ofc-text-center ofc-page-section-center 
+extraClasses: ofc-text-center ofc-page-section-center
 ---
 
 <div class="above-fold-layout">
@@ -12,7 +12,7 @@ extraClasses: ofc-text-center ofc-page-section-center
   <br>
 
   ### a concept to incorporate operational experience into software projects
-  
+
   <br>
   <br>
 

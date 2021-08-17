@@ -1,13 +1,5 @@
-import React from "react";
-import {
-  TextContent,
-  Text,
-  TextVariants,
-  TextList,
-  TextListVariants,
-  TextListItem,
-  TextListItemVariants,
-} from "@patternfly/react-core";
+import React from 'react';
+import { TextContent, Text, TextVariants } from '@patternfly/react-core';
 
 export const Samples = () => (
   <div className="samples">

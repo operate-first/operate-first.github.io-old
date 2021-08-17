@@ -1,7 +1,8 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import "./JupyterNotebook.scss";
+import './JupyterNotebook.scss';
 
 export const JupyterNotebook = ({ path }) => {
   const notebookData = useStaticQuery(
@@ -33,6 +34,10 @@ export const JupyterNotebook = ({ path }) => {
       <div dangerouslySetInnerHTML={{ __html: notebook.html }} />
     </div>
   );
+};
+
+JupyterNotebook.propTypes = {
+  path: PropTypes.string,
 };
 
 export default JupyterNotebook;

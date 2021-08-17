@@ -1,37 +1,58 @@
-import React from "react";
-import { useStaticQuery, Link, graphql } from "gatsby";
-import { Nav, NavExpandable, NavItem, NavList, PageSidebar } from "@patternfly/react-core";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, Link, graphql } from 'gatsby';
+import {
+  Nav,
+  NavExpandable,
+  NavItem as DefaultNavItem,
+  NavList,
+  PageSidebar,
+} from '@patternfly/react-core';
 
-function createNavItem({ id, label, href }, pathname) {
-  // only include navItems that start with the current top level navigation
-  if (pathname.split("/")[1] !== href.split("/")[1]) {
-    return;
+const NavItem = ({ id, label, href, location }) => (
+  <DefaultNavItem key={id} itemId={id} isActive={location.pathname === href}>
+    <Link to={href}>{label}</Link>
+  </DefaultNavItem>
+);
+NavItem.propTypes = {
+  href: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+const NavGroup = (props) => {
+  const { id, label, links, location } = props;
+
+  if (!links) {
+    return <NavItem {...props} location={location} />;
   }
 
-  const isActive = pathname === href;
+  const navItems = links
+    // only include navItems that start with the current top level navigation
+    .filter(({ href }) => location.pathname.split('/')[1] !== href.split('/')[1])
+    .map((node) => <NavItem key={node.id} {...node} location={location} />);
+  const isActive = !!links.find((c) => location.pathname.startsWith(c.href));
 
-  return (
-    <NavItem key={id} itemId={id} isActive={isActive}>
-      <Link to={href}>{label}</Link>
-    </NavItem>
-  );
-}
-
-function createNavGroup({ id, label, links }, pathname) {
-  const navItems = links.map((c) => createNavItem(c, pathname))
-                      .filter((n) => { return n !== undefined });
-
-  if (navItems.length === 0) {
-    return;
+  if (navItems.filter(Boolean).length === 0) {
+    return null;
   }
-  
-  const isActive = !!links.find((c) => pathname.startsWith(c.href));
   return (
     <NavExpandable key={id} title={label} groupId={id} isActive={isActive} isExpanded={isActive}>
-      { navItems }
+      {navItems}
     </NavExpandable>
   );
-}
+};
+NavGroup.propTypes = {
+  links: PropTypes.array,
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }),
+};
 
 export const NavSidebar = ({ isNavOpen, location }) => {
   const navData = useStaticQuery(
@@ -54,24 +75,29 @@ export const NavSidebar = ({ isNavOpen, location }) => {
   ).navData.navItems;
 
   // No Sidebar for mainpage
-  if (location.pathname === "/") {
+  if (location.pathname === '/') {
     return <div />;
   }
 
-  let navItems = [];
-  if (location) {
-    navItems = navData.map((node) => {
-      if (node.links) {
-        return createNavGroup(node, location.pathname);
+  return (
+    <PageSidebar
+      isNavOpen={isNavOpen}
+      nav={
+        <Nav className="nav" theme="dark" aria-label="Nav">
+          <NavList>
+            {location &&
+              navData.map((node) => <NavGroup key={node.id} {...node} location={location} />)}
+          </NavList>
+        </Nav>
       }
-      return createNavItem(node, location.pathname);
-    });
-  }
-
-  const nav = (
-    <Nav className="nav" theme="dark" aria-label="Nav">
-      <NavList>{navItems}</NavList>
-    </Nav>
+      theme="dark"
+    />
   );
-  return <PageSidebar isNavOpen={isNavOpen} nav={nav} theme="dark" />;
+};
+
+NavSidebar.propTypes = {
+  isNavOpen: PropTypes.bool.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string,
+  }),
 };

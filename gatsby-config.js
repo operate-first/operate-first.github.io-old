@@ -1,5 +1,5 @@
-const path = require("path");
-const { contentPlugins } = require("./config-utils");
+const path = require('path');
+const { contentPlugins } = require('./config-utils');
 const pathPrefix = process.env.PATH_PREFIX;
 
 let config = {
@@ -15,28 +15,28 @@ let config = {
     slack: 'https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww',
     clusters: [
       {
-        name: "MOC",
+        name: 'MOC',
         clusters: [
           {
-            name: "Zero",
-            url: "http://console-openshift-console.apps.zero.massopen.cloud/"
+            name: 'Zero',
+            url: 'http://console-openshift-console.apps.zero.massopen.cloud/',
           },
           {
-            name: "Infra",
-            url: "http://console-openshift-console.apps.moc-infra.massopen.cloud/"
+            name: 'Infra',
+            url: 'http://console-openshift-console.apps.moc-infra.massopen.cloud/',
           },
-        ]
+        ],
       },
       {
-        name: "EMEA",
+        name: 'EMEA',
         clusters: [
           {
-            name: "Rick",
-            url: "https://console-openshift-console.apps.rick.emea.operate-first.cloud/"
-          }
-        ]
-      }
-    ]
+            name: 'Rick',
+            url: 'https://console-openshift-console.apps.rick.emea.operate-first.cloud/',
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     {
@@ -68,7 +68,7 @@ let config = {
         // Plugins configs
         plugins: [
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: 'gatsby-remark-embed-video',
             options: {
               width: 500,
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
@@ -101,8 +101,8 @@ let config = {
             resolve: `gatsby-remark-classes`,
             options: {
               classMap: {
-                list: "pf-c-list",
-                table: "pf-c-table",
+                list: 'pf-c-list',
+                table: 'pf-c-table',
               },
             },
           },
@@ -122,7 +122,7 @@ let config = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`],
-        defaultLayouts: { default: path.resolve("./src/components/Layout") },
+        defaultLayouts: { default: path.resolve('./src/components/Layout') },
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -141,8 +141,8 @@ let config = {
             resolve: `gatsby-remark-classes`,
             options: {
               classMap: {
-                list: "pf-c-list",
-                table: "pf-c-table",
+                list: 'pf-c-list',
+                table: 'pf-c-table',
               },
             },
           },
@@ -163,7 +163,7 @@ let config = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-178212082-1",
+        trackingId: 'UA-178212082-1',
         head: true,
       },
     },
@@ -190,7 +190,7 @@ let config = {
         name: `users/data-science-workflows`,
         remote: `https://github.com/aicoe-aiops/data-science-workflows.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -198,7 +198,7 @@ let config = {
         name: `data-science/data-science-workflows`,
         remote: `https://github.com/aicoe-aiops/data-science-workflows.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -206,7 +206,7 @@ let config = {
         name: `data-science/categorical-encoding`,
         remote: `https://github.com/aicoe-aiops/categorical-encoding.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -214,7 +214,7 @@ let config = {
         name: `data-science/configuration-files-analysis`,
         remote: `https://github.com/aicoe-aiops/configuration-files-analysis.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -222,7 +222,7 @@ let config = {
         name: `data-science/ocp-ci-analysis`,
         remote: `https://github.com/aicoe-aiops/ocp-ci-analysis.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -230,7 +230,7 @@ let config = {
         name: `data-science/cloud-price-analysis`,
         remote: `https://github.com/aicoe-aiops/cloud-price-analysis-public.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -238,7 +238,7 @@ let config = {
         name: `data-science/time-series`,
         remote: `https://github.com/aicoe-aiops/time-series.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -246,7 +246,7 @@ let config = {
         name: `users/elyra`,
         remote: `https://github.com/thoth-station/elyra-aidevsecops-tutorial.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -254,7 +254,7 @@ let config = {
         name: `users/moc-ray-demo`,
         remote: `https://github.com/erikerlandson/moc-ray-demo.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -262,7 +262,7 @@ let config = {
         name: `users/pulp`,
         remote: `https://github.com/thoth-station/pulp-operate-first-web.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -270,7 +270,7 @@ let config = {
         name: `users/support`,
         remote: `https://github.com/operate-first/support.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -278,7 +278,7 @@ let config = {
         name: `operations/continuous-deployment`,
         remote: `https://github.com/operate-first/continuous-deployment.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -286,7 +286,7 @@ let config = {
         name: `operations/moc-cnv-sandbox`,
         remote: `https://github.com/open-infrastructure-labs/moc-cnv-sandbox.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -294,7 +294,7 @@ let config = {
         name: `users/argocd-apps`,
         remote: `https://github.com/operate-first/argocd-apps.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -302,7 +302,7 @@ let config = {
         name: `blueprints/blueprint`,
         remote: `https://github.com/operate-first/blueprint.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -310,7 +310,7 @@ let config = {
         name: `blueprints/continuous-delivery`,
         remote: `https://github.com/operate-first/continuous-delivery.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -318,7 +318,7 @@ let config = {
         name: `operations/toolbox`,
         remote: `https://github.com/operate-first/toolbox`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -326,7 +326,7 @@ let config = {
         name: `data-science/ceph-drive-failure`,
         remote: `https://github.com/aicoe-aiops/ceph_drive_failure.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -334,7 +334,7 @@ let config = {
         name: `users/apps`,
         remote: `https://github.com/operate-first/apps.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -342,7 +342,7 @@ let config = {
         name: `data-science/mailing-list-analysis`,
         remote: `https://github.com/aicoe-aiops/mailing-list-analysis-toolkit.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -350,7 +350,7 @@ let config = {
         name: `data-science/openshift-anomaly-detection`,
         remote: `https://github.com/aicoe-aiops/openshift-anomaly-detection.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -358,31 +358,31 @@ let config = {
         name: `data-science/pet-image-detection`,
         remote: `https://github.com/aicoe-aiops/pet-image-detection.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-      }
+      },
     },
     {
-       resolve: `gatsby-source-git`,
-       options: {
-         name: `data-science/data-skipping`,
-         remote: `https://github.com/xskipper-io/xskipper.git`,
-         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
-       }
-     },
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `data-science/data-skipping`,
+        remote: `https://github.com/xskipper-io/xskipper.git`,
+        patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
+      },
+    },
     {
       resolve: `gatsby-source-git`,
       options: {
         name: `operations/sre`,
         remote: `https://github.com/operate-first/SRE.git`,
         patterns: [`**/*.md`],
-      }
+      },
     },
-   {
+    {
       resolve: `gatsby-source-git`,
       options: {
         name: `users/sre`,
         remote: `https://github.com/operate-first/SRE.git`,
         patterns: [`**/*.md`],
-      }
+      },
     },
     {
       resolve: `gatsby-source-git`,
@@ -390,7 +390,7 @@ let config = {
         name: `data-science/stateful-sessions-for-intelligent-apps`,
         remote: `https://github.com/Gkrumbach07/audio-decoder-demo.git`,
         patterns: [`**/*.md`, `**/*.png`],
-      }
+      },
     },
   ],
 };

@@ -3,7 +3,7 @@ title: Operations
 description: "Docs for operations related tasks and services.__"
 ---
 
-In this section, you can find documentation pertaining to operations within the Operate First initiative. 
+In this section, you can find documentation pertaining to operations within the Operate First initiative.
 
 ## GitOps and Operate First
 
@@ -17,7 +17,7 @@ Operate First's mission is to adapt industry best practices around Site Reliabil
 
 Toolbox is a Linux utility that provides a containerized environment in which software can be installed and used. We have created an Operate First toolbox that includes tools such as Kustomize, SOPS, KSOPS, and more that can be utilized for workflows. You can find details for installing our toolbox [here][4].
 
-[1]: https://www.redhat.com/en/topics/devops/what-is-gitops 
+[1]: https://www.redhat.com/en/topics/devops/what-is-gitops
 [2]: https://sre.google/workbook/table-of-contents/
 [3]: https://www.operate-first.cloud/operations/sre/incident-management/incident-management-procedure.md
 [4]: https://www.operate-first.cloud/operations/toolbox/README.md

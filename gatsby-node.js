@@ -1,5 +1,5 @@
 const fs = require(`fs`);
-const { createFilePath } = require("gatsby-source-filesystem");
+const { createFilePath } = require('gatsby-source-filesystem');
 const yaml = require(`js-yaml`);
 const path = require(`path`);
 const { nanoid } = require(`nanoid`);
@@ -8,18 +8,22 @@ const contentSources = yaml.safeLoad(fs.readFileSync(`./config/content-sources.y
 const tocSources = yaml.safeLoad(fs.readFileSync(`./config/toc-sources.yaml`, `utf-8`));
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField, getParent } = actions
-  let slug = "";
+  const { createNodeField } = actions;
+  let slug = '';
 
-  if (node.internal.type === "Mdx" || node.internal.type === "JupyterNotebook" || node.internal.type === "MarkdownRemark") {
+  if (
+    node.internal.type === 'Mdx' ||
+    node.internal.type === 'JupyterNotebook' ||
+    node.internal.type === 'MarkdownRemark'
+  ) {
     const fileNode = getNode(node.parent);
     const gitRemoteNode = getNode(fileNode.gitRemote___NODE);
     const relativeFilePath = createFilePath({
       node,
       getNode,
-      basePath: "",
-      trailingSlash: false
-    })
+      basePath: '',
+      trailingSlash: false,
+    });
 
     if (gitRemoteNode) {
       slug = gitRemoteNode.sourceInstanceName + relativeFilePath;
@@ -27,30 +31,28 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       slug = relativeFilePath;
     }
     // add extension, e.g. `.md` back to the URL, except for index
-    if (fileNode.name != "index") {
-      slug = slug + "." + fileNode.extension;
+    if (fileNode.name != 'index') {
+      slug = slug + '.' + fileNode.extension;
     }
 
     createNodeField({
       node,
-      name: "slug",
-      value: slug
-    })
+      name: 'slug',
+      value: slug,
+    });
 
     // Add the URL where the content is pulled from
-    const srcBase = gitRemoteNode ? (
-      `${gitRemoteNode.webLink}/blob/master/`
-    ) : (
-      `${getNode('Site').siteMetadata.srcLinkDefault}/blob/master/content/`
-    );
+    const srcBase = gitRemoteNode
+      ? `${gitRemoteNode.webLink}/blob/master/`
+      : `${getNode('Site').siteMetadata.srcLinkDefault}/blob/master/content/`;
 
     createNodeField({
       node,
-      name: "srcLink",
+      name: 'srcLink',
       value: srcBase + fileNode.relativePath,
-    })
+    });
   }
-}
+};
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -106,10 +108,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild(`ERROR: Loading "createPages" query`);
   }
 
-  let page_path = "";
+  let page_path = '';
 
   const jupyterTemplate = path.resolve(`./src/templates/JupyterNotebook.js`);
-  result.data.allJupyterNotebook.edges.forEach(({ node }, index) => {
+  result.data.allJupyterNotebook.edges.forEach(({ node }) => {
     if (node.fields && node.fields.slug) {
       createPage({
         path: node.fields.slug,
@@ -123,7 +125,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const md = result.data.allMarkdownRemark.edges;
   let docTemplate = path.resolve(`./src/templates/Markdown.js`);
-  md.forEach(({ node }, index) => {
+  md.forEach(({ node }) => {
     if (node.fields && node.fields.slug) {
       page_path = node.fields.slug;
     } else {
@@ -139,7 +141,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // create a 2nd URL for README.md files, which mirrors GitHub behaviour
     if (page_path.toLowerCase().endsWith('readme.md')) {
       createPage({
-        path: page_path.slice(0,-9),
+        path: page_path.slice(0, -9),
         component: docTemplate,
         context: {
           id: node.id,
@@ -150,7 +152,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const mdx = result.data.allMdx.edges;
   docTemplate = path.resolve(`./src/templates/Doc.js`);
-  mdx.forEach(({ node }, index) => {
+  mdx.forEach(({ node }) => {
     if (node.slug) {
       if (node.fields && node.fields.slug) {
         page_path = node.fields.slug;
@@ -166,7 +168,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     } else {
       createPage({
-        path: "/",
+        path: '/',
         component: docTemplate,
         context: {
           id: node.id,
@@ -196,10 +198,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest, reporter })
           if (!link.id) {
             link.id = nanoid();
           }
-        })
+        });
       }
       navItems.push(navItem);
-    }); 
+    });
 
     actions.createNode({
       id: createNodeId(`NavData`),
@@ -215,15 +217,15 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest, reporter })
 function createPagePath(node) {
   const pathMatch = contentSources.find((cs) => {
     let dirPath = cs.dir;
-    if (dirPath[0] !== "/") {
+    if (dirPath[0] !== '/') {
       dirPath = `/${dirPath}`;
     }
-    if (dirPath[dirPath.length - 1] !== "/") {
+    if (dirPath[dirPath.length - 1] !== '/') {
       dirPath = `${dirPath}/`;
     }
     return node.fileAbsolutePath.includes(dirPath);
   });
-  let prefix = "";
+  let prefix = '';
   if (pathMatch && pathMatch.urlPrefix) {
     prefix = pathMatch.urlPrefix;
   }
