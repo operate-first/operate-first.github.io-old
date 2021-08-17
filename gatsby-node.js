@@ -232,3 +232,14 @@ function createPagePath(node) {
   let slug = node.slug;
   return path.join(prefix, slug);
 }
+
+exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
+  createTypes(`
+    type Frontmatter @infer {
+      banner: String @md
+    }
+    type MarkdownRemark implements Node @infer {
+      frontmatter: Frontmatter!
+    }
+  `);
+};

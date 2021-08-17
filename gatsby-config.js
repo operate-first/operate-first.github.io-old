@@ -118,6 +118,7 @@ let config = {
         ],
       },
     },
+    'gatsby-transformer-remark-frontmatter',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

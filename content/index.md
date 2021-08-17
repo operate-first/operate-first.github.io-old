@@ -1,39 +1,22 @@
 ---
 description: "Operate First for ODH"
 extraClasses: ofc-text-center ofc-page-section-center
----
-
-<div class="above-fold-layout">
-
-  <br>
-
+banner: |
   ![Logo](logo.png "logo")
-
-  <br>
 
   ### a concept to incorporate operational experience into software projects
 
-  <br>
-  <br>
+  #### Ready to get started?
 
-  Ready to get started?
-
-  <br>
-
-  <div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
-    <div class= "ofc-gallery-card">
-      <a href="/users/support/docs/intro.md"> <button style="width: 220px; height: 75px; color: black;"><h3>I am an open source developer</h3></button></a>
-    </div>
-    <div class= "ofc-gallery-card">
-      <a href="/operations/sre/"> <button style="width: 220px; height: 75px;"><h3>I want to learn SRE practices</h3></button></a>
-    </div>
+  <div class="pf-l-flex pf-m-justify-content-center pf-m-space-items-xl pf-m-wrap">
+    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/users/support/docs/intro.md">
+      <h3>I am an open source developer</h3>
+    </a>
+    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/operations/sre/">
+      <h3>I want to learn SRE practices</h3>
+    </a>
   </div>
-
-  <br>
-  <br>
-</div>
-
-<br>
+---
 
 ## The Motivation
 
@@ -57,33 +40,27 @@ The result?
 
 <br>
 
-<div class="pf-l-flex pf-m-align-items-stretch pf-m-justify-content-center pf-m-wrap">
-
-  <div class="pf-c-card pf-m-flat ofc-gallery-card">
-    <div class="pf-c-card__body">
-      <i class="pf-icon pf-icon-catalog" style="font-size: 5em;"></i>
+<div class="pf-l-bullsey pf-l-flex">
+  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/data-science/data-science-workflows/" target="_blank" tabindex="0">
+    <div class="pf-c-tile__header pf-m-stacked">
+      <div class="pf-c-tile__icon">
+        <i class="pf-icon pf-icon-catalog" style="font-size: 5em;"></i>
+      </div>
+      <div class="pf-c-tile__title">Start learning today</div>
     </div>
-    <div class="pf-c-card__body">
-      <p>Start learning today</p>
+    <div class="pf-c-tile__body"><h3>Data Science Learning Pathway</h3></div>
+  </a>
+  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/users/support/" target="_blank">
+    <div class="pf-c-tile__header pf-m-stacked">
+      <div class="pf-c-tile__icon">
+        <i class="pf-icon pf-icon-help" style="font-size: 5em;"></i>
+      </div>
+      <div class="pf-c-tile__title">Find out about our resources</div>
     </div>
-    <div class="pf-c-card__title">
-      <small><h3><a href="/data-science/data-science-workflows/" target="_blank">Data Science Learning Pathway</a></h3></small>
-    </div>
-  </div>
-
-  <div class="pf-c-card pf-m-flat ofc-gallery-card">
-    <div class="pf-c-card__body">
-      <i class="pf-icon pf-icon-help" style="font-size: 5em;"></i>
-    </div>
-    <div class="pf-c-card__body">
-      <p>Find out about our resources</p>
-    </div>
-    <div class="pf-c-card__title">
-      <small><h3><a href="/users/support/" target="_blank">Operate First Support</a></h3></small>
-    </div>
-  </div>
-
+    <div class="pf-c-tile__body"><h3>Operate First Support</h3></div>
+  </a>
 </div>
+
 
 ## Get Involved
 

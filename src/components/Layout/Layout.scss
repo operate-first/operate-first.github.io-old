@@ -25,20 +25,54 @@
 }
 
 .ofc-gallery-card {
-  flex: 1 1 0;
-  margin: var(--pf-global--spacer--md); // creates a gap around/between cards
-  min-width: 250px;
-  max-width: 350px;
+  margin: var(--pf-global--spacer--md);
+  padding: var(--pf-global--spacer--md);
 }
 
-.above-fold-layout {
-  background-color: black;
+.banner {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: var(--pf-c-page__header--BackgroundColor);
   color: white;
-  width: 1000px;
+  text-align: center;
+
+  .pf-c-content {
+    --pf-c-content--MarginBottom: var(--pf-global--spacer--2xl);
+    --pf-c-content--h1--MarginBottom: var(--pf-global--spacer--2xl);
+    --pf-c-content--h2--MarginBottom: var(--pf-global--spacer--2xl);
+    --pf-c-content--h3--MarginBottom: var(--pf-global--spacer--2xl);
+    --pf-c-content--h4--MarginBottom: var(--pf-global--spacer--2xl);
+    color: white;
+  }
+
+  + .pf-c-page__main-section {
+    margin-top: 0;
+  }
 }
 
 .narrow-text-block {
-  width: 700px;
+  max-width: 700px;
   margin: auto;
   text-align: left;
+}
+
+.pf-c-button__cta-primary,
+.pf-c-button__cta-secondary {
+  border: 1px solid #fff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 16px 24px;
+  transition: var(--pf-global--Transition);
+}
+
+.pf-c-button__cta-primary,
+.pf-c-button__cta-secondary:hover {
+  background-color: var(--pf-global--Color--light-100);
+  color: #06c !important;
+}
+
+.pf-c-button__cta-primary:hover,
+.pf-c-button__cta-secondary {
+  background-color: transparent;
+  color: var(--pf-global--Color--light-100) !important;
 }
