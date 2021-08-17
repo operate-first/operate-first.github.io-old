@@ -1,0 +1,23 @@
+presubmits:
+  - name: pre-commit
+    decorate: true
+    skip_report: false
+    always_run: true
+    context: aicoe-ci/prow/pre-commit
+    spec:
+      containers:
+        - image: quay.io/operate-first/opf-toolbox:v0.4.2
+          command:
+            - "pre-commit"
+            - "run"
+            - "--all-files"
+          env:
+            - name: HOME
+              value: "."
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "300m"
+            limits:
+              memory: "1Gi"
+              cpu: "300m"

@@ -1,0 +1,40 @@
+---
+repos:
+  - repo: git://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.10
+    hooks:
+      - id: remove-tabs
+        exclude: Makefile
+
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: "v8.0.0-beta.0"
+    hooks:
+      - id: eslint
+        additional_dependencies:
+          - eslint
+          - eslint-config-prettier
+          - eslint-config-stylelint
+          - eslint-plugin-prettier
+          - babel-eslint
+          - prettier
+          - eslint-plugin-react
+
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-symlinks
+      - id: detect-private-key
+
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.26.2
+    hooks:
+      - id: yamllint
+        files: \.(yaml|yml)$
+        types: [file, yaml]
+        entry: yamllint --strict -c yamllint-config.yaml

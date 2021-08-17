@@ -1,2 +1,2 @@
-export * from "./JupyterNotebook";
-export { JupyterNotebook as default } from "./JupyterNotebook";
+export * from './JupyterNotebook';
+export { JupyterNotebook as default } from './JupyterNotebook';

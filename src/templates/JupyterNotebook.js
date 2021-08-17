@@ -1,26 +1,13 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { PageSection, PageSectionVariants, TextContent } from "@patternfly/react-core";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Layout from "../components/Layout";
-import SEO from "../components/seo";
+import { graphql } from 'gatsby';
+import { PageSection, PageSectionVariants, TextContent } from '@patternfly/react-core';
 
-import "./JupyterNotebook.scss";
+import Layout from '../components/Layout';
+import SEO from '../components/seo';
 
-export default function JupyterNotebookTemplate(data) {
-  return (
-    <Layout location={data.location} title={data.data.site.siteMetadata.title} srcLink={data.data.jupyterNotebook.fields.srcLink}>
-      <SEO title={""} description={""} />
-      <PageSection className="jupyterNotebook" variant={PageSectionVariants.light}>
-        <TextContent>
-          <div className="jupyter-notebook">
-            <div dangerouslySetInnerHTML={{ __html: data.data.jupyterNotebook.html }} />
-          </div>
-        </TextContent>
-      </PageSection>
-     </Layout>
-   );
-}
+import './JupyterNotebook.scss';
 
 export const pageQuery = graphql`
   query JupyterNotebookQuery($id: String) {
@@ -38,3 +25,31 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+const JupyterNotebookTemplate = ({ data: { site, jupyterNotebook }, location }) => {
+  return (
+    <Layout
+      location={location}
+      title={site.siteMetadata.title}
+      srcLink={jupyterNotebook.fields.srcLink}
+    >
+      <SEO title={''} description={''} />
+      <PageSection className="jupyterNotebook" variant={PageSectionVariants.light}>
+        <TextContent>
+          <div className="jupyter-notebook">
+            <div dangerouslySetInnerHTML={{ __html: jupyterNotebook.html }} />
+          </div>
+        </TextContent>
+      </PageSection>
+    </Layout>
+  );
+};
+JupyterNotebookTemplate.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.object,
+    jupyterNotebook: PropTypes.object,
+  }),
+  location: PropTypes.object,
+};
+
+export default JupyterNotebookTemplate;
