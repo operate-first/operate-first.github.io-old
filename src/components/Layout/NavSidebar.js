@@ -32,7 +32,7 @@ const NavGroup = (props) => {
 
   const navItems = links
     // only include navItems that start with the current top level navigation
-    .filter(({ href }) => location.pathname.split('/')[1] !== href.split('/')[1])
+    .filter(({ href }) => location.pathname.split('/')[1] === href.split('/')[1])
     .map((node) => <NavItem key={node.id} {...node} location={location} />);
   const isActive = !!links.find((c) => location.pathname.startsWith(c.href));
 
