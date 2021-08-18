@@ -49,6 +49,7 @@
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-source-git": "^1.1.0",
     "gatsby-transformer-remark": "^2.12.0",
+    "gatsby-transformer-remark-frontmatter": "^1.1.0",
     "gatsby-transformer-sharp": "^2.5.21",
     "gatsby-transformer-yaml": "^2.7.0",
     "js-yaml": "^3.14.0",
