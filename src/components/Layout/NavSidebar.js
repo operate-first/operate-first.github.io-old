@@ -24,15 +24,20 @@ NavItem.propTypes = {
 };
 
 const NavGroup = (props) => {
-  const { id, label, links, location } = props;
+  const { id, label, links, location, href } = props;
+
+  const isSubPath = (path) => location.pathname.split('/')[1] === path.split('/')[1];
 
   if (!links) {
+    if (!isSubPath(href)) {
+      return null;
+    }
     return <NavItem {...props} location={location} />;
   }
 
   const navItems = links
     // only include navItems that start with the current top level navigation
-    .filter(({ href }) => location.pathname.split('/')[1] === href.split('/')[1])
+    .filter(({ href }) => isSubPath(href))
     .map((node) => <NavItem key={node.id} {...node} location={location} />);
   const isActive = !!links.find((c) => location.pathname.startsWith(c.href));
 
@@ -52,6 +57,7 @@ NavGroup.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }),
+  href: PropTypes.string.isRequired,
 };
 
 export const NavSidebar = ({ isNavOpen, location }) => {
