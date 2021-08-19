@@ -1,5 +1,5 @@
 ---
-description: "Operate First for ODH"
+description: "Open Source Operations for the Cloud"
 extraClasses: ofc-text-center ofc-page-section-center
 banner: |
   ![Logo](logo.png "logo")
