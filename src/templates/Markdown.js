@@ -24,6 +24,9 @@ export const pageQuery = graphql`
         title
         description
         extraClasses
+        banner {
+          html
+        }
       }
     }
   }
@@ -33,7 +36,12 @@ const MarkdownTemplate = ({ data: { site, markdownRemark }, location }) => {
   const siteTitle = site.siteMetadata.title;
 
   return (
-    <Layout location={location} title={siteTitle} srcLink={markdownRemark.fields.srcLink}>
+    <Layout
+      location={location}
+      title={siteTitle}
+      srcLink={markdownRemark.fields.srcLink}
+      banner={markdownRemark.frontmatter.banner}
+    >
       <SEO
         title={markdownRemark.frontmatter.title}
         description={markdownRemark.frontmatter.description}

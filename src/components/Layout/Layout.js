@@ -13,7 +13,7 @@ import { Header, NavSidebar, Footer } from './';
 import '@patternfly/patternfly/patternfly.css';
 import './Layout.scss';
 
-export const Layout = ({ location, srcLink, children }) => {
+export const Layout = ({ location, srcLink, banner, children }) => {
   const [isNavOpen, setIsNavOpen] = useState(true);
 
   const onNavToggle = () => {
@@ -27,17 +27,22 @@ export const Layout = ({ location, srcLink, children }) => {
       isManagedSidebar
       className="layout"
     >
+      {banner && (
+        <PageSection className="banner">
+          <TextContent>
+            <section dangerouslySetInnerHTML={{ __html: banner.html }} />
+          </TextContent>
+        </PageSection>
+      )}
       {children}
-      <PageSection className="ofc-text-center" variant={PageSectionVariants.dark}>
+      <PageSection isFilled className="ofc-text-center" variant={PageSectionVariants.dark}>
         <TextContent>
           <Button variant="primary" isLarge component="a" href={srcLink} target="_contribute">
             Contribute to this page
           </Button>
         </TextContent>
       </PageSection>
-      <PageSection sticky="bottom" padding={{ default: 'noPadding' }}>
-        <Footer />
-      </PageSection>
+      <Footer />
     </Page>
   );
 };
@@ -48,6 +53,9 @@ Layout.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string,
   }),
+  banner: PropTypes.shape({
+    html: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Layout;
