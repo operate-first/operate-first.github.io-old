@@ -68,8 +68,9 @@ The result?
 
 <div class="narrow-text-block">
 
-Find our code on [GitHub](https://github.com/operate-first), meet the community on [slack](https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww), and join our mailing lists for announcements and discussions.
-* [Community mailing list](https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/) for Operate First users and contributors
-* OpenInfra labs [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs) for those interested in cloud operations more broadly
+Find our code on [GitHub](https://github.com/operate-first), meet the community on [slack](https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww), and join our mailing lists for announcements and discussions:
+* [Community mailing list](https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/) for Operate First project user and contributor discussions
+* [Announcements list](https://lists.operate-first.cloud/admin/lists/announcements.lists.operate-first.cloud/) for the latest project news
+* OpenInfra Labs [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs) for those interested in open source cloud operations more broadly
 
 </div>
