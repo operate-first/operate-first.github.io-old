@@ -58,6 +58,16 @@
       href: /data-science/mailing-list-analysis/docs/contribute.md
     - label: Content
       href: /data-science/mailing-list-analysis/docs/content.md
+- label: OpenShift Anomaly Detection
+  links:
+    - label: Overview
+      href: /data-science/openshift-anomaly-detection/
+    - label: Get Started
+      href: /data-science/openshift-anomaly-detection/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/openshift-anomaly-detection/docs/how-to-contribute.md
+    - label: Content
+      href: /data-science/openshift-anomaly-detection/docs/content.md
 - label: Pet Image Detection
   links:
     - label: Overview
