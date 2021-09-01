@@ -11,13 +11,13 @@
 - label: AI for Continuous Integration
   links:
     - label: Overview
-      href: /data-science/ocp-ci-analysis/
+      href: /data-science/ai4ci/
     - label: Get Started
-      href: /data-science/ocp-ci-analysis/docs/get-started.md
+      href: /data-science/ai4ci/docs/get-started.md
     - label: How to Contribute
-      href: /data-science/ocp-ci-analysis/docs/how-to-contribute.md
+      href: /data-science/ai4ci/docs/how-to-contribute.md
     - label: Content
-      href: /data-science/ocp-ci-analysis/docs/content.md
+      href: /data-science/ai4ci/docs/content.md
 - label: Categorical Encoding
   links:
     - label: Overview

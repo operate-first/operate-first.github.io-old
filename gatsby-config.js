@@ -220,7 +220,7 @@ let config = {
     {
       resolve: `gatsby-source-git`,
       options: {
-        name: `data-science/ocp-ci-analysis`,
+        name: `data-science/ai4ci`,
         remote: `https://github.com/aicoe-aiops/ocp-ci-analysis.git`,
         patterns: [`**/*.md`, `**/*.png`, `**/*.ipynb`],
       },
