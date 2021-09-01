@@ -69,7 +69,8 @@ The result?
 <div class="narrow-text-block">
 
 Find our code on [GitHub](https://github.com/operate-first), meet the community on [slack](https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww), and join our mailing lists for announcements and discussions.
-* [General mailing list](https://listman.redhat.com/mailman/listinfo/operate-first) for Operate First users and contributors (a new mailing list is coming soon!)
+* [General mailing list](https://lists.operate-first.cloud/archives/list/community@lists.operate-first.cloud/) for Operate First users and contributors
+* [Announcements mailing list](https://lists.operate-first.cloud/admin/lists/announcements.lists.operate-first.cloud/)
 * OpenInfra labs [mailing list](http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs) for those interested in cloud operations more broadly
 
 </div>
