@@ -7,7 +7,7 @@
     - label: How to Contribute
       href: /data-science/data-science-workflows/docs/how-to-contribute.md
     - label: Data Science Projects
-      href: /data-science/
+      href: /data-science/projectsoverview.md
 - label: AI for Continuous Integration
   links:
     - label: Overview
