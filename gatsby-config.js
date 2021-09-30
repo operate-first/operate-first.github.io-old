@@ -25,6 +25,10 @@ let config = {
             name: 'Infra',
             url: 'http://console-openshift-console.apps.moc-infra.massopen.cloud/',
           },
+          {
+            name: 'Smaug',
+            url: 'http://console-openshift-console.apps.smaug.na.operate-first.cloud/',
+          },
         ],
       },
       {
@@ -33,6 +37,10 @@ let config = {
           {
             name: 'Rick',
             url: 'https://console-openshift-console.apps.rick.emea.operate-first.cloud/',
+          },
+          {
+            name: 'Balrog',
+            url: 'https://console-openshift-console.apps.balrog.aws.operate-first.cloud/',
           },
         ],
       },
