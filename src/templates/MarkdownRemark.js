@@ -5,7 +5,7 @@ import { PageSection, PageSectionVariants, TextContent } from '@patternfly/react
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
-import './Markdown.scss';
+import './MarkdownRemark.scss';
 
 export const pageQuery = graphql`
   query MarkdownQuery($id: String) {

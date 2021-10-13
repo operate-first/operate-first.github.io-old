@@ -1,7 +1,7 @@
 ---
 title: Users
 description: "User facing docs"
-redirect: https://www.operate-first.cloud/users/support/
+redirect: /users/support/
 ---
 
 Information for users
