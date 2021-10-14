@@ -7,7 +7,7 @@
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "serve": "gatsby serve -H ${HOST:-0.0.0.0} -p ${PORT:-8080}",
-    "clean": "gatsby clean",
+    "clean": "gatsby clean && rimraf .content-cache",
     "gh-pages": "gh-pages -d public",
     "deploy": "npm run build && npm run gh-pages -- -m 'Updates: Manual build'",
     "travis-deploy": "npm run build && npm run gh-pages -- -r https://$GH_TOKEN@github.com/operate-first/operate-first.github.io.git -m \"Updates $TRAVIS_COMMIT: $TRAVIS_COMMIT_MESSAGE\""
@@ -55,7 +55,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
