@@ -8,7 +8,7 @@ node_js:
   - "12"
 deploy:
   provider: script
-  script: npm install && npm run travis-deploy
+  script: npm ci && npm run travis-deploy
   skip_cleanup: true
   on:
     branch: master

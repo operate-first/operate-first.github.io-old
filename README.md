@@ -1,4 +1,5 @@
 # Operate First Website
+
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.operate-first.cloud%2F)
 
 This repository contains some content and the code to build [operate-first.cloud](https://www.operate-first.cloud/). It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [OpenShift](scripts/templates/base) or [GitHub Pages](https://pages.github.com/).
@@ -40,6 +41,7 @@ For example, to add content locally to the `blueprints` category, create a docum
 ### Supported File Types
 
 Files formatted as
+
 * [Markdown .md](https://daringfireball.net/projects/markdown/)
 * [JupyterNotebook .ipynb](https://jupyter.org/)
 * [MarkdownX .mdx](https://mdxjs.com/)
@@ -75,7 +77,6 @@ Similar to Markdown, but you can add [React Components](https://www.gatsbyjs.com
 
 See [/content/examples/mdx.mdx](/content/examples/mdx.mdx) rendered [here](https://www.operate-first.cloud/examples/mdx.mdx)
 
-
 ```markdown
 ---
 title: My MDX
@@ -105,7 +106,6 @@ Content will be added to one of the four categories on this website:
 * **operations**: Documentation pertaining to Operate First operation procedures.
 * **blueprints**: Generic information that can be applied to other projects as well.
 
-
 #### Configuring Table of Contents
 
 Whether adding content remotely, or locally, the content needs to be added to the vertical navigation bar on the left and will belong to one of the four categories.
@@ -128,118 +128,31 @@ Following is an example of 2 level hierarchy from a repo, for cases where you ha
       href: /blueprints/continuous-delivery/docs/setup_source_operations
 ```
 
-
 ## Local Development
 
 You can run the app locally to preview your changes.
 In terminal:
 
-```shell script
-make dev
+```sh
+npm install
+npm run dev
 ```
 
-If you have problems, run `make dev-clean`
+In case of stale cache or errors, please try:
+
+```sh
+npm run clean
+```
 
 ### Previewing your changes on GitHub pages
 
-When previewing your changes on a fork.
-
-First, enable github pages to use the gh-pages branch from root.
-
-![](misc/gh-pages-fork.png)
-
-Make sure to push your changes to your branch on the fork.
-
-Then, from your branch manually build and push.
-
-```shell script
-make gh-pages-fork
-```
-
-Now you can view your work on `https://githubuserid.github.io/operate-first.github.io`
-
-### Previewing multiple PRs on GitHub pages
-
-If you've set up to preview the site on your personal GitHub pages, like the above, you can also preview multiple PR branches from your fork under separate paths. For example, for a branch named `my-branch`, would deploy under a subpath of the same name.
-
-From your branch manually build and push.
-
-```shell script
-make gh-pages-branch
-```
-
-Now you can view your work on `https://githubuserid.github.io/operate-first.github.io/my-branch`
+We use Netlify to preview PR changes. Each PR will show a Netlify check that can be used to access a dynamically generated build and deployment of that PR.
 
 ### Manual Site Deployment (Production GitHub Pages)
 
 [CI](https://travis-ci.org/github/operate-first/operate-first.github.io) should deploy to GitHub pages automatically, but to manually redeploy
 
-```shell script
-make gh-pages
-```
-
-## Building the site in a container
-
-Customize your `.env` file similar to `.env.default`(.env.default)
-
-#### Building a containerized image
-
-Customize `.env` file to image and source information as desired. `npm` and the `s2i` command line tool is required. [https://github.com/openshift/source-to-image](https://github.com/openshift/source-to-image)
-
-```.env
-IMAGE_REPOSITORY=quay.io/my-org/operate-first-app:latest
-SOURCE_REPOSITORY_URL=git@github.com:my-org/operate-first.github.io.git
-SOURCE_REPOSITORY_REF=my-branch
-```
-
-```shell script
-make build
-```
-
-#### Pushing the container image
-
-Customize `.env` file to image information and container builder.
-
-```.env
-CONTAINER_BUILDER=docker
-IMAGE_REPOSITORY=quay.io/my-org/odh-dashboard:latest
-```
-
-```shell script
-make push
-```
-
-#### Deploying to OpenShift
-
-Customize `.env` file for deployment information. Required. `oc` command line tool is required.
-
-```.env
-OC_URL=https://api.my-host:6443
-OC_PROJECT=operate-first
-# user and password login
-OC_USER=kubeadmin
-OC_PASSWORD=my_password
-```
-
-or
-
-```.env
-OC_URL=https://api.my-host:6443
-OC_PROJECT=operate-first
-# token login
-OC_TOKEN=my_token
-```
-
-Modify the image repository in the deployment config `deployment.yaml` present in `scripts/templates/base` to fetch the latest image from the location you pushed the container image to in the previous step.
-
-Modify the following line to reflect the image repository you pushed it to.
-
-```yaml
-image: quay.io/cfchase/operate-first-app:latest
-```
-
-Run:
-
-```shell script
-make deploy
+```sh
+npm install
+npm deploy
 ```
