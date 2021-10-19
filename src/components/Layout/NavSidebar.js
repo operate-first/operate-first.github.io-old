@@ -57,7 +57,7 @@ NavGroup.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }),
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
 };
 
 export const NavSidebar = ({ isNavOpen, location }) => {
