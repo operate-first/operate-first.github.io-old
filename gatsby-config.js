@@ -153,6 +153,7 @@ module.exports = {
     github: 'https://github.com/operate-first',
     youtube: 'https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg',
     slack: 'https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww',
+    twitter: 'https://twitter.com/OperateFirst',
     clusters: [
       {
         name: 'MOC',
