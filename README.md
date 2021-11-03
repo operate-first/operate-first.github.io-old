@@ -105,6 +105,7 @@ Content will be added to one of the four categories on this website:
 * **users**: Documentation for all users of ODH. Access details of various deployed ODH components.
 * **operations**: Documentation pertaining to Operate First operation procedures.
 * **blueprints**: Generic information that can be applied to other projects as well.
+* **community**: Operate First news, code of conduct, and other pertinent information to the Operate First community
 
 #### Configuring Table of Contents
 

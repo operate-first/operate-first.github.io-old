@@ -23,6 +23,7 @@ const TopNav = ({ location }) => {
     ['users', 'Users'],
     ['operations', 'Operations'],
     ['blueprints', 'Blueprints'],
+    ['community', 'Community']
   ];
 
   return (

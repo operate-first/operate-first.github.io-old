@@ -135,6 +135,11 @@ const remoteSources = [
     remote: 'https://github.com/Gkrumbach07/audio-decoder-demo.git',
     patterns: ['**/*.md', '**/*.png'],
   },
+  {
+    name: 'community/community',
+    remote: 'https://github.com/operate-first/community.git',
+    patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
+  },
 ];
 
 module.exports = {
