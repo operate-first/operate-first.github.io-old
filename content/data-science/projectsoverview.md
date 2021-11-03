@@ -76,3 +76,8 @@ _This document contains a list of data science projects maintained as a part of 
 
     [Github](https://github.com/aicoe-aiops/time-series)
     [Blog](https://www.operate-first.cloud/data-science/time-series/)
+    
+16. **Github Issue Labeler** : Github issues of any given repository or user space can be automatically labelled using this model. Often in large, open-source repositories many issues go unlabelled and issue boards end up unorganized. With this tool, given sufficient labeled issues, one can extract data, train a model, and set up an app that will output preedicted labels for an issue given its contents with good accuracy.
+
+    [Github](https://github.com/aicoe-aiops/github-labeler)
+    [Blog](https://www.operate-first.cloud/data-science/github-labeler/docs/blog.md)
