@@ -1,0 +1,158 @@
+- label: General
+  links:
+    - label: Introduction
+      href: /hitchhikers-guide/apps/docs/about/intro.md
+    - label: Support
+      href: /hitchhikers-guide/support/README.md
+- label: Operations
+  links:
+    - label: Intro
+      href: /hitchhikers-guide/operations-intro.md
+    - label: SRE Overview
+      href: /hitchhikers-guide/sre/README.md
+    - label: Incident Management Procedure
+      href: /hitchhikers-guide/sre/incident-management/incident-management-procedure.md
+    - label: Setup GitHub Receiver
+      href: /hitchhikers-guide/sre/incident-management/github-receiver-setup.md
+    - label: Configure Prometheus Alerts
+      href: /hitchhikers-guide/sre/incident-management/configure-prometheus-alerts.md
+    - label: Alerts
+      href: /hitchhikers-guide/alerts.md
+- label: ACM
+  links:
+    - label: Add Users to ACM
+      href: /hitchhikers-guide/apps/docs/acm/adding_users_to_acm.md
+- label: ACME
+  links:
+    - label: Securing your Routes
+      href: /hitchhikers-guide/apps/docs/acme/issuing_certificates.md
+- label: ArgoCD & GitOps
+  links:
+    - label: Onboard to ArgoCD
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/onboarding_to_argocd.md
+    - label: Add Application
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/add_application.md
+    - label: Add Permissions to Project
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/add_permissions_to_project.md
+    - label: Secret Management
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/secret_management.md
+    - label: Encrypting Applications
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/encrypting_applications.md
+    - label: Set up Dev Environment
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/setup_argocd_dev_environment.md
+    - label: Import GPG for Dev
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/import_dev_gpg.md
+    - label: Update ArgoCD
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/update_argocd.md
+    - label: Update ArgoCD GPG Key
+      href: /hitchhikers-guide/apps/docs/argocd-gitops/update_gpg_key.md
+- label: Cluster Management
+  links:
+    - label: Onboard to a Cluster
+      href: /hitchhikers-guide/apps/docs/cluster-scope/onboarding_to_cluster.md
+    - label: Add Resource Quota
+      href: /hitchhikers-guide/apps/docs/cluster-scope/add_resource_quotas.md
+    - label: Resource Quota List
+      href: /hitchhikers-guide/apps/docs/cluster-scope/quotas.md
+- label: Development
+  links:
+    - label: Provision OCP via CRC
+      href: /hitchhikers-guide/apps/docs/development/crc-disk-size.md
+    - label: Provision OCP via Quicklab
+      href: /hitchhikers-guide/apps/docs/development/setup_quicklab.md
+- label: Grafana
+  links:
+    - label: Overview
+      href: /hitchhikers-guide/apps/docs/grafana/README.md
+    - label: Add Grafana Dashboard
+      href: /hitchhikers-guide/apps/docs/grafana/add_grafana_dashboard.md
+    - label: Provide Groups Access
+      href: /hitchhikers-guide/apps/docs/grafana/map_groups_to_roles.md
+- label: Kubeflow
+  links:
+    - label: Overview
+      href: /hitchhikers-guide/apps/docs/kubeflow/README.md
+    - label: How to access Kubeflow Dashboard
+      href: /hitchhikers-guide/apps/docs/kubeflow/kubeflow-dashboard/README.md
+    - label: How to access Kubeflow Pipelines
+      href: /hitchhikers-guide/apps/docs/kubeflow/kubeflow-pipelines/README.md
+- label: Loki
+  links:
+    - label: How to access Loki
+      href: /hitchhikers-guide/apps/docs/observatorium/loki/README.md
+    - label: How to set up Loki as data source in Grafana
+      href: /hitchhikers-guide/apps/docs/observatorium/loki/add_loki_grafana_datasource.md
+- label: Thanos
+  links:
+    - label: How to access Thanos
+      href: /hitchhikers-guide/apps/docs/observatorium/thanos/README.md
+- label: OpenShift Container Storage
+  links:
+    - label: Provision S3 Bucket
+      href: /hitchhikers-guide/apps/docs/ocs/claiming_object_store.md
+- label: User Workload Monitoring
+  links:
+    - label: Overview
+      href: /hitchhikers-guide/apps/docs/uwm/README.md
+- label: Pulp
+  links:
+    - label: Using Pulp to host or consume Python packages
+      href: /hitchhikers-guide/pulp/usage.md
+
+# ODH
+- label: Open Data Hub
+  links:
+    - label: Overview
+      href: /hitchhikers-guide/apps/docs/odh/README.md
+    - label: Add Kfdef
+      href: /hitchhikers-guide/apps/docs/odh/adding_kfdefs.md
+- label: JupyterHub
+  links:
+    - label: Access JupyterHub
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/access_jupyterhub.md
+    - label: Add ImageStream
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/add_imagestream_to_jh.md
+    - label: Analyze Storage
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/analyze_storage.md
+    - label: Increase PVC Size
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/increase_pvc_size_jh.md
+    - label: Re-install Kernel
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/reinstall_kernel.md
+    - label: Manage User Profiles
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/user_profiles.md
+    - label: Create a Jupyterhub image and deploy it on ODH
+      href: /hitchhikers-guide/data-science-workflows/docs/create_and_deploy_jh_image.md
+    - label: Elyra AIDevSecOps Tutorial
+      href: /hitchhikers-guide/elyra/README.md
+    - label: Using Ray with Jupyter and ODH
+      href: /hitchhikers-guide/moc-ray-demo/README.md
+    - label: Runbook
+      href: /hitchhikers-guide/apps/docs/odh/jupyterhub/runbook.md
+- label: Kafka
+  links:
+    - label: Overview
+      href: /hitchhikers-guide/apps/docs/odh/kafka/README.md
+    - label: Add new Kafka Topics
+      href: /hitchhikers-guide/apps/docs/odh/kafka/add_kafka_topics.md
+    - label: Add users to Kafka
+      href: /hitchhikers-guide/apps/docs/odh/kafka/add_kafka_users.md
+    - label: Runbook
+      href: /hitchhikers-guide/apps/docs/odh/kafka/runbook.md
+- label: Superset
+  links:
+    - label: Add users to Superset
+      href: /hitchhikers-guide/apps/docs/odh/superset/add_superset_users.md
+    - label: Add groups to Superset
+      href: /hitchhikers-guide/apps/docs/odh/superset/map_groups_to_roles.md
+    - label: Runbook
+      href: /hitchhikers-guide/apps/docs/odh/superset/runbook.md
+- label: Trino
+  links:
+    - label: Access Public Bucket
+      href: /hitchhikers-guide/apps/docs/odh/trino/access_public_bucket.md
+    - label: Add S3 bucket to Trino
+      href: /hitchhikers-guide/apps/docs/odh/trino/add_more_buckets.md
+    - label: Add PostgreSQL DB to Trino
+      href: /hitchhikers-guide/apps/docs/odh/trino/add_more_postgress_catalogs.md
+    - label: Trino & Superset Guide
+      href: /hitchhikers-guide/apps/docs/odh/trino/trino_superset_user_guide.md
