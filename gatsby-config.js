@@ -41,6 +41,11 @@ const remoteSources = [
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
   },
   {
+    name: 'data-science/github-labeler',
+    remote: 'https://github.com/aicoe-aiops/github-labeler.git',
+    patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
+  },
+  {
     name: 'users/elyra',
     remote: 'https://github.com/thoth-station/elyra-aidevsecops-tutorial.git',
     patterns: ['**/*.md', '**/*.png'],
