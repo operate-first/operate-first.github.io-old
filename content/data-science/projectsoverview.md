@@ -35,6 +35,11 @@ _This document contains a list of data science projects maintained as a part of 
     [Github](https://github.com/aicoe-aiops/data-science-workflows)
     [Blog](https://www.operate-first.cloud/data-science/data-science-workflows/)
 
+16. **Github Issue Labeler** : Github issues of any given repository or user space can be automatically labelled using this model. Often in large, open-source repositories many issues go unlabelled and issue boards end up unorganized. With this tool, given sufficient labeled issues, one can extract data, train a model, and set up an app that will output preedicted labels for an issue given its contents with good accuracy.
+
+    [Github](https://github.com/aicoe-aiops/github-labeler)
+    [Blog](https://www.operate-first.cloud/data-science/github-labeler/docs/blog.md)
+
 7. **Mailing list Analysis**: This analysis contains example code for how to develop a custom end-to-end email analytics service using the Open Data Hub on OpenShift. We demonstrate this by performing text analysis on the Fedora mailing list. This list contains many discussions about the issues occurring with Fedora development on a monthly basis and suggestions for how to address the issues. This project aims to help the Fedora community bring a more data driven approach to their planning process by performing text analysis and gathering insights into the trends in the email conversations.
 
     [Github](https://github.com/aicoe-aiops/mailing-list-analysis-toolkit)
@@ -76,8 +81,3 @@ _This document contains a list of data science projects maintained as a part of 
 
     [Github](https://github.com/aicoe-aiops/time-series)
     [Blog](https://www.operate-first.cloud/data-science/time-series/)
-    
-16. **Github Issue Labeler** : Github issues of any given repository or user space can be automatically labelled using this model. Often in large, open-source repositories many issues go unlabelled and issue boards end up unorganized. With this tool, given sufficient labeled issues, one can extract data, train a model, and set up an app that will output preedicted labels for an issue given its contents with good accuracy.
-
-    [Github](https://github.com/aicoe-aiops/github-labeler)
-    [Blog](https://www.operate-first.cloud/data-science/github-labeler/docs/blog.md)
