@@ -3,8 +3,6 @@ title: Operations
 description: "Docs for operations related tasks and services.__"
 ---
 
-In this section, you can find documentation pertaining to operations within the Operate First initiative.
-
 ## GitOps and Operate First
 
 In Operate First, operations span cluster operations as well as operations for managed services. We follow the [GitOps][1] operating model for OpenShift cluster and service management. Because this model hinges on Git as a single source of truth, we perform all operations for live deployments via GitHub pull-requests. As a result, practically anyone can submit changes to the state of the cluster. Various applications managed by the Operate First team can be updated in a similar manner.

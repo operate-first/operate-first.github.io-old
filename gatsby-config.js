@@ -6,11 +6,6 @@ const pathPrefix = process.env.PATH_PREFIX;
 
 const remoteSources = [
   {
-    name: 'users/data-science-workflows',
-    remote: 'https://github.com/aicoe-aiops/data-science-workflows.git',
-    patterns: ['**/*.md', '**/*.png'],
-  },
-  {
     name: 'data-science/data-science-workflows',
     remote: 'https://github.com/aicoe-aiops/data-science-workflows.git',
     patterns: ['**/*.md', '**/*.png'],
@@ -46,38 +41,43 @@ const remoteSources = [
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
   },
   {
-    name: 'users/elyra',
-    remote: 'https://github.com/thoth-station/elyra-aidevsecops-tutorial.git',
+    name: 'hitchhikers-guide/apps',
+    remote: 'https://github.com/operate-first/apps.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'users/moc-ray-demo',
-    remote: 'https://github.com/erikerlandson/moc-ray-demo.git',
-    patterns: ['**/*.md', '**/*.png'],
-  },
-  {
-    name: 'users/pulp',
-    remote: 'https://github.com/thoth-station/pulp-operate-first-web.git',
-    patterns: ['**/*.md', '**/*.png'],
-  },
-  {
-    name: 'users/support',
+    name: 'hitchhikers-guide/support',
     remote: 'https://github.com/operate-first/support.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'operations/continuous-deployment',
-    remote: 'https://github.com/operate-first/continuous-deployment.git',
+    name: 'hitchhikers-guide/sre',
+    remote: 'https://github.com/operate-first/SRE.git',
+    patterns: ['**/*.md'],
+  },
+  {
+    name: 'hitchhikers-guide/elyra',
+    remote: 'https://github.com/thoth-station/elyra-aidevsecops-tutorial.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'operations/moc-cnv-sandbox',
-    remote: 'https://github.com/open-infrastructure-labs/moc-cnv-sandbox.git',
+    name: 'hitchhikers-guide/pulp',
+    remote: 'https://github.com/thoth-station/pulp-operate-first-web.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'users/argocd-apps',
-    remote: 'https://github.com/operate-first/argocd-apps.git',
+    name: 'hitchhikers-guide/moc-ray-demo',
+    remote: 'https://github.com/erikerlandson/moc-ray-demo.git',
+    patterns: ['**/*.md', '**/*.png'],
+  },
+  {
+    name: 'hitchhikers-guide/data-science-workflows',
+    remote: 'https://github.com/aicoe-aiops/data-science-workflows.git',
+    patterns: ['**/*.md', '**/*.png'],
+  },
+  {
+    name: 'hitchhikers-guide/toolbox',
+    remote: 'https://github.com/operate-first/toolbox',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
@@ -91,19 +91,9 @@ const remoteSources = [
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'operations/toolbox',
-    remote: 'https://github.com/operate-first/toolbox',
-    patterns: ['**/*.md', '**/*.png'],
-  },
-  {
     name: 'data-science/ceph-drive-failure',
     remote: 'https://github.com/aicoe-aiops/ceph_drive_failure.git',
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
-  },
-  {
-    name: 'users/apps',
-    remote: 'https://github.com/operate-first/apps.git',
-    patterns: ['**/*.md', '**/*.png'],
   },
   {
     name: 'data-science/mailing-list-analysis',
@@ -124,16 +114,6 @@ const remoteSources = [
     name: 'data-science/data-skipping',
     remote: 'https://github.com/xskipper-io/xskipper.git',
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
-  },
-  {
-    name: 'operations/sre',
-    remote: 'https://github.com/operate-first/SRE.git',
-    patterns: ['**/*.md'],
-  },
-  {
-    name: 'users/sre',
-    remote: 'https://github.com/operate-first/SRE.git',
-    patterns: ['**/*.md'],
   },
   {
     name: 'data-science/stateful-sessions-for-intelligent-apps',

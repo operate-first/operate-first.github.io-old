@@ -21,10 +21,9 @@ import Launcher from './Launcher';
 const TopNav = ({ location }) => {
   const navItems = [
     ['data-science', 'Data Science'],
-    ['users', 'Users'],
-    ['operations', 'Operations'],
+    ['hitchhikers-guide', 'Hitchhikers Guide '],
     ['blueprints', 'Blueprints'],
-    ['community', 'Community']
+    ['community', 'Community'],
   ];
 
   return (

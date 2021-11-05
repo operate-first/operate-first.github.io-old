@@ -9,10 +9,10 @@ banner: |
   #### Ready to get started?
 
   <div class="pf-l-flex pf-m-justify-content-center pf-m-space-items-xl pf-m-wrap">
-    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/users/support/docs/intro.md">
+    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/hitchhikers-guide/apps/docs/about/intro.md">
       <h3>I am an open source developer</h3>
     </a>
-    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/operations/sre/">
+    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/hitchhikers-guide/operations-intro.md">
       <h3>I want to learn SRE practices</h3>
     </a>
   </div>
@@ -50,7 +50,7 @@ The result?
     </div>
     <div class="pf-c-tile__body"><h3>Data Science Learning Pathway</h3></div>
   </a>
-  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/users/support/" target="_blank">
+  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/hitchhikers-guide/support/README.md" target="_blank">
     <div class="pf-c-tile__header pf-m-stacked">
       <div class="pf-c-tile__icon">
         <i class="pf-icon pf-icon-help" style="font-size: 5em;"></i>
