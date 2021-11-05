@@ -35,49 +35,49 @@ _This document contains a list of data science projects maintained as a part of 
     [Github](https://github.com/aicoe-aiops/data-science-workflows)
     [Blog](https://www.operate-first.cloud/data-science/data-science-workflows/)
 
-16. **Github Issue Labeler** : Github issues of any given repository or user space can be automatically labelled using this model. Often in large, open-source repositories many issues go unlabelled and issue boards end up unorganized. With this tool, given sufficient labeled issues, one can extract data, train a model, and set up an app that will output preedicted labels for an issue given its contents with good accuracy.
+7. **Github Issue Labeler** : Github issues of any given repository or user space can be automatically labelled using this model. Often in large, open-source repositories many issues go unlabelled and issue boards end up unorganized. With this tool, given sufficient labeled issues, one can extract data, train a model, and set up an app that will output preedicted labels for an issue given its contents with good accuracy.
 
     [Github](https://github.com/aicoe-aiops/github-labeler)
     [Blog](https://www.operate-first.cloud/data-science/github-labeler/docs/blog.md)
 
-7. **Mailing list Analysis**: This analysis contains example code for how to develop a custom end-to-end email analytics service using the Open Data Hub on OpenShift. We demonstrate this by performing text analysis on the Fedora mailing list. This list contains many discussions about the issues occurring with Fedora development on a monthly basis and suggestions for how to address the issues. This project aims to help the Fedora community bring a more data driven approach to their planning process by performing text analysis and gathering insights into the trends in the email conversations.
+8. **Mailing list Analysis**: This analysis contains example code for how to develop a custom end-to-end email analytics service using the Open Data Hub on OpenShift. We demonstrate this by performing text analysis on the Fedora mailing list. This list contains many discussions about the issues occurring with Fedora development on a monthly basis and suggestions for how to address the issues. This project aims to help the Fedora community bring a more data driven approach to their planning process by performing text analysis and gathering insights into the trends in the email conversations.
 
     [Github](https://github.com/aicoe-aiops/mailing-list-analysis-toolkit)
     [Blog](https://www.operate-first.cloud/data-science/mailing-list-analysis/)
 
-8. **OpenShift Alert Prediction** : If a customer’s OpenShift cluster goes down, it can have a significant impact on their business. Since there are a variety of reasons why an OpenShift cluster might fail, finding and fixing the issue that the cluster suffers from is not always trivial. However, if we can predict in advance whether a cluster will run into a given issue, then we may be able to fix it before it fails or before it severely impacts the customer. Issues in a cluster are often defined by, or closely related to, the alerts that it fires. So predicting alerts can be a step towards predicting the underlying issue. Thus, the goal of this project is to predict whether a cluster will fire a given alert within the next hour.
+9. **OpenShift Alert Prediction** : If a customer’s OpenShift cluster goes down, it can have a significant impact on their business. Since there are a variety of reasons why an OpenShift cluster might fail, finding and fixing the issue that the cluster suffers from is not always trivial. However, if we can predict in advance whether a cluster will run into a given issue, then we may be able to fix it before it fails or before it severely impacts the customer. Issues in a cluster are often defined by, or closely related to, the alerts that it fires. So predicting alerts can be a step towards predicting the underlying issue. Thus, the goal of this project is to predict whether a cluster will fire a given alert within the next hour.
 
     [Github](https://github.com/aicoe-aiops/ocp-alert-prediction-public)
 
-9. **OpenShift Anomaly Detection**: OpenShift deployments could suffer from a variety of issues and bugs. So it can be tedious for an engineer to inspect and diagnose each deployment individually, which in turn can adversely affect customer experience. In this project, we work on the following two initiatives to address this problem:
+10. **OpenShift Anomaly Detection**: OpenShift deployments could suffer from a variety of issues and bugs. So it can be tedious for an engineer to inspect and diagnose each deployment individually, which in turn can adversely affect customer experience. In this project, we work on the following two initiatives to address this problem:
     - Anomaly Detection: In this approach, we try to identify issues before they occur, or before they significantly impact customers. To do so, we find deployments that behave “anomalously” and try to explain this behaviour.
     - Diagnosis Discovery: In this approach, we try to identify deployments that exhibit similar “symptoms” (issues), and determine exactly what makes these deployments similar to one another. Engineers can then use this information to determine the “diagnosis” of the issues, and apply the same or similar fix to all the deployments.
 
     [Github](https://github.com/aicoe-aiops/openshift-anomaly-detection)
     [Blog](https://www.operate-first.cloud/data-science/openshift-anomaly-detection/docs/blog/diagnosis-discovery-blog.md)
 
-10. **Pet Image Detection** : After a data scientist has created and trained a model, the next step is putting the model into production. Model serving deploys machine learning models as microservices that can interact easily with other pieces of a larger intelligent application. This project highlights a simple model serving demo which allows users to send data to the model service and receive predictions and implements an explainability algorithm to understand the model predictions better.
+11. **Pet Image Detection** : After a data scientist has created and trained a model, the next step is putting the model into production. Model serving deploys machine learning models as microservices that can interact easily with other pieces of a larger intelligent application. This project highlights a simple model serving demo which allows users to send data to the model service and receive predictions and implements an explainability algorithm to understand the model predictions better.
 
     [Github](https://github.com/aicoe-aiops/pet-image-detection)
 
-11. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
+12. **Prometheus-api-client python** : A python library to make querying prometheus data simpler and also convert metric data into a more Data Science suitable format of a pandas dataframe.
 
     [Github](https://github.com/AICoE/prometheus-api-client-python)
 
-12. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
+13. **Sentiment Analysis** : Red Hat has a variety of text based artifacts coming from sources starting from partner and customer engagements to documentation and communication logs. These text based artifacts are valuable and can be used to generate business insights and inform decisions if appropriately mined. The goal of this project is to allow other teams across Red Hat to have a tool at their disposal allowing them to analyze their text data and make informed decisions based on the insights gained from them.
 
     [Github](https://github.com/aicoe-aiops/sentiment-analysis-public)
 
-13. **Stateful Sessions for Intelligent Apps** : Live audio transcription and other similar applications require stateful processing to support both multi-user sessions and dynamic scale-out. We can persist audio state with a Kafka kappa architecture, but that state must also be preserved across the OpenShift cluster boundary to user web clients. Fortunately, OpenShift's sticky sessions allow stateful sessions to be implemented without complicated custom configurations.The goal of this project is to convert your single user constrained application to support stateful sessions with any number of users. Using the power of OpenShift and Open Data Hub's data monitoring and streaming tools, a stateful architecture can be developed and managed easily.
+14. **Stateful Sessions for Intelligent Apps** : Live audio transcription and other similar applications require stateful processing to support both multi-user sessions and dynamic scale-out. We can persist audio state with a Kafka kappa architecture, but that state must also be preserved across the OpenShift cluster boundary to user web clients. Fortunately, OpenShift's sticky sessions allow stateful sessions to be implemented without complicated custom configurations.The goal of this project is to convert your single user constrained application to support stateful sessions with any number of users. Using the power of OpenShift and Open Data Hub's data monitoring and streaming tools, a stateful architecture can be developed and managed easily.
 
     [Github](https://github.com/Gkrumbach07/audio-decoder-demo)
     [Blog](https://www.operate-first.cloud/data-science/stateful-sessions-for-intelligent-apps/docs/blog.md)
 
-14. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
+15. **Sync Pipelines** : Data ingress pipelines for DataHub via Argo pipelines.
 
     [Github](https://github.com/aicoe-aiops/sync-pipelines)
 
-15. **Time Series Analysis** : Data science with time series metric data aims to reduce the search space of root cause analysis by providing concise visualizations and potential hotspots for specific real time problems. For simple monolithic architectures, monitoring using metrics is a viable solution as the system is less complex. However, with cloud applications, it is inefficient to manually monitor a large number of generated metrics. We need automated ways of finding root causes and incidents. In this series of notebooks, we are going to discuss how we can manipulate, visualize, and forecast the time series metrics data to achieve better monitoring systems.
+16. **Time Series Analysis** : Data science with time series metric data aims to reduce the search space of root cause analysis by providing concise visualizations and potential hotspots for specific real time problems. For simple monolithic architectures, monitoring using metrics is a viable solution as the system is less complex. However, with cloud applications, it is inefficient to manually monitor a large number of generated metrics. We need automated ways of finding root causes and incidents. In this series of notebooks, we are going to discuss how we can manipulate, visualize, and forecast the time series metrics data to achieve better monitoring systems.
 
     [Github](https://github.com/aicoe-aiops/time-series)
     [Blog](https://www.operate-first.cloud/data-science/time-series/)
