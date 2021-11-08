@@ -104,3 +104,9 @@
       href: /data-science/data-skipping/site/docs/getting-started/operatefirst-getting-started.md
     - label: Get Started
       href: /data-science/data-skipping/notebooks/python/Xskipper - Python Sample.ipynb
+- label: Get Involved
+  links:
+    - label: Data Science Community Meetup
+      href: /data-science/operate-first-data-science-community/docs/meetup-landing-page.md
+    - label: Agenda
+      href: /data-science/operate-first-data-science-community/docs/content.md
