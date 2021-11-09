@@ -104,6 +104,16 @@
       href: /data-science/data-skipping/site/docs/getting-started/operatefirst-getting-started.md
     - label: Get Started
       href: /data-science/data-skipping/notebooks/python/Xskipper - Python Sample.ipynb
+- label: Github Issue Labeler
+  links:
+    - label: Overview
+      href: /data-science/github-labeler/README.md
+    - label: Get Started
+      href: /data-science/github-labeler/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/github-labeler/docs/contribute.md
+    - label: Content
+      href: /data-science/github-labeler/docs/content.md
 - label: Get Involved
   links:
     - label: Data Science Community Meetup
