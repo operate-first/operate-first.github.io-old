@@ -121,7 +121,7 @@ const remoteSources = [
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'data-science/operate-first-data-science-community/',
+    name: 'data-science/operate-first-data-science-community',
     remote: 'https://github.com/aicoe-aiops/operate-first-data-science-community.git',
     patterns: ['**/*.md', '**/*.png'],
   },
