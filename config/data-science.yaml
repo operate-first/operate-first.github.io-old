@@ -78,6 +78,8 @@
       href: /data-science/pet-image-detection/docs/how-to-contribute.md
     - label: Content
       href: /data-science/pet-image-detection/docs/content.md
+- label: Project Meteor
+  href: /data-science/meteor/
 - label: Time series analysis for monitoring
   links:
     - label: Overview
