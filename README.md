@@ -1,6 +1,7 @@
 # Operate First Website
 
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.operate-first.cloud%2F)
+[![Deploy Operate First GH Pages](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml/badge.svg)](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml)
 
 This repository contains some content and the code to build [operate-first.cloud](https://www.operate-first.cloud/). It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [OpenShift](scripts/templates/base) or [GitHub Pages](https://pages.github.com/).
 
@@ -151,7 +152,11 @@ We use Netlify to preview PR changes. Each PR will show a Netlify check that can
 
 ### Manual Site Deployment (Production GitHub Pages)
 
-[CI](https://travis-ci.org/github/operate-first/operate-first.github.io) should deploy to GitHub pages automatically, but to manually redeploy
+CI will deploy to GitHub pages automatically on every push to default branch as well on daily schedule. You can trigger a new build manually if you have _write_ permissions on this repo by simply clicking **Run workflow** button on the [CI workflow details screen here](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml).
+
+![Manual CI trigger](misc/manual_ci_trigger.png)
+
+Fully manual build is possible by issuing following commands (requires _write_ access to the repo):
 
 ```sh
 npm install
