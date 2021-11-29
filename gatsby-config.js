@@ -126,6 +126,11 @@ const remoteSources = [
     patterns: ['**/*.md', '**/*.png'],
   },
   {
+    name: 'data-science/meteor',
+    remote: 'https://github.com/aicoe/meteor.git',
+    patterns: ['**/*.md'],
+  },
+  {
     name: 'community/community',
     remote: 'https://github.com/operate-first/community.git',
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
