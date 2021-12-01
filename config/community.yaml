@@ -1,6 +1,6 @@
 - label: Overview
   href: /community/community
-- label: Community Handbook
+- label: Contributing
   href: /community/community/contributing.md
-- label: Community Metrics
+- label: Metrics
   href: /community/community/metrics/community_metrics.ipynb

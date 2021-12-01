@@ -41,42 +41,37 @@ const remoteSources = [
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
   },
   {
-    name: 'hitchhikers-guide/apps',
-    remote: 'https://github.com/operate-first/apps.git',
+    name: 'community-handbook/main',
+    remote: 'https://github.com/operate-first/community-handbook.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'hitchhikers-guide/support',
+    name: 'community-handbook/support',
     remote: 'https://github.com/operate-first/support.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'hitchhikers-guide/sre',
+    name: 'community-handbook/sre',
     remote: 'https://github.com/operate-first/SRE.git',
     patterns: ['**/*.md'],
   },
   {
-    name: 'hitchhikers-guide/elyra',
+    name: 'community-handbook/elyra',
     remote: 'https://github.com/thoth-station/elyra-aidevsecops-tutorial.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'hitchhikers-guide/pulp',
+    name: 'community-handbook/pulp',
     remote: 'https://github.com/thoth-station/pulp-operate-first-web.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'hitchhikers-guide/moc-ray-demo',
+    name: 'community-handbook/moc-ray-demo',
     remote: 'https://github.com/erikerlandson/moc-ray-demo.git',
     patterns: ['**/*.md', '**/*.png'],
   },
   {
-    name: 'hitchhikers-guide/data-science-workflows',
-    remote: 'https://github.com/aicoe-aiops/data-science-workflows.git',
-    patterns: ['**/*.md', '**/*.png'],
-  },
-  {
-    name: 'hitchhikers-guide/toolbox',
+    name: 'community-handbook/toolbox',
     remote: 'https://github.com/operate-first/toolbox',
     patterns: ['**/*.md', '**/*.png'],
   },
@@ -133,6 +128,11 @@ const remoteSources = [
   {
     name: 'community/community',
     remote: 'https://github.com/operate-first/community.git',
+    patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
+  },
+  {
+    name: 'common/common',
+    remote: 'https://github.com/operate-first/common.git',
     patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
   },
 ];
