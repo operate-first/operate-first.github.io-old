@@ -3,7 +3,7 @@
 # - path/to/cloned/toc.yaml
 
 - config/data-science.yaml
-- config/hitchhikers-guide.yaml
+- config/community-handbook.yaml
 - config/operations.yaml
 - config/blueprints.yaml
 - config/community.yaml

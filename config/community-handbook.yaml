@@ -1,0 +1,41 @@
+- label: General
+  links:
+    - label: Intro
+      href: /community-handbook/main/README.md
+    - label: Support
+      href: /community-handbook/support/README.md
+- label: GitHub Access
+  links:
+    - label: Get Access
+      href: /common/docs/add_gh_member_and_access.md
+    - label: Get A Repo
+      href: /common/docs/add_repo.md
+- label: GitOps Docs
+  links:
+    - label: Documentation
+      href: /community-handbook/
+      remote: https://www.operate-first.cloud/apps
+- label: SRE
+  links:
+    - label: Intro
+      href: /community-handbook/operations-intro.md
+    - label: SRE Overview
+      href: /community-handbook/sre/README.md
+    - label: Incident Management Procedure
+      href: /community-handbook/sre/incident-management/incident-management-procedure.md
+    - label: Setup GitHub Receiver
+      href: /community-handbook/sre/incident-management/github-receiver-setup.md
+    - label: Configure Prometheus Alerts
+      href: /community-handbook/sre/incident-management/configure-prometheus-alerts.md
+    - label: Alerts
+      href: /community-handbook/alerts.md
+- label: Pulp
+  links:
+    - label: Using Pulp to host or consume Python packages
+      href: /community-handbook/pulp/usage.md
+- label: Demos
+  links:
+    - label: Elyra AIDevSecOps Tutorial
+      href: /community-handbook/elyra/README.md
+    - label: Using Ray with Jupyter and ODH
+      href: /community-handbook/moc-ray-demo/README.md
