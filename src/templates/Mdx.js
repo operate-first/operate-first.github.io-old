@@ -9,7 +9,7 @@ import { PageSection, PageSectionVariants, TextContent } from '@patternfly/react
 import Layout from '../components/Layout';
 import JupyterNotebook from '../components/JupyterNotebook';
 import SEO from '../components/seo';
-import './Doc.scss';
+import './Mdx.scss';
 
 export const pageQuery = graphql`
   query DocQuery($id: String) {

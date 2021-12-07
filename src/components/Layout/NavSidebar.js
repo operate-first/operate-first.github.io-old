@@ -9,13 +9,23 @@ import {
   PageSidebar,
 } from '@patternfly/react-core';
 
-const NavItem = ({ id, label, href, location }) => (
-  <DefaultNavItem key={id} itemId={id} isActive={location.pathname === href}>
-    <Link to={href}>{label}</Link>
-  </DefaultNavItem>
-);
+const NavItem = ({ id, label, href, remote, location }) => {
+  let isActive = location.pathname === href;
+  let linkTo = href;
+  if (remote) {
+    linkTo = remote;
+    isActive = false;
+  }
+  return (
+    <DefaultNavItem key={id} itemId={id} isActive={isActive}>
+      <Link to={linkTo}>{label}</Link>
+    </DefaultNavItem>
+  );
+};
+
 NavItem.propTypes = {
   href: PropTypes.string,
+  remote: PropTypes.string,
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   location: PropTypes.shape({
@@ -36,10 +46,15 @@ const NavGroup = (props) => {
   }
 
   const navItems = links
-    // only include navItems that start with the current top level navigation
+    // only include navItems that start with the current top level navigation or are remote urls
     .filter(({ href }) => isSubPath(href))
     .map((node) => <NavItem key={node.id} {...node} location={location} />);
-  const isActive = !!links.find((c) => location.pathname.startsWith(c.href));
+  const isActive = !!links.find((c) => {
+    if (c.remote) {
+      return false;
+    }
+    return location.pathname.startsWith(c.href);
+  });
 
   if (navItems.filter(Boolean).length === 0) {
     return null;
@@ -57,7 +72,7 @@ NavGroup.propTypes = {
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
   }),
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
 };
 
 export const NavSidebar = ({ isNavOpen, location }) => {
@@ -72,6 +87,7 @@ export const NavSidebar = ({ isNavOpen, location }) => {
             links {
               id
               label
+              remote
               href
             }
           }

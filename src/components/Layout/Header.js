@@ -15,14 +15,15 @@ import logo from './logo.png';
 import GithubIcon from '@patternfly/react-icons/dist/esm/icons/github-icon';
 import SlackIcon from '@patternfly/react-icons/dist/esm/icons/slack-icon';
 import YoutubeIcon from '@patternfly/react-icons/dist/esm/icons/youtube-icon';
+import TwitterIcon from '@patternfly/react-icons/dist/esm/icons/twitter-icon';
 import Launcher from './Launcher';
 
 const TopNav = ({ location }) => {
   const navItems = [
     ['data-science', 'Data Science'],
-    ['users', 'Users'],
-    ['operations', 'Operations'],
+    ['community-handbook', 'Community Handbook '],
     ['blueprints', 'Blueprints'],
+    ['community', 'Community'],
   ];
 
   return (
@@ -54,6 +55,7 @@ const HeaderTools = () => {
             github
             youtube
             slack
+            twitter
           }
         }
       }
@@ -75,6 +77,11 @@ const HeaderTools = () => {
       href: links.youtube,
       ariaLabel: 'Operate First YouTube',
       icon: <YoutubeIcon />,
+    },
+    {
+      href: links.twitter,
+      ariaLabel: 'Operate First Twitter',
+      icon: <TwitterIcon />,
     },
   ];
 

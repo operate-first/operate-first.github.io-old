@@ -55,7 +55,7 @@ Layout.propTypes = {
   }),
   banner: PropTypes.shape({
     html: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
 };
 
 export default Layout;

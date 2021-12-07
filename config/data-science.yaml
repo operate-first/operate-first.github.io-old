@@ -1,3 +1,9 @@
+- label: Get Involved
+  links:
+    - label: Data Science Community Meetup
+      href: /data-science/operate-first-data-science-community/docs/meetup-landing-page.md
+    - label: Agenda
+      href: /data-science/operate-first-data-science-community/docs/content.md
 - label: Data Science Workflow
   links:
     - label: Overview
@@ -7,17 +13,17 @@
     - label: How to Contribute
       href: /data-science/data-science-workflows/docs/how-to-contribute.md
     - label: Data Science Projects
-      href: /data-science/
+      href: /data-science/projectsoverview.md
 - label: AI for Continuous Integration
   links:
     - label: Overview
-      href: /data-science/ocp-ci-analysis/
+      href: /data-science/ai4ci/
     - label: Get Started
-      href: /data-science/ocp-ci-analysis/docs/get-started.md
+      href: /data-science/ai4ci/docs/get-started.md
     - label: How to Contribute
-      href: /data-science/ocp-ci-analysis/docs/how-to-contribute.md
+      href: /data-science/ai4ci/docs/how-to-contribute.md
     - label: Content
-      href: /data-science/ocp-ci-analysis/docs/content.md
+      href: /data-science/ai4ci/docs/content.md
 - label: Categorical Encoding
   links:
     - label: Overview
@@ -38,6 +44,32 @@
       href: /data-science/cloud-price-analysis/docs/contribute.md
     - label: Content
       href: /data-science/cloud-price-analysis/docs/content.md
+- label: Configuration File Analysis
+  links:
+    - label: Overview
+      href: /data-science/configuration-files-analysis/docs/overview.md
+    - label: Get Started
+      href: /data-science/configuration-files-analysis/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/configuration-files-analysis/docs/contribute.md
+    - label: Content
+      href: /data-science/configuration-files-analysis/docs/content.md
+- label: Data Skipping using Xskipper
+  links:
+    - label: Overview
+      href: /data-science/data-skipping/site/docs/getting-started/operatefirst-getting-started.md
+    - label: Get Started
+      href: /data-science/data-skipping/notebooks/python/Xskipper - Python Sample.ipynb
+- label: Github Issue Labeler
+  links:
+    - label: Overview
+      href: /data-science/github-labeler/README.md
+    - label: Get Started
+      href: /data-science/github-labeler/docs/get-started.md
+    - label: How to Contribute
+      href: /data-science/github-labeler/docs/contribute.md
+    - label: Content
+      href: /data-science/github-labeler/docs/content.md
 - label: Hard Drive Failure Prediction
   links:
     - label: Overview
@@ -78,6 +110,8 @@
       href: /data-science/pet-image-detection/docs/how-to-contribute.md
     - label: Content
       href: /data-science/pet-image-detection/docs/content.md
+- label: Project Meteor
+  href: /data-science/meteor/
 - label: Time series analysis for monitoring
   links:
     - label: Overview
@@ -88,19 +122,3 @@
       href: /data-science/time-series/docs/contribute.md
     - label: Content
       href: /data-science/time-series/docs/content.md
-- label: Configuration File Analysis
-  links:
-    - label: Overview
-      href: /data-science/configuration-files-analysis/docs/overview.md
-    - label: Get Started
-      href: /data-science/configuration-files-analysis/docs/get-started.md
-    - label: How to Contribute
-      href: /data-science/configuration-files-analysis/docs/contribute.md
-    - label: Content
-      href: /data-science/configuration-files-analysis/docs/content.md
-- label: Data Skipping using Xskipper
-  links:
-    - label: Overview
-      href: /data-science/data-skipping/site/docs/getting-started/operatefirst-getting-started.md
-    - label: Get Started
-      href: /data-science/data-skipping/notebooks/python/Xskipper - Python Sample.ipynb
