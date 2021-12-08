@@ -9,10 +9,10 @@ banner: |
   #### Ready to get started?
 
   <div class="pf-l-flex pf-m-justify-content-center pf-m-space-items-xl pf-m-wrap">
-    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/hitchhikers-guide/apps/docs/about/intro.md">
+    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/open-source-developers/">
       <h3>I am an open source developer</h3>
     </a>
-    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/hitchhikers-guide/operations-intro.md">
+    <a class="pf-l-flex__item pf-c-button pf-c-button__cta-secondary pf-m-display-lg" href="/sre-learners/">
       <h3>I want to learn SRE practices</h3>
     </a>
   </div>
