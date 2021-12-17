@@ -8,10 +8,6 @@
   links:
     - label: Overview
       href: /data-science/data-science-workflows/
-    - label: Get Started
-      href: /data-science/data-science-workflows/docs/getting-started.md
-    - label: How to Contribute
-      href: /data-science/data-science-workflows/docs/how-to-contribute.md
     - label: Data Science Projects
       href: /data-science/projectsoverview.md
 - label: AI for Continuous Integration
