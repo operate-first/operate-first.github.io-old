@@ -7,13 +7,13 @@
 - label: Data Science Workflow
   links:
     - label: Overview
-      href: /data-science/data-science-workflows/
+      href: /data-science/ds-workflows/README.md
     - label: Data Science Projects
       href: /data-science/projectsoverview.md
 - label: AI for Continuous Integration
   links:
     - label: Overview
-      href: /data-science/ai4ci/
+      href: /data-science/ai4ci/README.md
     - label: Get Started
       href: /data-science/ai4ci/docs/get-started.md
     - label: How to Contribute
@@ -33,7 +33,7 @@
 - label: Cloud Price Analysis
   links:
     - label: Overview
-      href: /data-science/cloud-price-analysis/
+      href: /data-science/cloud-price-analysis/README.md
     - label: Get Started
       href: /data-science/cloud-price-analysis/docs/get-started.md
     - label: How to Contribute
@@ -69,7 +69,7 @@
 - label: Hard Drive Failure Prediction
   links:
     - label: Overview
-      href: /data-science/ceph-drive-failure/
+      href: /data-science/ceph-drive-failure/README.md
     - label: Get Started
       href: /data-science/ceph-drive-failure/docs/get-started.md
     - label: How to Contribute
@@ -79,7 +79,7 @@
 - label: Mailing List Analysis
   links:
     - label: Overview
-      href: /data-science/mailing-list-analysis/
+      href: /data-science/mailing-list-analysis/README.md
     - label: Get Started
       href: /data-science/mailing-list-analysis/docs/getting-started.md
     - label: How to Contribute
@@ -89,7 +89,7 @@
 - label: OpenShift Anomaly Detection
   links:
     - label: Overview
-      href: /data-science/openshift-anomaly-detection/
+      href: /data-science/openshift-anomaly-detection/README.md
     - label: Get Started
       href: /data-science/openshift-anomaly-detection/docs/get-started.md
     - label: How to Contribute
@@ -99,7 +99,7 @@
 - label: Pet Image Detection
   links:
     - label: Overview
-      href: /data-science/pet-image-detection/
+      href: /data-science/pet-image-detection/README.md
     - label: Get Started
       href: /data-science/pet-image-detection/docs/get-started.md
     - label: How to Contribute
@@ -111,7 +111,7 @@
 - label: Time series analysis for monitoring
   links:
     - label: Overview
-      href: /data-science/time-series/
+      href: /data-science/time-series/README.md
     - label: Get Started
       href: /data-science/time-series/docs/get-started.md
     - label: How to Contribute
