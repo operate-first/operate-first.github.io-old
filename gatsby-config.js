@@ -6,7 +6,7 @@ const pathPrefix = process.env.PATH_PREFIX;
 
 const remoteSources = [
   {
-    name: 'data-science/data-science-workflows',
+    name: 'data-science/ds-workflows',
     remote: 'https://github.com/aicoe-aiops/data-science-workflows.git',
     patterns: ['**/*.md', '**/*.png'],
   },
