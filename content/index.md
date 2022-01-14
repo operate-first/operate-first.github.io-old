@@ -41,7 +41,7 @@ The result?
 <br>
 
 <div class="pf-l-bullsey pf-l-flex">
-  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/data-science/data-science-workflows/" target="_blank" tabindex="0">
+  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/data-science/ds-workflows/README.md" target="_blank" tabindex="0">
     <div class="pf-c-tile__header pf-m-stacked">
       <div class="pf-c-tile__icon">
         <i class="pf-icon pf-icon-catalog" style="font-size: 5em;"></i>
