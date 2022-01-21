@@ -8,7 +8,7 @@ const remoteSources = [
   {
     name: 'data-science/ds-workflows',
     remote: 'https://github.com/aicoe-aiops/data-science-workflows.git',
-    patterns: ['**/*.md', '**/*.png'],
+    patterns: ['**/*.md', '**/*.png', '**/*.ipynb'],
   },
   {
     name: 'data-science/categorical-encoding',
