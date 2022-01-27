@@ -50,7 +50,7 @@ The result?
     </div>
     <div class="pf-c-tile__body"><h3>Data Science Learning Pathway</h3></div>
   </a>
-  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="/hitchhikers-guide/support/README.md" target="_blank">
+  <a class="pf-c-tile pf-c-tile pf-m-flex-1 pf-l-flex__item" style="text-decoration: none" href="https://github.com/operate-first/hitchhikers-guide" target="_blank">
     <div class="pf-c-tile__header pf-m-stacked">
       <div class="pf-c-tile__icon">
         <i class="pf-icon pf-icon-help" style="font-size: 5em;"></i>
