@@ -154,10 +154,6 @@ module.exports = {
         name: 'MOC',
         clusters: [
           {
-            name: 'Zero',
-            url: 'http://console-openshift-console.apps.zero.massopen.cloud/',
-          },
-          {
             name: 'Infra',
             url: 'http://console-openshift-console.apps.moc-infra.massopen.cloud/',
           },
