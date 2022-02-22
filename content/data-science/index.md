@@ -1,6 +1,6 @@
 # Cloud Native Data Science and AI Ops:</br> *With Operate-First!*
 
-**Ready to help build the next generation of intelligent applications for the cloud, *IN* the cloud?** :sunglasses:
+**Ready to help build the next generation of intelligent applications for the cloud, *IN* the cloud?** 😎
 
 ### **Who are we?**
 
