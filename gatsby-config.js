@@ -167,6 +167,10 @@ module.exports = {
         name: 'EMEA',
         clusters: [
           {
+            name: 'Morty',
+            url: 'https://console-openshift-console.apps.morty.emea.operate-first.cloud/',
+          },
+          {
             name: 'Rick',
             url: 'https://console-openshift-console.apps.rick.emea.operate-first.cloud/',
           },
