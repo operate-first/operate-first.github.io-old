@@ -10,6 +10,10 @@
       href: /common/docs/add_gh_member_and_access.md
     - label: Get A Repo
       href: /common/docs/add_repo.md
+- label: Cluster Workload Overview
+  links:
+    - label: Workload Overview
+      href: /community-handbook/cluster_workload_overview.md
 - label: GitOps Docs
   links:
     - label: Documentation
